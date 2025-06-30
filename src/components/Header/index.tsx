@@ -93,7 +93,7 @@ const Header: FC<Props> = ({ mainRef }) => {
   return (
     <nav
       ref={navRef}
-      className="nav absolute top-0 z-[1000] flex h-[6vw] w-full items-center px-[2vw] text-[1.25vw] text-card-bg"
+      className="nav bg-blue-200 absolute top-0 z-[1000] flex w-full items-center px-[7.4rem] py-[3.2rem] text-[1.25vw] text-card-bg"
     >
       <div className="min-w-[15vw] text-[2vw] font-semibold">gj_wp</div>
 
