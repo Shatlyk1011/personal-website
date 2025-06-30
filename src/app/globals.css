@@ -13,16 +13,43 @@
 }
 
 html {
-  /* use .rem values */
-  /* font-size:calc(10 * 100vw / 1440);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale; */
+    scrollbar-width:thin;
+    
+    font-size:calc(10 * 100vw / 1440);
+    font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+
+    text-align:left;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    
+    /* @media (min-width:$screen-sm-min) {
+        font-size:calc(10 * 100vw / 768);
+    }
+    
+    @media (min-width:$screen-ml-min) {
+        font-size:calc(10 * 100vw / 1440);
+    }
+    
+    
+    @media (min-width:$screen-ul-min) {
+        font-size:10px;
+    }
+    
+    // need for prevent iOS overscroll offset (see: navbar.scss)
+    //@media (pointer:coarse) {
+    //    position:relative;
+    //} */
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size:10px;
+  }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
   overflow-x: hidden;
 }
 
@@ -92,8 +119,8 @@ body::after {
 /* HERO IMAGE STYLES */
 
 .hero_img_box:hover > img {
-  @apply animate-pusle-image-animation;
-  filter: url(#noise_hero_image);
+  /* @apply animate-pusle-image-animation; */
+  /* filter: url(#noise_hero_image); */
 }
 
 /* NOTE */
