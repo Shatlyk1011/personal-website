@@ -32,7 +32,7 @@ const Hero = () => {
 
   return (
     // 10.2rem is heading
-    <section className="max-w-[144rem] mx-auto pt-[calc(3.2rem+10.2rem)] pb-[12.4rem] px-[7.4rem]">
+    <section id="home" className="max-w-[144rem] mx-auto pt-[calc(3.2rem+10.2rem)] pb-[12.4rem] px-[7.4rem]">
       <div className='flex gap-[6.4rem] h-[76.5rem]'>
         {/* left */}
         <div className='flex-[1.1] flex flex-col justify-between bg-cyan-50'>

@@ -5,6 +5,11 @@
 
   --text-1: #070707;
   --text-2: #393A39;
+
+  --gray-1: #DCDCDC;
+  --gray-2: #A5A5A5;
+  --gray-3: #787878;
+  
 }
 
 @theme inline {
@@ -12,6 +17,9 @@
   --color-text-1: var(--text-1);
   --color-text-2: var(--text-2);
 
+  --color-gray-1: var(--gray-1);
+  --color-gray-2: var(--gray-2);
+  --color-gray-3: var(--gray-3);
 
   --tracking-one: 0.01em;
   --tracking-two: 0.02em;
@@ -84,7 +92,7 @@ body::after {
 
 /* Sticky card styles */
 .sticky-content {
-  width: 100vw;
+  width: 100%;
   position: sticky;
   top: 0;
   --offset: 0px;
