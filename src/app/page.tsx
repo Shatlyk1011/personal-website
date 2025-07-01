@@ -10,6 +10,7 @@ import Preload from "@/components/Preload";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import Works from "@/components/Works";
 
 export default function Home() {
   const mainRef = useRef<HTMLDivElement | null>(null);
@@ -39,9 +40,8 @@ export default function Home() {
         {isLoading && <Preload path={path} />}
         <Hero />
         <Services />
-        <Hero />
-        {/* <Works />
-        <CallToAction /> */}
+        <Works />
+        {/*<CallToAction /> */}
       </main>
     </ReactLenis>
   );

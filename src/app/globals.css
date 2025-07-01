@@ -2,6 +2,8 @@
 
 :root {
   --bg-black: #0C0C0C;
+  --bg-white: #F0F0F0;
+  
 
   --text-1: #070707;
   --text-2: #393A39;
@@ -14,6 +16,8 @@
 
 @theme inline {
   --color-bg-black: var(--bg-black);
+  --color-bg-white: var(--bg-white);
+
   --color-text-1: var(--text-1);
   --color-text-2: var(--text-2);
 
@@ -21,10 +25,6 @@
   --color-gray-2: var(--gray-2);
   --color-gray-3: var(--gray-3);
 
-  --tracking-one: 0.01em;
-  --tracking-two: 0.02em;
-  --tracking-three: 0.03em;
-  --tracking-four: 0.04em;
 }
 
 html {
@@ -57,7 +57,7 @@ body.overflow-hidden {
 }
 
 body::before {
-  filter: url(#noise_body);
+  /* filter: url(#noise_body); */
 }
 
 body::before,

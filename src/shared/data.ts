@@ -30,4 +30,70 @@ export const SERVICES = [
   },
 ];
 
+export const PROJECTS = [
+  {
+    title: "GrowChief",
+    description:
+      "Multivendor food delivery application written using Payload CMS. Small and medium size brands to find themselfes. Previously worked as cook for",
+
+    tags: ["Open Source", "Fullstack", "Design", "UI/UX", "CMS"],
+
+    links: [
+      {
+        title: "Live",
+        href: "https://www.growchief.com/",
+      },
+      {
+        title: "Github",
+        href: "#",
+      },
+    ],
+
+    videoUrl: "#",
+  },
+
+  {
+    title: "Edil Ozi - Component Library",
+    description:
+      "Multivendor food delivery application written using Payload CMS. Small and medium size brands to find themselfes. Previously worked as cook for",
+
+    tags: ["Open Source", "UI/UX"],
+
+    links: [
+      {
+        title: "Live",
+        href: "#",
+      },
+      {
+        title: "Github",
+        href: "#",
+      },
+    ],
+
+    videoUrl: "#",
+  },
+
+  {
+    title: "33Ashpez - Food delivery app",
+    description:
+      "Multivendor food delivery application written using Payload CMS. Small and medium size brands to find themselfes. Previously worked as cook for",
+
+    tags: ["Open-source", "UI/UX"],
+
+    links: [
+      {
+        title: "Live",
+        href: "#",
+      },
+      {
+        title: "Github",
+        href: "#",
+      },
+    ],
+
+    videoUrl: "#",
+  },
+];
+
 export type Services = (typeof SERVICES)[number];
+export type Project = (typeof PROJECTS)[number];

@@ -18,8 +18,8 @@ import { SERVICES } from "@/shared/data";
 
 const Services = () => {
   return (
-    <section id="services" className="bg-black py-[12.4rem] px-[7.4rem] text-gray-1" >
-      <div className="max-w-[1440px] mx-auto">
+    <section id="services" className="bg-bg-black py-[12.4rem] px-[7.4rem] text-gray-1" >
+      <div className="max-w-[144rem] mx-auto">
 
         <div className="flex flex-col gap-[6.4rem] pb-[3.2rem]">
           <h3 className="text-[6.4rem] font-medium tracking-[0.04px] leading-[1.2]">What can I do for you</h3>

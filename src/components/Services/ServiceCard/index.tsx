@@ -12,7 +12,7 @@ const ServiceCard: FC<Props> = ({ item }) => {
   const { title, services, description, number, awareItemClass } = item;
 
   return (
-    <div className="sticky-content relative z-10 w-full bg-black pt-[3.2rem] nth-[2]:pt-[6.4rem] pb-[3.2rem] border-t border-white/[12%]">
+    <div className="sticky-content relative z-10 w-full bg-bg-black pt-[3.2rem] nth-[2]:pt-[6.4rem] pb-[3.2rem] border-t border-white/[12%] last:border-b">
       <div className="flex justify-between">
 
         {/* left */}
