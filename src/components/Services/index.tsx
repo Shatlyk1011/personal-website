@@ -22,11 +22,11 @@ const Services = () => {
       <div className="max-w-[1440px] mx-auto">
 
         <div className="flex flex-col gap-[6.4rem] pb-[3.2rem]">
-          <h3 className="text-[6.4rem] font-medium tracking-[0.04px] leading-[1.2]">What Can I Create Together?</h3>
+          <h3 className="text-[6.4rem] font-medium tracking-[0.04px] leading-[1.2]">What can I do for you</h3>
 
           <p className="max-w-[66.4rem] text-gray-2 self-end text-[2.2rem] leading-[2.6rem] ">I help ambitious people and brands turn complex ideas into clear, compelling designs that engage audiences, solve real problems, and drive measurable results.</p>
         </div>
-        {SERVICES.map((item) => (
+        {SERVICES.slice(0, 3).map((item) => (
           <ServiceCard key={item.title} item={item} />
         ))}
       </div>

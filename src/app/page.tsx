@@ -39,6 +39,7 @@ export default function Home() {
         {isLoading && <Preload path={path} />}
         <Hero />
         <Services />
+        <Hero />
         {/* <Works />
         <CallToAction /> */}
       </main>
