@@ -1,22 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-black: #0C0C0C;
+
+  --text-1: #070707;
+  --text-2: #393A39;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg-black: var(--bg-black);
+  --color-text-1: var(--text-1);
+  --color-text-2: var(--text-2);
+
+
+  --tracking-one: 0.01em;
+  --tracking-two: 0.02em;
+  --tracking-three: 0.03em;
+  --tracking-four: 0.04em;
 }
 
 html {
     scrollbar-width:thin;
     
     font-size:calc(10 * 100vw / 1440);
-    font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+    font-family: "SF Pro", sans-serif;
 
     text-align:left;
     -webkit-font-smoothing:antialiased;
@@ -51,6 +58,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   overflow-x: hidden;
+  font-size: 1.6rem;
 }
 
 body.overflow-hidden {

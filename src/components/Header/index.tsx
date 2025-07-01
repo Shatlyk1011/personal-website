@@ -1,18 +1,17 @@
 "use client";
-import { FC, MutableRefObject, useEffect, useRef } from "react";
+import { FC, RefObject, useEffect, useRef } from "react";
 
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { NAV_LINKS } from "@/shared/data";
 
 import TextGlitch from "../ui/TextGlitch";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 interface Props {
-  mainRef: MutableRefObject<HTMLDivElement | null>;
+  mainRef: RefObject<HTMLDivElement | null>;
 }
 
 const Header: FC<Props> = ({ mainRef }) => {
@@ -93,11 +92,11 @@ const Header: FC<Props> = ({ mainRef }) => {
   return (
     <nav
       ref={navRef}
-      className="nav bg-blue-200 absolute top-0 z-[1000] flex w-full items-center px-[7.4rem] py-[3.2rem] text-[1.25vw] text-card-bg"
+      className="nav absolute top-0 z-[1000] flex w-full justify-between items-center px-[7.4rem] py-[3.2rem] text-[1.8rem] font-medium text-card-bg"
     >
-      <div className="min-w-[15vw] text-[2vw] font-semibold">gj_wp</div>
+      <div className="min-w-[14rem] text-[2rem] font-semibold">gj_wp</div>
 
-      <ul className="flex flex-1 items-center justify-end gap-[1.3vw] [font-kerning:none]" data-fixed>
+      <ul className="flex items-center justify-end gap-[4.2rem] [font-kerning:none]" data-fixed>
         {NAV_LINKS.map(({ id }) => (
           <li
             className="nav_link inline-block cursor-pointer"
@@ -111,6 +110,9 @@ const Header: FC<Props> = ({ mainRef }) => {
           </li>
         ))}
       </ul>
+      <button type="button" className="py-[0.7rem] px-[0.8rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">
+        <span className="text-[1.8rem]">Let&apos;s Connect</span>
+      </button>
     </nav>
   );
 };
