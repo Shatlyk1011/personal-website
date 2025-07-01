@@ -5,8 +5,10 @@ import ReactLenis from "lenis/react";
 
 import handleOnLoad from "@/composables/onLoad";
 
+//components
 import Preload from "@/components/Preload";
 import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 
 
 export default function Home() {
@@ -35,8 +37,8 @@ export default function Home() {
       <main className="relative" ref={mainRef}>
         <Header mainRef={mainRef} />
         {isLoading && <Preload path={path} />}
-        {/* <Hero />
-        <Services />
+        <Hero />
+        {/*<Services />
         <Works />
         <CallToAction /> */}
       </main>
