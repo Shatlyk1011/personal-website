@@ -39,19 +39,6 @@ const Header: FC<Props> = ({ mainRef }) => {
 
     const navItems = mainRef?.current?.querySelectorAll(".nav_link");
 
-    // Create ScrollTrigger for each section
-    NAV_LINKS.forEach(({ id, linkIdx, isDarkBg, start, end }) => {
-      ScrollTrigger.create({
-        trigger: "#" + id,
-        start: start || "top top",
-        end: end || "bottom top",
-        onEnter: () => setActiveLink(linkIdx, isDarkBg),
-        onEnterBack: () => setActiveLink(linkIdx, isDarkBg),
-        // onLeave: () => setActiveLink(linkIdx, isDarkBg)
-      });
-    });
-
-    // Function to update active link style
     const setActiveLink = (linkIdx: number, isDark: boolean) => {
       navItems.forEach((item, i) => {
         if (navRef.current && linkIdx === 1) {
@@ -83,6 +70,21 @@ const Header: FC<Props> = ({ mainRef }) => {
       });
     };
 
+    // Create ScrollTrigger for each section
+    NAV_LINKS.forEach(({ id, linkIdx, isDarkBg, start, end }) => {
+      ScrollTrigger.create({
+        trigger: "#" + id,
+        start: start || "top top",
+        end: end || "bottom top",
+        onEnter: () => setActiveLink(linkIdx, isDarkBg),
+        onEnterBack: () => setActiveLink(linkIdx, isDarkBg),
+        // onLeave: () => setActiveLink(linkIdx, isDarkBg)
+      });
+    });
+
+    // Function to update active link style
+
+
     // Cleanup
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
@@ -92,11 +94,11 @@ const Header: FC<Props> = ({ mainRef }) => {
   return (
     <nav
       ref={navRef}
-      className="nav absolute top-0 z-[1000] flex w-full justify-between items-center px-[7.4rem] py-[3.2rem] text-[1.8rem] font-medium text-card-bg"
+      className="nav absolute top-0 z-[1000] flex gap-[3.2rem] w-full justify-between items-center px-[7.4rem] py-[3.2rem] text-[1.8rem] font-medium text-card-bg"
     >
       <div className="min-w-[14rem] text-[2rem] font-semibold">gj_wp</div>
 
-      <ul className="flex items-center justify-end gap-[4.2rem] [font-kerning:none]" data-fixed>
+      <ul className="flex flex-1 items-center justify-end gap-[3.2rem] [font-kerning:none]" data-fixed>
         {NAV_LINKS.map(({ id }) => (
           <li
             className="nav_link inline-block cursor-pointer"
