@@ -39,7 +39,7 @@ const ProjectCard: FC<Props> = ({ item: { title, description, tags, links } }) =
 
       {/* FIX SIZES */}
       <figure className="h-[39.5rem] w-full flex-[7] rounded-[0.6vw] bg-neutral-900">
-        <img src="" alt="" />
+        {/* <img src="" alt="" /> */}
       </figure>
     </div>
   );
