@@ -112,9 +112,9 @@ const Header: FC<Props> = ({ mainRef }) => {
           </li>
         ))}
       </ul>
-      <button type="button" className="py-[0.7rem] px-[0.8rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">
+      {/* <button type="button" className="py-[0.7rem] px-[0.8rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">
         <span className="text-[1.8rem]">Let&apos;s Connect</span>
-      </button>
+      </button> */}
     </nav>
   );
 };

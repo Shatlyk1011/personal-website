@@ -7,14 +7,13 @@ import { type Services } from "@/shared/data";
 interface Props {
   item: Services;
 }
-      {/* {awareItemClass && <div className={cn("absolute top-[-5%] z-[-1] h-[80%] w-full", awareItemClass)}></div>} */}
 const ServiceCard: FC<Props> = ({ item }) => {
   const { title, services, description, number, awareItemClass } = item;
 
   return (
-    <div className="sticky-content relative z-10 w-full bg-bg-black pt-[3.2rem] nth-[2]:pt-[6.4rem] pb-[3.2rem] border-t border-white/[12%] last:border-b">
+    <div className="sticky-content relative z-10 w-full bg-bg-black pt-[3.2rem]  pb-[3.2rem] border-t border-white/[12%] last:border-b">
       <div className="flex justify-between">
-
+        {awareItemClass && <div className={cn("absolute top-[-8%] z-[-1] h-[108%] w-full", awareItemClass)}></div>}
         {/* left */}
         <div className="text-[3.4rem] leading-[3.6rem] tracking-[0.4px] text-gray-1">
           ({number})

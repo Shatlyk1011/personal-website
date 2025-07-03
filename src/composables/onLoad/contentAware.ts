@@ -12,7 +12,7 @@ interface Effect {
 
 // how it works:
 // add "data-fixed" attribute to the element that should be awared
-// add '.aware_threshold' class to the element in which the element with data-fixed attribute should be hidden
+// add '.aware_threshold' class to the element where the data-fixed element should be styled
 
 const contentAware = (blocks: NodeListOf<Element>, fixedElements: NodeListOf<Element>) => {
   gsap.registerPlugin(ScrollTrigger);

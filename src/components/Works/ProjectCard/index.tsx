@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { cn } from "@/shared/utils";
 
 import { Project } from "@/shared/data";
 

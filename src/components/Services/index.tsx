@@ -1,7 +1,7 @@
 "use client";
 
-// import SectionHeader from "../ui/SectionHeading";
 import ServiceCard from "./ServiceCard";
+import SectionHeading from "../ui/SectionHeading";
 
 import { SERVICES } from "@/shared/data";
 
@@ -18,11 +18,12 @@ import { SERVICES } from "@/shared/data";
 
 const Services = () => {
   return (
-    <section id="services" className="bg-bg-black py-[12.4rem] px-[7.4rem] text-gray-1" >
+    <section id="services" className="bg-bg-black pt-[12.4rem] px-[7.4rem] text-gray-1" >
       <div className="max-w-[144rem] mx-auto">
 
-        <div className="flex flex-col gap-[6.4rem] pb-[3.2rem]">
-          <h3 className="text-[6.4rem] font-medium tracking-[0.04px] leading-[1.2]">What can I do for you</h3>
+        <div className="flex flex-col gap-[6.4rem] pb-[3.2rem] relative">
+          <SectionHeading title="What can I do for you" />
+          <div className="aware_threshold -z-1 absolute top-[-12.4rem] h-[calc(100%+12.4rem)] w-full"></div>
 
           <p className="max-w-[66.4rem] text-gray-2 self-end text-[2.2rem] leading-[2.6rem] ">I help ambitious people and brands turn complex ideas into clear, compelling designs that engage audiences, solve real problems, and drive measurable results.</p>
         </div>

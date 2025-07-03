@@ -15,7 +15,7 @@ const CustomLink: FC<Props> = ({ title, url, classes }) => {
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "bg-bg-white px-[2.4rem] py-[1.2rem] hover:bg-primary hover:text-white text-text-1 transition_1 rounded-[1.6rem]",
+        "bg-bg-white px-[2.4rem] py-[1.1rem] hover:bg-primary hover:text-white text-text-1 transition_1 rounded-[1.6rem]",
         classes,
       )}
     >

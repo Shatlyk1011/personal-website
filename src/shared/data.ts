@@ -23,7 +23,7 @@ export const SERVICES = [
   {
     title: "Growth & Optimization",
     description:
-      "Boost your web app with my optimization expertise. <br/> SEO Optimization enhances search rankings via keywords. Performance Enhancement speeds up your site. App Optimization ensures fast, intuitive, cross-platform apps. Maximize impact with my solutions.",
+      "Boost your web app with my optimization expertise. SEO Optimization enhances search rankings via keywords. Performance Enhancement speeds up your site. App Optimization ensures fast, intuitive, cross-platform apps. Maximize impact with my solutions.",
     services: ["SEO Optimization", "Performance Enhancement", "App Optimization"],
     number: "03",
     awareItemClass: "aware_threshold",

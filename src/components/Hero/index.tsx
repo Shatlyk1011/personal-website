@@ -33,7 +33,7 @@ const Hero = () => {
 
   return (
     // 10.2rem is heading
-    <AuroraBackground className='h-full'>
+    <AuroraBackground className='min-h-screen'>
       <section id="home" className="max-w-[144rem] w-full mx-auto pt-[calc(3.2rem+10.2rem)] pb-[12.4rem] px-[7.4rem] z-10">
         <div className='flex gap-[6.4rem] h-[76.5rem] max-h-[70vh] min-h-[60vh]'>
           {/* left */}
@@ -64,7 +64,7 @@ const Hero = () => {
             <div className='max-w-[53.2rem]'>
               <h2 className='text-[3.4rem] leading-[3.4rem] font-medium tracking-[0.04rem] mb-[1.4rem]'>Web Designer & Developer</h2>
               <p className='text-[2.2rem] leading-[2.6rem] mb-[1.6rem]'>I craft user-focused websites that empower startups and businesses to stand out and scale with confidence.</p>
-              <button type="button" className="py-[0.7rem] transition hover:text-primary px-[0.8rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">
+              <button type="button" className="py-[1.6rem] bg-text-2 hover:bg-primary transition hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.15)] text-white  px-[2.4rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">
                 <span className="text-[1.8rem]">Let&apos;s Connect</span>
               </button>
             </div>
