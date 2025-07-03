@@ -12,12 +12,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className="antialiased">
-        <svg className="pointer-events-none absolute cursor-none">
-          <filter id="noise_body">
-            <feTurbulence type="turbulence" baseFrequency="0.5"></feTurbulence>
-            <feColorMatrix type="saturate" values="0"></feColorMatrix>
-          </filter>
-        </svg>
         {children}
       </body>
     </html>
