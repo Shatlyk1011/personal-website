@@ -4,9 +4,10 @@ import { FC, RefObject, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { NAV_LINKS } from "@/shared/data";
+import { NAV_LINKS, NavLinkIdx } from "@/shared/data";
 
 import TextGlitch from "../ui/TextGlitch";
+import { Logo } from "../icons/Logo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,25 +39,34 @@ const Header: FC<Props> = ({ mainRef }) => {
     if (!mainRef?.current) return;
 
     const navItems = mainRef?.current?.querySelectorAll(".nav_link");
+    const logo = mainRef?.current?.querySelector(".logo");
 
-    const setActiveLink = (linkIdx: number, isDark: boolean) => {
-      navItems.forEach((item, i) => {
-        if (navRef.current && linkIdx === 1) {
+    const setActiveLink = (linkIdx: NavLinkIdx, isDark: boolean) => {
+      navItems.forEach((item,) => {
+        // set fixed position on "services" section
+        if (navRef.current && linkIdx === NavLinkIdx.Services) {
           navRef.current.style.position = "fixed";
-        } else if (navRef.current && linkIdx === 0) {
+        } else if (navRef.current && linkIdx === NavLinkIdx.Home) {
           navRef.current.style.position = "absolute";
           gsap.to(item, {
-            color: "#000",
+            color: "#0C0C0C",
             fontWeight: 400,
             duration: 0.15,
           });
-
+          console.log('before return', linkIdx, isDark);
+          gsap.to(logo, {
+            opacity: isDark ? '0' : '1'
+          })
           return;
         }
 
-        if (i === linkIdx) {
+        gsap.to(logo, {
+          opacity: isDark ? '0' : '1'
+        })
+
+        if (item.getAttribute('data-name') == linkIdx) {
           gsap.to(item, {
-            color: isDark ? "#fff" : "#000", // Active color
+            color: isDark ? "#DCDCDC" : "#0C0C0C", // Active color
             fontWeight: 500,
             duration: 0.15,
           });
@@ -68,9 +78,11 @@ const Header: FC<Props> = ({ mainRef }) => {
           });
         }
       });
+
+
     };
 
-    // Create ScrollTrigger for each section
+    // Create ScrollTrigger for each section with id
     NAV_LINKS.forEach(({ id, linkIdx, isDarkBg, start, end }) => {
       ScrollTrigger.create({
         trigger: "#" + id,
@@ -81,9 +93,6 @@ const Header: FC<Props> = ({ mainRef }) => {
         // onLeave: () => setActiveLink(linkIdx, isDarkBg)
       });
     });
-
-    // Function to update active link style
-
 
     // Cleanup
     return () => {
@@ -96,7 +105,9 @@ const Header: FC<Props> = ({ mainRef }) => {
       ref={navRef}
       className="nav absolute top-0 z-[1000] flex gap-[3.2rem] w-full justify-between items-center px-[7.4rem] py-[3.2rem] text-[1.8rem] font-medium text-card-bg"
     >
-      <div className="min-w-[14rem] text-[2rem] font-semibold">gj_wp</div>
+      <div className="min-w-[14rem] text-[2rem] font-semibold">
+        <Logo className="logo text-text-1" />
+      </div>
 
       <ul className="flex flex-1 items-center justify-end gap-[3.2rem] [font-kerning:none]" data-fixed>
         {NAV_LINKS.map(({ id }) => (
@@ -104,6 +115,7 @@ const Header: FC<Props> = ({ mainRef }) => {
             className="nav_link inline-block cursor-pointer"
             aria-label="link-button"
             role="button"
+            data-name={id}
             key={id}
           >
             <a href={"#" + id} className="capitalize">
