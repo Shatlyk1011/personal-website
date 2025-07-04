@@ -1,0 +1,30 @@
+import { FC } from 'react';
+
+import MuxPlayer from '@mux/mux-player-react/lazy';
+import { cn } from '@/shared/utils';
+
+interface Props {
+  playbackId:string
+  classes?:string
+};
+
+const MuxVideo:FC<Props> = ({ playbackId, classes }) => {
+  
+  return (
+    <MuxPlayer
+      className={cn(classes)}
+      loading="viewport"
+      playbackId={playbackId}
+      metadata={{
+        video_id: 'video-id-123456',
+        video_title: 'Bick Buck Bunny',
+        viewer_user_id: 'user-id-bc-789',
+      }}
+      autoPlay 
+      muted
+      loop
+      playsInline
+    />
+  )
+};
+export default MuxVideo

@@ -3,12 +3,13 @@ import { FC } from "react";
 import { Project } from "@/shared/data";
 
 import CustomLink from "./CustomLink";
+import MuxVideo from "@/components/ui/MuxVideo";
 
 interface Props {
   item: Project;
 }
 
-const ProjectCard: FC<Props> = ({ item: { title, description, tags, links } }) => {
+const ProjectCard: FC<Props> = ({ item: { title, description, playbackId, tags, links } }) => {
   return (
     <div className="flex gap-[3.2rem] pt-[6.4rem] pb-[4.2rem] border-b border-white/[12%]">
       {/* left */}
@@ -36,11 +37,13 @@ const ProjectCard: FC<Props> = ({ item: { title, description, tags, links } }) =
 
       {/* right */}
 
-      {/* FIX SIZES */}
-      <figure className="aspect-square w-full h-full flex-[7] rounded-[0.6vw] bg-neutral-900">
-        <video src="/videos/growchief-web.mp4" autoPlay muted loop playsInline className="w-full h-full "></video>
-        {/* <img src="" alt="" /> */}
-      </figure>
+      <div className="aspect-square relative w-full h-full flex justify-center items-center flex-[7] bg-white/50 overflow-hidden rounded-[1.6rem]">
+        <figure className="flex justify-center z-10 w-[90%] rounded-[1.2rem] overflow-hidden">
+          <MuxVideo playbackId={playbackId} classes="w-full object-cover z-[2] h-full" />
+          {/* <video src="/videos/web-done.mp4"></video> */}
+        </figure>
+        <img src="/images/growchief-bg.webp" className="absolute top-0 left-0 w-full h-full z-[1] object-cover" alt="growchief image" />
+      </div>
     </div>
   );
 };

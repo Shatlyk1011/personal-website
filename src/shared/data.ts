@@ -55,8 +55,8 @@ export const PROJECTS = [
         href: "#",
       },
     ],
-
-    videoUrl: "#",
+    // get from mux dashboard
+    playbackId: "3vkPrLCdWA00Tnkpgo6wWZcxWKDdCF9Xr9zaZQjBCP01w",
   },
 
   {
@@ -76,8 +76,7 @@ export const PROJECTS = [
         href: "#",
       },
     ],
-
-    videoUrl: "#",
+    playbackId: "3vkPrLCdWA00Tnkpgo6wWZcxWKDdCF9Xr9zaZQjBCP01w",
   },
 
   {
@@ -97,8 +96,7 @@ export const PROJECTS = [
         href: "#",
       },
     ],
-
-    videoUrl: "#",
+    playbackId: "3vkPrLCdWA00Tnkpgo6wWZcxWKDdCF9Xr9zaZQjBCP01w",
   },
 ];
 
