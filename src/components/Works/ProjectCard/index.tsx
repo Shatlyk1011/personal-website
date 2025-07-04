@@ -37,7 +37,8 @@ const ProjectCard: FC<Props> = ({ item: { title, description, tags, links } }) =
       {/* right */}
 
       {/* FIX SIZES */}
-      <figure className="h-[39.5rem] w-full flex-[7] rounded-[0.6vw] bg-neutral-900">
+      <figure className="aspect-square w-full h-full flex-[7] rounded-[0.6vw] bg-neutral-900">
+        <video src="/videos/growchief-web.mp4" autoPlay muted loop playsInline className="w-full h-full "></video>
         {/* <img src="" alt="" /> */}
       </figure>
     </div>

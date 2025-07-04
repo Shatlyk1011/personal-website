@@ -1,7 +1,13 @@
 import { useEffect } from 'react';
 
 import gsap from "gsap";
+
+//components
 import { AuroraBackground } from '../ui/AuroraBg';
+import TextEffect from '../ui/TextEffect';
+
+import { animH2, animH2Desc } from '@/shared/anim';
+import { motion } from 'motion/react';
 
 
 const Hero = () => {
@@ -62,15 +68,45 @@ const Hero = () => {
             </h1>
 
             <div className='max-w-[53.2rem]'>
-              <h2 className='text-[3.4rem] leading-[3.4rem] font-medium tracking-[0.04rem] mb-[1.4rem]'>Web Designer & Developer</h2>
-              <p className='text-[2.2rem] leading-[2.6rem] mb-[1.6rem]'>I craft user-focused websites that empower startups and businesses to stand out and scale with confidence.</p>
-              <button type="button" className="py-[1.6rem] bg-text-2 hover:bg-primary transition hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.15)] text-white  px-[2.4rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">
+              <TextEffect
+                className="text-[3.4rem] leading-[3.4rem] font-medium tracking-[0.04rem] mb-[1.4rem]"
+                per="line"
+                as="h2"
+                variants={animH2}
+                delay={1.5}
+                speedReveal={2}
+              >
+                Web Designer & Developer
+              </TextEffect>
+              {/* <h2 className=''></h2> */}
+              <TextEffect
+                per="line"
+                as="p"
+                delay={1.7}
+                className="text-[2.2rem] leading-[2.6rem] mb-[1.6rem]"
+                segmentWrapperClassName="overflow-hidden block"
+                variants={animH2Desc}
+              >
+                I craft user-focused websites that empower startups and businesses to stand out and scale with confidence.
+              </TextEffect>
+              {/* <p className='text-[2.2rem] leading-[2.6rem] mb-[1.6rem]'>I craft user-focused websites that empower startups and businesses to stand out and scale with confidence.</p> */}
+              <motion.button
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  duration: 0.5,
+                  delay: 2,
+                }}
+                translate='yes'
+                type="button"
+                className="py-[1.6rem] bg-text-2 hover:bg-primary transition hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.15)] text-white  px-[2.4rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">
                 <span className="text-[1.8rem]">Let&apos;s Connect</span>
-              </button>
+              </motion.button>
             </div>
           </div>
           {/* right */}
           <figure className='flex-1 bg-neutral-800 rounded-[1.6rem] overflow-hidden'>
+
             {/* <img src="" alt="" /> */}
           </figure>
         </div>
