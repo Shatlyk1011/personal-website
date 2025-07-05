@@ -6,10 +6,34 @@ export enum NavLinkIdx {
 }
 
 export const NAV_LINKS = [
-  { id: "home", linkIdx: NavLinkIdx.Home, isDarkBg: false, start: "", end: "" },
-  { id: "services", linkIdx: NavLinkIdx.Services, isDarkBg: true, start: "", end: "" },
-  { id: "works", linkIdx: NavLinkIdx.Works, isDarkBg: true, start: "", end: "" },
-  { id: "contact", linkIdx: NavLinkIdx.Contact, isDarkBg: false, start: "", end: "" },
+  {
+    id: "home",
+    linkIdx: NavLinkIdx.Home,
+    isDarkBg: false,
+    start: "top top",
+    end: "bottom top",
+  },
+  {
+    id: "services",
+    linkIdx: NavLinkIdx.Services,
+    isDarkBg: true,
+    start: "top-=1% top",
+    end: "bottom-=2% top",
+  },
+  {
+    id: "works",
+    linkIdx: NavLinkIdx.Works,
+    isDarkBg: true,
+    start: "top-=3% top",
+    end: "bottom+=2% top",
+  },
+  {
+    id: "contact",
+    linkIdx: NavLinkIdx.Contact,
+    isDarkBg: false,
+    start: "top 90%",
+    end: "bottom top",
+  },
 ];
 
 export const SERVICES = [
@@ -57,10 +81,12 @@ export const PROJECTS = [
     ],
     // get from mux dashboard
     playbackId: "3vkPrLCdWA00Tnkpgo6wWZcxWKDdCF9Xr9zaZQjBCP01w",
+
+    bgSrc: "/images/growchief-bg.webp",
   },
 
   {
-    title: "Edil Ozi - Component Library",
+    title: "Copilot",
     description:
       "Multivendor food delivery application written using Payload CMS. Small and medium size brands to find themselfes. Previously worked as cook for",
 
@@ -76,7 +102,9 @@ export const PROJECTS = [
         href: "#",
       },
     ],
-    playbackId: "3vkPrLCdWA00Tnkpgo6wWZcxWKDdCF9Xr9zaZQjBCP01w",
+    playbackId: "1xhk4BRkE72Eo01HxhrB00p1fm8XYN1Em9eXDIr5BeVVQ",
+
+    bgSrc: "/images/copilot-bg.webp",
   },
 
   {
@@ -97,6 +125,8 @@ export const PROJECTS = [
       },
     ],
     playbackId: "3vkPrLCdWA00Tnkpgo6wWZcxWKDdCF9Xr9zaZQjBCP01w",
+
+    bgSrc: "/images/copilot-bg.webp",
   },
 ];
 

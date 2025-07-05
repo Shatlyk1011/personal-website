@@ -36,11 +36,11 @@ export const AuroraBackground = ({
             // "--indigo-300": "#a5b4fc",
             // "--violet-200": "#ddd6fe",
 
-            "--blue-300": "#052655",
-            "--blue-400": "#052655",
-            "--blue-500": "#070707",
-            "--indigo-300": "#070707",
-            "--violet-200": "#fff",
+            "--blue-300": "#A5A5A5",
+            "--blue-400": "#A5A5A5",
+            "--blue-500": "#A5A5A5",
+            "--indigo-300": "#A5A5A5",
+            "--violet-200": "#052655",
 
             // "--blue-300": "#070707",
 
@@ -59,7 +59,7 @@ export const AuroraBackground = ({
             // "--indigo-300": "#f0f",
             // "--violet-200": "#00f",
             "--black": "#000",
-            "--white": "#fff",
+            "--white": "#ddd6fe",
             "--transparent": "transparent",
           } as React.CSSProperties
         }

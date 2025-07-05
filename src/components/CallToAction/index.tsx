@@ -2,6 +2,7 @@ import React from "react";
 
 import { AuroraBackground } from "../ui/AuroraBg";
 import { cn } from "@/shared/utils";
+import TextGlitch from "../ui/TextGlitch";
 
 const CallToAction = () => {
   return (
@@ -19,33 +20,28 @@ const CallToAction = () => {
 
       </section>
 
-      <footer className={cn("leading-[22px] w-full uppercase")}>
+      <footer className={cn("leading-[22px] w-full text-[1.4rem] uppercase")}>
         <div className="mx-auto w-full">
-          <div className={cn("relative mx-[4rem] border-t border-black/20 max-lg:mx-[2.3rem] max-md:mx-[2rem]")}>
-            <div className={cn("relative flex justify-between py-[4rem] max-lg:mx-[0.7rem] max-lg:flex-wrap max-md:mx-0 max-md:flex-col max-md:flex-nowrap")}>
-              <ul className="flex items-center gap-[2rem] max-lg:order-2">
+          <div className={cn("relative mx-[3.2rem] border-t border-black/20 ")}>
+            <div className={cn("relative flex justify-between py-[2rem] ")}>
+              <ul className="flex items-center gap-[2rem] basis-[20%]">
                 <li>©2025 Shatlyk Abdullayev</li>
                 {/* <li>Based in the US</li> */}
               </ul>
 
-              <ul className="flex gap-[1.4rem] max-lg:order-1 max-lg:mb-[2.4rem] max-md:order-0 max-md:gap-[1.6rem]">
+              <ul className="flex gap-[1.4rem] ">
                 {SOCIALS.map(({ href, title }) => (
                   <li key={title}>
                     <a href={href} target="_blank" rel="noopener">
-                      {title}
+                      <TextGlitch text={title} classes="text-[1.4rem] leading-[2rem] uppercase"></TextGlitch>
                     </a>
                   </li>
                 ))}
               </ul>
 
-              <ul className="flex items-center gap-[2.4rem] max-lg:mb-[2.4rem] max-lg:basis-[60%] max-md:order-1 max-md:mb-[3rem] max-md:flex-col max-md:gap-[1.2rem]">
-                <li>
-                  <a href="#">Terms & Conditions</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-              </ul>
+              <a href="#" className="basis-[20%] text-end">
+                <TextGlitch text="More PROJECTS" classes="text-[1.4rem] leading-[2rem] uppercase" />
+              </a>
             </div>
           </div>
         </div>

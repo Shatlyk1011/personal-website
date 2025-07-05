@@ -53,7 +53,6 @@ const Header: FC<Props> = ({ mainRef }) => {
             fontWeight: 400,
             duration: 0.15,
           });
-          console.log('before return', linkIdx, isDark);
           gsap.to(logo, {
             opacity: isDark ? '0' : '1'
           })
@@ -86,8 +85,8 @@ const Header: FC<Props> = ({ mainRef }) => {
     NAV_LINKS.forEach(({ id, linkIdx, isDarkBg, start, end }) => {
       ScrollTrigger.create({
         trigger: "#" + id,
-        start: start || "top top",
-        end: end || "bottom top",
+        start,
+        end,
         onEnter: () => setActiveLink(linkIdx, isDarkBg),
         onEnterBack: () => setActiveLink(linkIdx, isDarkBg),
         // onLeave: () => setActiveLink(linkIdx, isDarkBg)

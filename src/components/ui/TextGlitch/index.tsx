@@ -1,17 +1,20 @@
 import { FC } from "react";
 
+import { cn } from "@/shared/utils";
+
 interface Props {
   text: string;
+  classes?: string
 }
 
-const TextGlitch: FC<Props> = ({ text }) => {
+const TextGlitch: FC<Props> = ({ text, classes }) => {
   return (
-    <div className="group relative inline-block overflow-hidden capitalize">
+    <div className={cn("group relative inline-block overflow-hidden capitalize leading-[3.4rem]", classes)}>
       <span className="invisible">{text}</span>
-      <span className="absolute left-0 top-0 text-inherit leading-[3.4rem] transition duration-300 ease-in-out group-hover:-translate-y-full">
+      <span className="absolute left-0 top-0 text-inherit transition duration-300 ease-in-out group-hover:-translate-y-full">
         {text}
       </span>
-      <span className="absolute left-0 top-0 leading-[3.4rem] translate-y-full text-inherit transition duration-300 ease-in-out group-hover:translate-y-0">
+      <span className="absolute left-0 top-0  translate-y-full text-inherit transition duration-300 ease-in-out group-hover:translate-y-0">
         {text}
       </span>
     </div>

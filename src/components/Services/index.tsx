@@ -21,11 +21,10 @@ const Services = () => {
     <section id="services" className="bg-bg-black pt-[12.4rem] px-[7.4rem] text-gray-1" >
       <div className="max-w-[144rem] mx-auto">
 
-        <div className="flex flex-col gap-[6.4rem] pb-[3.2rem] relative">
+        <div className="flex flex-col gap-[6.4rem] pb-[3.2rem] ">
           <SectionHeading title="What can I do for you" />
-          <div className="aware_threshold -z-1 absolute top-[-12.4rem] h-[calc(100%+12.4rem)] w-full"></div>
 
-          <p className="max-w-[66.4rem] text-gray-2 self-end text-[2.2rem] leading-[2.6rem] ">I help ambitious people and brands turn complex ideas into clear, compelling designs that engage audiences, solve real problems, and drive measurable results.</p>
+          <p className=" relative max-w-[66.4rem] text-gray-2 self-end text-[2.2rem] leading-[2.6rem] ">I help ambitious people and brands turn complex ideas into clear, compelling designs that engage audiences, solve real problems, and drive measurable results. <span className="aware_threshold -z-1 absolute left-0 top-[-10rem] h-[calc(100%+8rem)] w-full"></span></p>
         </div>
         {SERVICES.slice(0, 3).map((item) => (
           <ServiceCard key={item.title} item={item} />

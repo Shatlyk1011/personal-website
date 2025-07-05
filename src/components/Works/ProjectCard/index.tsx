@@ -9,7 +9,7 @@ interface Props {
   item: Project;
 }
 
-const ProjectCard: FC<Props> = ({ item: { title, description, playbackId, tags, links } }) => {
+const ProjectCard: FC<Props> = ({ item: { title, description, bgSrc, playbackId, tags, links } }) => {
   return (
     <div className="flex gap-[3.2rem] pt-[6.4rem] pb-[4.2rem] border-b border-white/[12%]">
       {/* left */}
@@ -37,12 +37,12 @@ const ProjectCard: FC<Props> = ({ item: { title, description, playbackId, tags, 
 
       {/* right */}
 
-      <div className="aspect-square relative w-full h-full flex justify-center items-center flex-[7] bg-white/50 overflow-hidden rounded-[1.6rem]">
+      <div className="aspect-square relative w-full h-full flex justify-center items-center flex-[7] bg-neutral-900 overflow-hidden rounded-[1.6rem]">
         <figure className="flex justify-center z-10 w-[90%] rounded-[1.2rem] overflow-hidden">
           <MuxVideo playbackId={playbackId} classes="w-full object-cover z-[2] h-full" />
           {/* <video src="/videos/web-done.mp4"></video> */}
         </figure>
-        <img src="/images/growchief-bg.webp" className="absolute top-0 left-0 w-full h-full z-[1] object-cover" alt="growchief image" />
+        <img src={bgSrc} className="absolute top-0 left-0 w-full h-full z-[1] object-cover" alt="growchief image" />
       </div>
     </div>
   );
