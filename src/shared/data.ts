@@ -67,7 +67,7 @@ export const PROJECTS = [
     description:
       "Multivendor food delivery application written using Payload CMS. Small and medium size brands to find themselfes. Previously worked as cook for",
 
-    tags: ["Open Source", "Fullstack", "Design", "UI/UX", "CMS"],
+    tags: ["Startup", "Nextjs", "Tailwind", "Blog"],
 
     links: [
       {
@@ -106,7 +106,7 @@ export const PROJECTS = [
     ],
     playbackId: "1xhk4BRkE72Eo01HxhrB00p1fm8XYN1Em9eXDIr5BeVVQ",
 
-    bgSrc: "/images/copilot-bg.webp",
+    bgSrc: "/images/heroes-bg.webp",
     placeholder:
       'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><filter id="b" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="20"/><feComponentTransfer><feFuncA type="discrete" tableValues="1 1"/></feComponentTransfer></filter><g filter="url(%23b)"><image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" href="data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAwAAQAcJaQAAvkPE6wgoAD+/u+eBjLi0bgLMkF8UJJlHEEqZFVlqzWnP3yxDDRqFX5/Ul4Koweau3jLORCP1voAAA=="/></g></svg>',
   },
@@ -130,7 +130,7 @@ export const PROJECTS = [
     ],
     playbackId: "01p5bcFrJxvK2TGGdeqBZ01O54Qe8sQKP01erVrbcG9flg",
 
-    bgSrc: "/images/heroes-bg.webp",
+    bgSrc: "/images/copilot-bg.webp",
     placeholder:
       'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><filter id="b" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="20"/><feComponentTransfer><feFuncA type="discrete" tableValues="1 1"/></feComponentTransfer></filter><g filter="url(%23b)"><image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" href="data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAACwAgCdASoQAAwAAQAcJbACsDXAOklJTkNe17NqMCAA/v6p9XmQ/2nUX4DY4+PuyHd20b+oxvnyVvXwDCxN/frP/lL0g4KtLDZBP++sOFuom78Tn/KSLPuOiWT5Pkp8GTXna/uH2vdZVrZ6JB//RU75dvYh1U83gcDdu4zgzYvzOhs/8iv/60rNPHQqFf7/L/m74Uz8x/4qxWFMUVQXWfqdlbsjv54qkDb/pe7F/x/B+Go+GfMMH+jhyeAAAA=="/></g></svg>',
   },
