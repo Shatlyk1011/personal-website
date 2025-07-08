@@ -112,8 +112,6 @@ const Header: FC<Props> = ({ mainRef }) => {
         {NAV_LINKS.map(({ id }) => (
           <li
             className="nav_link inline-block cursor-pointer"
-            aria-label="link-button"
-            role="button"
             data-name={id}
             key={id}
           >

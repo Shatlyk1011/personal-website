@@ -1,8 +1,11 @@
 import React from "react";
+import { cn } from "@/shared/utils";
+
+import { FOOTER_SOCIALS } from "@/shared/data";
 
 import { AuroraBackground } from "../ui/AuroraBg";
-import { cn } from "@/shared/utils";
 import TextGlitch from "../ui/TextGlitch";
+import CalCom from "../ui/CalCom";
 
 const CallToAction = () => {
   return (
@@ -13,10 +16,9 @@ const CallToAction = () => {
         <p className='mb-[4.8rem] text-[2.2rem] text-text-2 leading-[2.8rem] tracking-[0.04px]'>I transform bold ideas into real impact — through design driven by <br /> insight, crafted with precision, and built to make a difference.</p>
 
         <div className='flex justify-center items-center gap-[1.8rem]'>
-          <button className='transition-all duration-200 rounded-[1.8rem] ease-linear hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.15)] text-white text-[1.8rem] font-medium tracking-[-0.04px] py-[1.8rem] px-[2.4rem] bg-text-2 hover:bg-primary' type="button">Start a project</button>
-          <button className='rounded-[1.8rem] outline duration-200 outline-current ease-linear hover:text-primary hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.1)] transition-all py-[1.8rem] px-[2.4rem]' type="button">Schedule a call</button>
+          <CalCom>Schedule a call</CalCom>
+          {/* <button className='rounded-[1.8rem] outline duration-200 outline-current ease-linear hover:text-primary hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.1)] transition-all py-[1.8rem] px-[2.4rem]' type="button"></button> */}
         </div>
-
 
       </section>
 
@@ -30,7 +32,7 @@ const CallToAction = () => {
               </ul>
 
               <ul className="flex gap-[1.4rem] ">
-                {SOCIALS.map(({ href, title }) => (
+                {FOOTER_SOCIALS.map(({ href, title }) => (
                   <li key={title}>
                     <a href={href} target="_blank" rel="noopener">
                       <TextGlitch text={title} classes="text-[1.4rem] leading-[2rem] uppercase"></TextGlitch>
@@ -52,21 +54,3 @@ const CallToAction = () => {
 };
   export default CallToAction
 
-export const SOCIALS = [
-  {
-    title: "Github",
-    href: "#",
-  },
-  {
-    title: "Instagram",
-    href: "#",
-  },
-  {
-    title: "Youtube",
-    href: "#",
-  },
-  {
-    title: "X",
-    href: "#",
-  },
-]
