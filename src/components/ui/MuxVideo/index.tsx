@@ -1,19 +1,23 @@
+
 import { FC } from 'react';
 
 import MuxPlayer from '@mux/mux-player-react/lazy';
 import { cn } from '@/shared/utils';
 
+
 interface Props {
   playbackId:string
+  placheolder: string
   classes?:string
 };
 
-const MuxVideo:FC<Props> = ({ playbackId, classes }) => {
-  
+const MuxVideo: FC<Props> = ({ playbackId, placheolder, classes }) => {
+
   return (
     <MuxPlayer
-      className={cn(classes)}
+      className={cn('aspect-[4/3]', classes)}
       loading="viewport"
+      placeholder={placheolder}
       playbackId={playbackId}
       metadata={{
         video_id: 'video-id-123456',
