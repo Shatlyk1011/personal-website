@@ -8,6 +8,7 @@ import TextEffect from '../ui/TextEffect';
 
 import { animH2, animH2Desc } from '@/shared/anim';
 import { motion } from 'motion/react';
+import CalCom from '../ui/CalCom';
 
 
 const Hero = () => {
@@ -22,8 +23,8 @@ const Hero = () => {
 
     tl.fromTo(
       "#img",
-      { scale: 1.2, delay: 1 },
-      { scale: 1, delay: 1, duration: 2 },
+      { scale: 1.2, delay: 0 },
+      { scale: 1, delay: 0, duration: 2 },
 
       "-=5", // Overlap with previous animation
     );
@@ -36,7 +37,7 @@ const Hero = () => {
     // 10.2rem is heading
     <AuroraBackground className='min-h-screen h-auto'>
       <section id="home" className="max-w-[144rem] w-full h-full mx-auto pt-[calc(3.2rem+10.2rem)] pb-[12.4rem] px-[7.4rem] z-10">
-        <div className='flex gap-[6.4rem] h-[76.5rem] max-h-[70vh] min-h-[60vh]'>
+        <div className='flex gap-[6.4rem] h-[76.5rem] max-h-[36vw] min-h-[35vw]'>
           {/* left */}
           <div className='flex-[1.2] flex flex-col justify-between '>
             <h1 className="mb-[2rem]">
@@ -85,23 +86,21 @@ const Hero = () => {
                 I craft user-focused websites that empower startups and businesses to stand out and scale with confidence.
               </TextEffect>
               {/* <p className='text-[2.2rem] leading-[2.6rem] mb-[1.6rem]'>I craft user-focused websites that empower startups and businesses to stand out and scale with confidence.</p> */}
-              <motion.button
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
                   duration: 0.5,
                   delay: 2,
                 }}
-                translate='yes'
-                type="button"
-                className="py-[1.6rem] bg-text-2 hover:bg-primary transition hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.15)] text-white  px-[2.4rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">
-                <span className="text-[1.8rem]">Let&apos;s Connect</span>
-              </motion.button>
+              >
+                <CalCom>Let&apos;s Connect</CalCom>
+              </motion.div>
             </div>
           </div>
           {/* right */}
-          <figure id="img" className='flex-1 w-full h-full bg-neutral-800 rounded-[1.6rem] overflow-hidden'>
-            <img src="/images/profile.png" className='w-full h-full object-cover' alt="" />
+          <figure id="img" className='flex-1 bg-gray-1 w-full h-full rounded-[1.6rem] overflow-hidden'>
+            <img src="/images/main-1x.webp" srcSet='/images/main-1x.webp 1x, /images/main-2x.webp 2x' className='w-full h-full object-cover object-top' loading='eager' alt="Shatlyk Abdullayev main hero image" />
           </figure>
         </div>
       </section>
