@@ -1,5 +1,4 @@
 import React from "react";
-import { cn } from "@/shared/utils";
 
 import { FOOTER_SOCIALS } from "@/shared/data";
 
