@@ -102,9 +102,9 @@ const Header: FC<Props> = ({ mainRef }) => {
   return (
     <nav
       ref={navRef}
-      className="nav absolute top-0 z-[1000] flex gap-[3.2rem] w-full justify-between items-center px-[7.4rem] py-[3.2rem] text-[1.8rem] font-medium text-card-bg"
+      className="nav absolute top-0 left-0 box-border z-[1000] flex gap-[3.2rem] w-full justify-between items-center px-[7.4rem] portrait:px-[4rem] py-[3.2rem] text-[1.8rem] font-medium text-card-bg"
     >
-      <div className="min-w-[14rem] text-[2rem] font-semibold">
+      <div className="min-w-[14rem]">
         <Logo className="logo text-text-1" />
       </div>
 
@@ -116,7 +116,7 @@ const Header: FC<Props> = ({ mainRef }) => {
             key={id}
           >
             <a href={"#" + id} className="capitalize">
-              <TextGlitch text={id} />
+              <TextGlitch text={id} classes="portrait:text-[2.2rem]" />
             </a>
           </li>
         ))}

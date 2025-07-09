@@ -15,24 +15,24 @@ const ServiceCard: FC<Props> = ({ item }) => {
       <div className="flex justify-between">
         {awareItemClass && <div className={cn("absolute top-[-8%] z-[-1] h-[108%] w-full", awareItemClass)}></div>}
         {/* left */}
-        <div className="text-[3.4rem] leading-[3.6rem] tracking-[0.4px] text-gray-1">
+        <div className="text-[3.4rem] portrait:hidden leading-[3.6rem] tracking-[0.4px] text-gray-1">
           ({number})
         </div>
         {/* right */}
 
-        <div className="basis-[66.4rem]">
-          <h4 className="text-[3.4rem] leading-[3.6rem] tracking-[0.4px] mb-[3.2rem]">{title}</h4>
+        <div className="basis-[66.4rem] ">
+          <h4 className="text-[3.4rem] leading-[3.6rem] portrait:text-[3.6rem] portrait:leading-[3.8rem] tracking-[0.4px] mb-[3.2rem]">{title}</h4>
 
           <ul className="mb-[6.4rem] text-[2.2rem] ledaing-[2.6rem] max-w-[38.5rem]">
             {services.map((s, i) => (
-              <li key={s} className="not-last:mb-[1.8rem] border-b border-white/[12%]">
+              <li key={s} className="not-last:mb-[1.8rem] portrait:text-[2rem] portrait:leading-[2.6rem] border-b border-white/[12%]">
                 <span className="opacity-80 text-gray-3 mr-[1rem]">0{i + 1}</span>
                 {s}
               </li>
             ))}
           </ul>
 
-          <p className="text-gray-2">{description}</p>
+          <p className="text-gray-2 text-[2.2rem] ledaing-[2.6rem] portrait:text-[2rem] portrait:leading-[2.6rem]">{description}</p>
         </div>
       </div>
 

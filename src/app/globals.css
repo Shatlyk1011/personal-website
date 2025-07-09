@@ -53,11 +53,11 @@ html {
     scroll-behavior: smooth;
 }
 
-/* @media (min-width: 1920px) {
+@media (orientation: portrait) {
   html {
-    font-size:10px;
+    font-size:calc(10 * 100vw / 800);
   }
-} */
+}
 
 body {
   overflow-x: hidden;

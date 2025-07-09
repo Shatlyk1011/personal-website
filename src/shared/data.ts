@@ -64,19 +64,14 @@ export const SERVICES = [
 export const PROJECTS = [
   {
     title: "GrowChief",
-    description:
-      "Multivendor food delivery application written using Payload CMS. Small and medium size brands to find themselfes. Previously worked as cook for",
+    description: `GrowChief is an AI-powered social engagement tool developed using Next.js and Tailwind CSS. <br class="portrait:hidden"/> It features a fully responsive webpage with seamless blog functionality.`,
 
-    tags: ["Startup", "Nextjs", "Tailwind", "Blog"],
+    tags: ["Startup", "Blog", "Nextjs", "Tailwind"],
 
     links: [
       {
         title: "Live",
         href: "https://www.growchief.com/",
-      },
-      {
-        title: "Github",
-        href: "#",
       },
     ],
     // get from mux dashboard
