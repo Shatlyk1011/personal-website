@@ -1,5 +1,6 @@
 "use client";
 import { FC, RefObject, useEffect, useRef } from "react";
+import { motion } from 'motion/react'
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -16,24 +17,7 @@ interface Props {
 }
 
 const Header: FC<Props> = ({ mainRef }) => {
-  const navRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    gsap.fromTo(
-      ".nav",
-      {
-        y: -100,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 3,
-        delay: 0.2,
-        ease: "expo.inOut",
-      },
-    );
-  }, []);
+  const headerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (!mainRef?.current) return;
@@ -44,10 +28,10 @@ const Header: FC<Props> = ({ mainRef }) => {
     const setActiveLink = (linkIdx: NavLinkIdx, isDark: boolean) => {
       navItems.forEach((item,) => {
         // set fixed position on "services" section
-        if (navRef.current && linkIdx === NavLinkIdx.Services) {
-          navRef.current.style.position = "fixed";
-        } else if (navRef.current && linkIdx === NavLinkIdx.Home) {
-          navRef.current.style.position = "absolute";
+        if (headerRef.current && linkIdx === NavLinkIdx.Services) {
+          headerRef.current.style.position = "fixed";
+        } else if (headerRef.current && linkIdx === NavLinkIdx.Home) {
+          headerRef.current.style.position = "absolute";
           gsap.to(item, {
             color: "#0C0C0C",
             fontWeight: 400,
@@ -100,31 +84,37 @@ const Header: FC<Props> = ({ mainRef }) => {
   }, [mainRef]);
 
   return (
-    <nav
-      ref={navRef}
-      className="nav absolute top-0 left-0 box-border z-[1000] flex gap-[3.2rem] w-full justify-between items-center px-[7.4rem] portrait:px-[4rem] py-[3.2rem] text-[1.8rem] font-medium text-card-bg"
-    >
-      <div className="min-w-[14rem]">
-        <Logo className="logo text-text-1" />
-      </div>
+    <header ref={headerRef} className="fixed top-0 left-0  z-[1000] w-full px-[7.4rem] portrait:px-[4rem] py-[3.2rem]">
+      <motion.nav
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 2, delay: 0.2, ease: 'easeInOut' }}
 
-      <ul className="flex flex-1 items-center justify-end gap-[3.2rem] [font-kerning:none]" data-fixed>
-        {NAV_LINKS.map(({ id }) => (
-          <li
-            className="nav_link inline-block cursor-pointer"
-            data-name={id}
-            key={id}
-          >
-            <a href={"#" + id} className="capitalize">
-              <TextGlitch text={id} classes="portrait:text-[2.2rem]" />
-            </a>
-          </li>
-        ))}
-      </ul>
-      {/* <button type="button" className="py-[0.7rem] px-[0.8rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">
-        <span className="text-[1.8rem]">Let&apos;s Connect</span>
-      </button> */}
-    </nav>
+        className="flex gap-[3.2rem] justify-between items-center text-[1.8rem] font-medium text-card-bg"
+      >
+        <div className="min-w-[14rem]">
+          <Logo className="logo text-text-1" />
+        </div>
+
+        <ul className="flex flex-1 items-center justify-end gap-[3.2rem] [font-kerning:none]" data-fixed>
+          {NAV_LINKS.map(({ id }) => (
+            <li
+              className="nav_link inline-block cursor-pointer"
+              data-name={id}
+              key={id}
+            >
+              <a href={"#" + id} className="capitalize">
+                <TextGlitch text={id} classes="portrait:text-[2.2rem]" />
+              </a>
+            </li>
+          ))}
+        </ul>
+        {/* <button type="button" className="py-[0.7rem] px-[0.8rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">
+          <span className="text-[1.8rem]">Let&apos;s Connect</span>
+        </button> */}
+      </motion.nav>
+    </header>
+
   );
 };
 export default Header;
