@@ -15,7 +15,7 @@ const MuxVideo: FC<Props> = ({ playbackId, placheolder, classes }) => {
 
   return (
     <MuxPlayer
-      className={cn('aspect-[4/3]', classes)}
+      className={cn('aspect-custom-video object-cover', classes)}
       style={{ aspectRatio: 4 / 3 }}
       loading="viewport"
       placeholder={placheolder}

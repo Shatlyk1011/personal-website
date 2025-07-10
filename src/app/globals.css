@@ -98,35 +98,6 @@ body.overflow-hidden {
 }
 
 
-/* HERO IMAGE STYLES */
-
-.hero_img_box:hover > img {
-  /* @apply animate-pusle-image-animation; */
-  /* filter: url(#noise_hero_image); */
-}
-
-/* NOTE */
-/* 16px ~ 1vw */
-
-/* custom aspect  with fallback */
-.custom_main_img_aspect {
-  aspect-ratio: 1.75/1;
-}
-
-@supports not (aspect-ratio: 1.6 / 1) {
-  /* .custom_main_img_aspect::before {
-    float: left;
-    padding-top: 50%;
-    content: "";
-  }
-  .custom_main_img_aspect::after {
-    display: block;
-    content: "";
-    clear: both;
-  } */
-}
-
-
 .transition_1 {
   transition: all 0.25s cubic-bezier(0.85, 0, 0.15, 1);
 }
@@ -154,4 +125,61 @@ mux-player {
   --rendition-selectmenu: none;
   --center-controls: none;
   --bottom-play-button: none
+}
+
+
+/* aspect ratio for ios devices with fallback*/
+/* 10 / 9 */
+.aspect-custom-hero-image {
+  aspect-ratio: 10/9;
+}
+
+/* Fallback for browsers that do not support aspect-ratio */
+@supports not (aspect-ratio: 10 / 9) {
+  .aspect-custom-hero-image::before {
+    float: left;
+    padding-top: 90%;
+    content: "";
+  }
+  .aspect-custom-hero-image::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+/* 4 / 3 */
+.aspect-custom-video {
+  aspect-ratio: 4/3;
+}
+
+@supports not (aspect-ratio: 4 / 3) {
+  .aspect-custom-video::before {
+    float: left;
+    padding-top: 75%;
+    content: "";
+  }
+  .aspect-custom-video::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+/* 1 / 1 */
+.aspect-custom-square {
+  aspect-ratio: 1/1;
+}
+
+@supports not (aspect-ratio: 1 / 1) {
+  .aspect-custom-square::before {
+    float: left;
+    padding-top: 100%;
+    content: "";
+  }
+  .aspect-custom-square::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }

@@ -92,7 +92,7 @@ const Header: FC<Props> = ({ mainRef }) => {
 
         className="flex gap-[3.2rem] justify-between items-center text-[1.8rem] font-medium text-card-bg"
       >
-        <div className="min-w-[14rem]">
+        <div className="min-w-[14rem]" data-fixed>
           <Logo className="logo text-text-1" />
         </div>
 

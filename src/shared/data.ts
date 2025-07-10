@@ -61,6 +61,7 @@ export const SERVICES = [
   },
 ];
 
+// get from mux dashboard
 export const PROJECT_VIDEO_IDS = [
   "3vkPrLCdWA00Tnkpgo6wWZcxWKDdCF9Xr9zaZQjBCP01w",
   "1xhk4BRkE72Eo01HxhrB00p1fm8XYN1Em9eXDIr5BeVVQ",
@@ -68,37 +69,18 @@ export const PROJECT_VIDEO_IDS = [
 ];
 
 export const PROJECTS = [
-  {
-    title: "GrowChief",
-    description: `GrowChief is an AI-powered social engagement tool developed using Next.js and Tailwind CSS. <br class="portrait:hidden"/> It features a fully responsive webpage with seamless blog functionality.`,
-
-    tags: ["Startup", "Blog", "Nextjs", "Tailwind"],
-
-    links: [
-      {
-        title: "View live site",
-        href: "https://www.growchief.com/",
-      },
-    ],
-    // get from mux dashboard
-    playbackId: PROJECT_VIDEO_IDS[0],
-
-    bgSrc: "/images/growchief-bg.webp",
-    placeholder:
-      'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><filter id="b" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="10"/><feComponentTransfer><feFuncA type="discrete" tableValues="1 1"/></feComponentTransfer></filter><g filter="url(%23b)"><image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" href="data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwAgCdASoQAAwAAQAcJYwCsAEUrmFFJbpwQAD+/yycAyCfSXAmKzz4rKU0NptalnmxaL/hDwbG/2gpnvYKVa5yQuZk7rzOrY5aWOWztLCwRu4P/f0s9//9oRW/iPRP60tLo8tz+ah7bK2+0d01sokJtAis5IrE5/I6aunOB06yvK+qY3pSAAAA"/></g></svg>',
-  },
-
-  {
-    title: "Copilot",
+    {
+    title: "CopilotKit",
     description:
-      "Multivendor food delivery application written using Payload CMS. Small and medium size brands to find themselfes. Previously worked as cook for",
+      // "CopilotKit an AI Copilot which was re-engineered from Webflow to NextJs app to create a smarter, user-aware virtual colleague for seamless product interactions",
+      "CopilotKit, an AI Copilot which was transformed from a Webflow to a powerful Next.js app. <br/>  It offers a smarter, user-aware virtual collegue <br/> for seamless product interactions",
 
-    tags: ["Open Source", "UI/UX"],
+    tags: ["Stack Migration", "SEO", "UI/UX", "NextJs", "Tailwind"] as Tags[],
 
     links: [
       {
         title: "View live site",
-        href: "#",
+        href: "https://www.copilotkit.ai",
       },
     ],
     playbackId: PROJECT_VIDEO_IDS[1],
@@ -109,16 +91,35 @@ export const PROJECTS = [
   },
 
   {
-    title: "Agent Heroes",
-    description:
-      "Multivendor food delivery application written using Payload CMS. Small and medium size brands to find themselfes. Previously worked as cook for",
+    title: "GrowChief",
+    description: `GrowChief is an AI-powered social engagement tool developed using Next.js and Tailwind CSS. <br class="portrait:hidden"/> It features a fully responsive webpage with seamless blog functionality.`,
 
-    tags: ["Open-source", "UI/UX"],
+    tags: ["Startup", "Blog", "SEO", "Nextjs", "Tailwind"] as Tags[],
 
     links: [
       {
         title: "View live site",
-        href: "#",
+        href: "https://www.growchief.com/",
+      },
+    ],
+    playbackId: PROJECT_VIDEO_IDS[0],
+
+    bgSrc: "/images/growchief-bg.webp",
+    placeholder:
+      'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><filter id="b" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="10"/><feComponentTransfer><feFuncA type="discrete" tableValues="1 1"/></feComponentTransfer></filter><g filter="url(%23b)"><image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" href="data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwAgCdASoQAAwAAQAcJYwCsAEUrmFFJbpwQAD+/yycAyCfSXAmKzz4rKU0NptalnmxaL/hDwbG/2gpnvYKVa5yQuZk7rzOrY5aWOWztLCwRu4P/f0s9//9oRW/iPRP60tLo8tz+ah7bK2+0d01sokJtAis5IrE5/I6aunOB06yvK+qY3pSAAAA"/></g></svg>',
+  },
+
+  {
+    title: "Agent Heroes",
+    description:
+      "Multivendor food delivery application written using Payload CMS. Small and medium size brands to find themselfes. Previously worked as cook for",
+
+    tags: ["GSAP", "Astro", "SCSS"] as Tags[],
+
+    links: [
+      {
+        title: "View live site",
+        href: "https://agentheroes.ai",
       },
       // {
       //   title: "Github",
@@ -142,16 +143,28 @@ export const FOOTER_SOCIALS = [
     title: "Instagram",
     href: "https://www.instagram.com/shatlykabdullayew/",
   },
-  {
-    title: "Youtube",
-    href: "#",
-  },
+  // {
+  //   title: "Youtube",
+  //   href: "#",
+  // },
   // {
   //   title: "X",
   //   href: "#",
   // },
 ];
 
+type Tags =
+  | "Startup"
+  | "Blog"
+  | "Nextjs"
+  | "Tailwind"
+  | "Stack Migration"
+  | "SEO"
+  | "NextJs"
+  | "UI/UX"
+  | "Astro"
+  | "SCSS"
+  | "GSAP";
 
 export type Services = (typeof SERVICES)[number];
 export type Project = (typeof PROJECTS)[number];

@@ -5,10 +5,10 @@
 * aurora bg
 * video on hover effect styles
 
-* aspect ratio for ios
-
-* add relative links
-
 * add budget cat to cal com
 
 * update videos
+
+* video metadata?
+
+* SEO !!

@@ -37,7 +37,7 @@ const ProjectCard: FC<Props> = ({ item: { title, description, bgSrc, playbackId,
       </div>
 
       {/* right */}
-      <div className="relative aspect-square flex-[7] w-full h-full flex justify-center items-center bg-neutral-900 overflow-hidden rounded-[1.6rem]">
+      <div className="relative aspect-custom-square flex-[7] w-full h-full flex justify-center items-center bg-neutral-900 overflow-hidden rounded-[1.6rem]">
         <figure className="flex justify-center z-10 w-[90%] rounded-[1.2rem] overflow-hidden">
           <MuxVideo playbackId={playbackId} placheolder={placeholder} classes="w-full object-cover z-[2] h-full" />
         </figure>
