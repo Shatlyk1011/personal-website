@@ -144,10 +144,10 @@ export const FOOTER_SOCIALS = [
     title: "Youtube",
     href: "#",
   },
-  {
-    title: "X",
-    href: "#",
-  },
+  // {
+  //   title: "X",
+  //   href: "#",
+  // },
 ];
 
 

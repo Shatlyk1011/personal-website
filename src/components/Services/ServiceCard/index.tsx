@@ -13,7 +13,7 @@ const ServiceCard: FC<Props> = ({ item }) => {
   return (
     <div className="sticky-content relative z-10 w-full bg-bg-black pt-[3.2rem]  pb-[3.2rem] border-t border-white/[12%] last:border-b">
       <div className="flex justify-between">
-        {awareItemClass && <div className={cn("absolute top-[-8%] z-[-1] h-[108%] w-full", awareItemClass)}></div>}
+        {awareItemClass && <div className={cn("absolute top-[-8%] -z-1 h-[108%] portrait:h-full w-full", awareItemClass)}></div>}
         {/* left */}
         <div className="text-[3.4rem] portrait:hidden leading-[3.6rem] tracking-[0.4px] text-gray-1">
           ({number})
