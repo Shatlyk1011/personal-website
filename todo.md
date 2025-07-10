@@ -1,9 +1,7 @@
 * fix active link issue - config threshold
 * add inview play of videos
-* fix project descriptions (style?)
 
 * aurora bg
-* video on hover effect styles
 
 * add budget cat to cal com
 
@@ -12,3 +10,7 @@
 * video metadata?
 
 * SEO !!
+
+* add analytics
+
+* improve site texts
