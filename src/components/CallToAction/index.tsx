@@ -8,8 +8,8 @@ import CalCom from "../ui/CalCom";
 
 const CallToAction = () => {
   return (
-    <AuroraBackground className="min-h-screen  h-full portrait:min-h-full">
-      <section id="contact" className="w-full flex-1 flex flex-col justify-center py-[12.4rem] portrait:py-[20rem] relative px-[7.4rem] text-center z-10">
+    <AuroraBackground className="min-h-screen h-full">
+      <section id="contact" className="w-full flex-1 h-full flex flex-col justify-center py-[12.4rem] portrait:py-[20rem] relative px-[7.4rem] text-center z-10">
         <h5 className="mb-[2rem] text-text-1 text-[6.4rem] leading-[1.25] tracking-[-0.03em] font-bold portrait:text-[5.6rem] portrait:leading-[1.2]">Book Your Free <br className="hidden portrait:inline-block" /> Session —  <br className="portrait:hidden" />Power Up Your Startup’s Future</h5>
 
         <p className="mb-[4.8rem] text-[2.2rem] text-text-2 leading-[2.8rem] portrait:text-[2.4rem] tracking-[0.04px]">I transform bold ideas into real impact — through design driven by <br className="portrait:hidden" /> insight, crafted with precision, and built to make a difference.</p>
@@ -21,13 +21,12 @@ const CallToAction = () => {
 
       </section>
 
-      <footer className="leading-[22px] w-full text-[1.4rem] uppercase">
-        <div className="mx-auto w-full">
+      <footer className="leading-[2.2rem] w-full">
           <div className="relative mx-[3.2rem] border-t border-black/20 ">
             <div className="relative flex justify-between py-[2rem]">
               <ul className="flex items-center gap-[2rem] basis-[20%] portrait:basis-[25%]">
-                <li>©2025 Shatlyk Abdullayev</li>
-                {/* <li>Based in the US</li> */}
+              <li className="text-nowrap uppercase portrait:hidden">©2025 Shatlyk Abdullayev</li>
+              <li className="text-nowrap uppercase hidden portrait:block">©2025 Shatlyk A.</li>
               </ul>
 
               <ul className="flex gap-[1.4rem] ">
@@ -42,8 +41,7 @@ const CallToAction = () => {
 
               <a href="#" className="basis-[20%] text-end">
                 <TextGlitch text="More PROJECTS" classes="text-[1.4rem] leading-[2rem] uppercase" />
-              </a>
-            </div>
+            </a>
           </div>
         </div>
       </footer>
