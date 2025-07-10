@@ -99,7 +99,7 @@ const Hero = () => {
           </div>
           {/* right */}
           <motion.figure id="img" className='flex-1 w-full h-full rounded-[1.6rem] overflow-hidden opacity-0' animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 1 }}>
-            <img src="/images/main-1x.webp" srcSet='/images/main-1x.webp 1x, /images/main-2x.webp 2x' className='w-full aspect-custom-hero-image h-full object-cover scale-101 object-top' loading='eager' alt="Shatlyk Abdullayev main hero image" />
+            <img fetchPriority='high' src="/images/main-1x.webp" srcSet='/images/main-1x.webp 1x, /images/main-2x.webp 2x' className='w-full aspect-custom-hero-image h-full object-cover scale-101 object-top' loading='eager' alt="Shatlyk Abdullayev main hero image" />
           </motion.figure>
         </div>
       </section>

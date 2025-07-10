@@ -41,7 +41,7 @@ const ProjectCard: FC<Props> = ({ item: { title, description, bgSrc, playbackId,
         <figure className="flex justify-center z-10 w-[90%] rounded-[1.2rem] overflow-hidden">
           <MuxVideo playbackId={playbackId} placheolder={placeholder} classes="w-full object-cover z-[2] h-full" />
         </figure>
-        <img src={bgSrc} className="absolute top-0 left-0 w-full h-full z-[1] object-cover" alt="growchief image" />
+        <img src={bgSrc} fetchPriority="low" className="absolute top-0 left-0 w-full h-full z-[1] object-cover" alt="growchief image" />
       </div>
     </div>
   );
