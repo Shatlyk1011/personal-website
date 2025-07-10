@@ -2,9 +2,11 @@
 * add inview play of videos
 * fix project descriptions (style?)
 
-* footer link sizes
 * aurora bg
-* cta py sizes
 * video on hover effect styles
 
+* aspect ratio for ios
 
+* add relative links
+
+* add budget cat to cal com

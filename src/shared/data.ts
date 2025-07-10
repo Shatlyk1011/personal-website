@@ -70,7 +70,7 @@ export const PROJECTS = [
 
     links: [
       {
-        title: "Live",
+        title: "View live site",
         href: "https://www.growchief.com/",
       },
     ],
@@ -91,11 +91,7 @@ export const PROJECTS = [
 
     links: [
       {
-        title: "Live",
-        href: "#",
-      },
-      {
-        title: "Github",
+        title: "View live site",
         href: "#",
       },
     ],
@@ -115,13 +111,13 @@ export const PROJECTS = [
 
     links: [
       {
-        title: "Live",
+        title: "View live site",
         href: "#",
       },
-      {
-        title: "Github",
-        href: "#",
-      },
+      // {
+      //   title: "Github",
+      //   href: "#",
+      // },
     ],
     playbackId: "01p5bcFrJxvK2TGGdeqBZ01O54Qe8sQKP01erVrbcG9flg",
 
