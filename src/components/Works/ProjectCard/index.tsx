@@ -11,6 +11,7 @@ interface Props {
 }
 
 const ProjectCard: FC<Props> = ({ item: { title, description, bgSrc, playbackId, placeholder, tags, links } }) => {
+
   return (
     <div className="flex portrait:flex-col gap-[3.2rem] pt-[6.4rem] pb-[4.2rem] border-b border-white/[12%]">
       {/* left */}

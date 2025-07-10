@@ -34,6 +34,7 @@ export default function Home() {
       clearTimeout(timer);
     };
   }, []);
+
   return (
     <ReactLenis root options={{ lerp: 0.135, smoothWheel: !isLoading }}>
       <main className="relative" ref={mainRef}>
@@ -48,3 +49,27 @@ export default function Home() {
     </ReactLenis>
   );
 }
+
+// get placeholders using ===> import { createBlurUp } from '@mux/blurup';
+
+// const [placeholders, setPlaceholders] = useState<[string, number][] | undefined>([])
+
+//   const getPlaceholder = async (id: string) => {
+//   const { blurDataURL, aspectRatio } = await createBlurUp(id, { blur: 10, time: 0 });
+
+//   return [blurDataURL, aspectRatio]
+// };
+// useEffect(() => {
+//   (async () => {
+//     const data = PROJECT_VIDEO_IDS.map(async (id) => {
+//       return await getPlaceholder(id)
+//     })
+
+//     const results = await Promise.all(data)
+
+//     console.log('results', results);
+//     if (results.length) {
+//       setPlaceholders(results)
+//     }
+//   })()
+// }, [])

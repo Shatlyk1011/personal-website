@@ -10,3 +10,5 @@
 * add relative links
 
 * add budget cat to cal com
+
+* update videos
