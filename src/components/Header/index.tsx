@@ -84,7 +84,7 @@ const Header: FC<Props> = ({ mainRef }) => {
   }, [mainRef]);
 
   return (
-    <header ref={headerRef} className="fixed top-0 left-0  z-[1000] w-full px-[7.4rem] portrait:px-[4rem] py-[3.2rem]">
+    <header ref={headerRef} className="fixed top-0 left-0  z-[1000] w-full px-[7.4rem] portrait:px-[2.4rem] py-[3.2rem]">
       <motion.nav
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
