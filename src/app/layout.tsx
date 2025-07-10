@@ -3,10 +3,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import '../../public/fonts.css'
 
-export const metadata: Metadata = {
-  title: "Shatlyk Abdullayev - Freelance developer",
-  description: "Description required",
-};
+import { constructMetadata } from "@/shared/utils";
+
+export const metadata: Metadata = constructMetadata({
+  title: "Shatlyk Abdullayev — Freelance Web Designer & Developer",
+  description: "Helping brands to turn ideas into high-impact, results-driven websites. Global expertise.",
+});
+
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
