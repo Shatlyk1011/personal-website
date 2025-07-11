@@ -34,7 +34,7 @@ export const NAV_LINKS = [
     start: "top 90%",
     end: "bottom top",
   },
-];
+]
 
 export const SERVICES = [
   {
@@ -59,17 +59,17 @@ export const SERVICES = [
     number: "03",
     awareItemClass: "aware_threshold",
   },
-];
+]
 
 // get from mux dashboard
 export const PROJECT_VIDEO_IDS = [
   "3vkPrLCdWA00Tnkpgo6wWZcxWKDdCF9Xr9zaZQjBCP01w",
   "1xhk4BRkE72Eo01HxhrB00p1fm8XYN1Em9eXDIr5BeVVQ",
   "01p5bcFrJxvK2TGGdeqBZ01O54Qe8sQKP01erVrbcG9flg",
-];
+]
 
 export const PROJECTS = [
-    {
+  {
     title: "CopilotKit",
     description:
       // "CopilotKit an AI Copilot which was re-engineered from Webflow to NextJs app to create a smarter, user-aware virtual colleague for seamless product interactions",
@@ -132,7 +132,7 @@ export const PROJECTS = [
     placeholder:
       'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><filter id="b" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="10"/><feComponentTransfer><feFuncA type="discrete" tableValues="1 1"/></feComponentTransfer></filter><g filter="url(%23b)"><image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" href="data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAACwAgCdASoQAAwAAQAcJbACsDXAOklJTkNe17NqMCAA/v6p9XmQ/2nUX4DY4+PuyHd20b+oxvnyVvXwDCxN/frP/lL0g4KtLDZBP++sOFuom78Tn/KSLPuOiWT5Pkp8GTXna/uH2vdZVrZ6JB//RU75dvYh1U83gcDdu4zgzYvzOhs/8iv/60rNPHQqFf7/L/m74Uz8x/4qxWFMUVQXWfqdlbsjv54qkDb/pe7F/x/B+Go+GfMMH+jhyeAAAA=="/></g></svg>',
   },
-];
+]
 
 export const FOOTER_SOCIALS = [
   {
@@ -151,7 +151,7 @@ export const FOOTER_SOCIALS = [
   //   title: "X",
   //   href: "#",
   // },
-];
+]
 
 type Tags =
   | "Startup"
@@ -164,7 +164,7 @@ type Tags =
   | "UI/UX"
   | "Astro"
   | "SCSS"
-  | "GSAP";
+  | "GSAP"
 
-export type Services = (typeof SERVICES)[number];
-export type Project = (typeof PROJECTS)[number];
+export type Services = (typeof SERVICES)[number]
+export type Project = (typeof PROJECTS)[number]

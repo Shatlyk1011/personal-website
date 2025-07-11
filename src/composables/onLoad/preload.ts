@@ -1,12 +1,11 @@
-import { type RefObject } from "react";
-import gsap from "gsap";
-
+import { type RefObject } from "react"
+import gsap from "gsap"
 
 const preloadAnimation = (path: RefObject<SVGPathElement | null>, close: () => void) => {
   gsap
     .timeline({
       onComplete: () => {
-        close();
+        close()
         // document.body.style.overflowY = "auto"
       },
     })
@@ -24,11 +23,10 @@ const preloadAnimation = (path: RefObject<SVGPathElement | null>, close: () => v
       duration: 0.8,
       ease: "power4",
       attr: { d: PRELOAD_PATHS.unfilled },
-    });
-};
+    })
+}
 
-export default preloadAnimation;
-
+export default preloadAnimation
 
 export const PRELOAD_PATHS = {
   filled: "M 0 0 V 100 Q 50 100 100 100 V 0 z",
@@ -37,4 +35,4 @@ export const PRELOAD_PATHS = {
     curve2: "M 0 0 V 50 Q 50 75 100 50 V 0 z",
   },
   unfilled: "M 0 0 V 0 Q 50 0 100 0 V 0 z",
-};
+}

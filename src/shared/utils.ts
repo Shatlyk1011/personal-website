@@ -1,9 +1,9 @@
-import { type ClassValue, clsx } from "clsx";
-import { Metadata } from "next";
-import { twMerge } from "tailwind-merge";
+import { type ClassValue, clsx } from "clsx"
+import { Metadata } from "next"
+import { twMerge } from "tailwind-merge"
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
+  return twMerge(clsx(inputs))
 }
 
 export function constructMetadata({
@@ -12,20 +12,14 @@ export function constructMetadata({
 
   ...props
 }: {
-  title: string;
-  description: string;
-  [key: string]: Metadata[keyof Metadata];
+  title: string
+  description: string
+  [key: string]: Metadata[keyof Metadata]
 }): Metadata {
   return {
     title,
     description,
-    keywords: [
-      "Web Development",
-      "Web Design",
-      "Freelance",
-      "Code Developer",
-      "Shatlyk Abdullayev",
-    ],
+    keywords: ["Web Development", "Web Design", "Freelance", "Code Developer", "Shatlyk Abdullayev"],
     openGraph: {
       title,
       description,
@@ -50,5 +44,5 @@ export function constructMetadata({
       icon: "/favicon.ico",
     },
     ...props,
-  };
+  }
 }

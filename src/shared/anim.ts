@@ -19,7 +19,7 @@ export const animH2 = {
       },
     },
   },
-};
+}
 
 export const animH2Desc = {
   container: {
@@ -42,4 +42,4 @@ export const animH2Desc = {
       },
     },
   },
-};
+}

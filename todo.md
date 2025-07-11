@@ -1,10 +1,11 @@
-* aurora bg
+- aurora bg
 
-* update videos
+- update videos
 
-* video metadata?
+- video metadata?
 
 <!--  https://analytics.google.com/analytics/web/ -->
-* add analytics (after attaching domain)
 
-* improve site texts
+- add analytics (after attaching domain)
+
+- improve site texts
