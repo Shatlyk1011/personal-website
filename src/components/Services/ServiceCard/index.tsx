@@ -11,7 +11,7 @@ const ServiceCard: FC<Props> = ({ item }) => {
   const { title, services, description, number, awareItemClass } = item;
 
   return (
-    <div className="sticky-content relative z-10 w-full bg-bg-black pt-[3.2rem]  pb-[3.2rem] border-t border-white/[12%] last:border-b">
+    <div className="sticky-content relative z-10 w-full bg-bg-black py-[3.2rem] portrait:py-[5.6rem] border-t border-white/[12%] last:border-b">
       <div className="flex justify-between">
         {awareItemClass && <div className={cn("absolute top-[-8%] -z-1 h-[108%] portrait:h-full w-full", awareItemClass)}></div>}
         {/* left */}
@@ -23,16 +23,16 @@ const ServiceCard: FC<Props> = ({ item }) => {
         <div className="basis-[66.4rem] ">
           <h4 className="text-[3.4rem] leading-[3.6rem] portrait:text-[3.6rem] portrait:leading-[3.8rem] tracking-[0.4px] mb-[3.2rem]">{title}</h4>
 
-          <ul className="mb-[6.4rem] text-[2.2rem] ledaing-[2.6rem] max-w-[38.5rem]">
+          <ul className="mb-[6.4rem] portrait:mb-[4.8rem] text-[2.2rem] leading-[2.6rem] max-w-[38.5rem] portrait:text-[2.4rem] portrait:leading-[4rem]">
             {services.map((s, i) => (
-              <li key={s} className="not-last:mb-[1.8rem] portrait:text-[2rem] portrait:leading-[2.6rem] border-b border-white/[12%]">
+              <li key={s} className="not-last:mb-[1.8rem]  border-b border-white/[12%]">
                 <span className="opacity-80 text-gray-3 mr-[1rem]">0{i + 1}</span>
                 {s}
               </li>
             ))}
           </ul>
 
-          <p className="text-gray-2 text-[2.2rem] ledaing-[2.6rem]  portrait:text-[2rem] portrait:leading-[2.6rem]">{description}</p>
+          <p className="text-gray-2 text-[2.2rem] ledaing-[2.6rem] portrait:text-[2rem] portrait:max-w-[90%] portrait:leading-[2.6rem]">{description}</p>
         </div>
       </div>
 

@@ -55,7 +55,7 @@ html {
 
 @media (orientation: portrait) {
   html {
-    font-size:calc(10 * 100vw / 680);
+    font-size:calc(10 * 100vw / 600);
   }
 }
 

@@ -65,7 +65,7 @@ const Hero = () => {
 
             <div className='max-w-[53.2rem] portrait:max-w-full'>
               <TextEffect
-                className="text-[4rem] portrait:text-[4.4rem] leading-[3.4rem] portrait:text-nowrap font-medium tracking-[0.04rem] mb-[1.4rem] portrait:mb-[2.4rem]"
+                className="text-[4rem] leading-[3.4rem] portrait:text-nowrap font-medium tracking-[0.04rem] mb-[1.4rem] portrait:mb-[2.4rem]"
                 per="line"
                 as="h2"
                 variants={animH2}
@@ -79,7 +79,7 @@ const Hero = () => {
                 per="line"
                 as="p"
                 delay={1.7}
-                className="text-[2.2rem] portrait:text-[2.6rem] portrait:leading-[3.6rem] leading-[2.6rem] mb-[1.6rem]"
+                className="text-[2.2rem] portrait:text-[2.4rem] portrait:leading-[3.2rem] portrait:max-w-[90%] leading-[2.6rem] mb-[1.6rem]"
                 segmentWrapperClassName="overflow-hidden block"
                 variants={animH2Desc}
               >

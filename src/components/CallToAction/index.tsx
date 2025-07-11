@@ -10,7 +10,7 @@ const CallToAction = () => {
   return (
     <AuroraBackground className="min-h-screen h-full">
       <section id="contact" className="w-full flex-1 h-full flex flex-col justify-center py-[12.4rem] portrait:py-[20rem] relative px-[7.4rem] portrait:px-[4rem] text-center z-10">
-        <h5 className="mb-[2rem] text-text-1 text-[6.4rem] leading-[1.25] tracking-[-0.03em] font-bold portrait:leading-[1.2]">Book Your Free <br className="hidden portrait:inline-block" /> Session —  <br className="portrait:hidden" />Power Up Your Startup’s Future</h5>
+        <h5 className="mb-[2rem] text-text-1 text-[6.4rem] portrait:text-[5.6rem] leading-[1.25] tracking-[-0.03em] font-bold portrait:leading-[1.15]">Book Your Free <br className="hidden portrait:inline-block" /> Session —  <br className="portrait:hidden" />Power Up Your Startup’s Future</h5>
 
         <p className="mb-[4.8rem] text-[2.2rem] text-text-2 leading-[2.8rem] portrait:max-w-[90%] mx-auto tracking-[0.04px]">I transform bold ideas into real impact — <br className="hidden portrait:block" /> through design driven by <br className="portrait:hidden" /> insight, crafted with precision, and built to make a difference.</p>
 
