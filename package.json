@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "npx prettier --write ."
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",
@@ -16,6 +17,7 @@
     "lenis": "^1.3.4",
     "motion": "^12.19.2",
     "next": "15.3.1",
+    "prettier-plugin-tailwindcss": "^0.6.14",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.3.1"
