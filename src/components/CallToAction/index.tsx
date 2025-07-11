@@ -32,7 +32,7 @@ const CallToAction = () => {
       <footer className="w-full leading-[2.2rem]">
         <div className="relative mx-[3.2rem] border-t border-black/20">
           <div className="relative flex justify-between py-[2rem]">
-            <ul className="flex basis-[20%] items-center gap-[2rem] portrait:basis-[25%]">
+            <ul className="flex basis-[25%] items-center gap-[2rem] portrait:basis-[25%]">
               <li className="text-nowrap uppercase portrait:hidden">©2025 Shatlyk Abdullayev</li>
               <li className="hidden text-nowrap uppercase portrait:block">©2025 Shatlyk A.</li>
             </ul>
@@ -47,7 +47,7 @@ const CallToAction = () => {
               ))}
             </ul>
 
-            <a href="#" className="basis-[20%] text-end">
+            <a href="#" className="basis-[25%] text-end">
               <TextGlitch text="More PROJECTS" classes="text-[1.4rem] leading-[2rem] uppercase" />
             </a>
           </div>

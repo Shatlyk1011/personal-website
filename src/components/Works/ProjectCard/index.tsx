@@ -23,7 +23,7 @@ const ProjectCard: FC<Props> = ({ item: { title, description, bgSrc, playbackId,
               </span>
             ))}
           </div>
-          <h4 className="mb-[2.4rem] text-[3.4rem] leading-[3.6rem] font-bold tracking-[0.04px]">{title}</h4>
+          <h4 className="mb-[2.4rem] text-[3.4rem] portrait:text-[3.6rem] portrait:leading-[3.8rem] leading-[3.6rem] font-bold tracking-[0.04px]">{title}</h4>
 
           <p
             className="mb-[2.4rem] text-[2.2rem] leading-[2.6rem] text-gray-2 portrait:text-[2rem]"

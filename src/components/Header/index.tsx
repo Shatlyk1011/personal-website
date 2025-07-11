@@ -89,7 +89,7 @@ const Header: FC<Props> = ({ mainRef }) => {
         transition={{ duration: 2, delay: 0.2, ease: "easeInOut" }}
         className="text-card-bg flex items-center justify-between gap-[3.2rem] text-[1.8rem] font-medium"
       >
-        <div className="min-w-[14rem]" data-fixed>
+        <div className="min-w-[14rem] portrait:min-w-max" data-fixed>
           <Logo className="logo text-text-1" />
         </div>
 
