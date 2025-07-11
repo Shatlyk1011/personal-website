@@ -34,7 +34,7 @@ const ServiceCard: FC<Props> = ({ item }) => {
             ))}
           </ul>
 
-          <p className="ledaing-[2.6rem] text-[2.2rem] text-gray-2 portrait:max-w-[90%] portrait:text-[2rem] portrait:leading-[2.6rem]">
+          <p className="ledaing-[2.6rem] text-[2.2rem] line-clamp-4 text-gray-2 portrait:max-w-[90%] portrait:text-[2rem] portrait:leading-[2.6rem]">
             {description}
           </p>
         </div>
