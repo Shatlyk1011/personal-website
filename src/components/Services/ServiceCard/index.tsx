@@ -21,22 +21,20 @@ const ServiceCard: FC<Props> = ({ item }) => {
         {/* right */}
 
         <div className="basis-[66.4rem]">
-          <h4 className="mb-[3.2rem] text-[3.4rem] leading-[3.6rem] tracking-[0.4px] portrait:text-[3.6rem] portrait:leading-[3.8rem]">
+          <h4 className="mb-[3.2rem]  text-[3.4rem] leading-[3.6rem] tracking-[0.4px] portrait:text-[3.6rem] portrait:leading-[3.8rem]">
             {title}
           </h4>
 
           <ul className="mb-[6.4rem] max-w-[38.5rem] text-[2.2rem] leading-[2.6rem] portrait:mb-[4.8rem] portrait:text-[2.4rem] portrait:leading-[4rem]">
             {services.map((s, i) => (
-              <li key={s} className="border-b border-white/[12%] not-last:mb-[1.8rem]">
+              <li key={s} className="border-b border-white/[12%] py-2 not-last:mb-[1.8rem]">
                 <span className="mr-[1rem] text-gray-3 opacity-80">0{i + 1}</span>
                 {s}
               </li>
             ))}
           </ul>
 
-          <p className="ledaing-[2.6rem] text-[2.2rem] line-clamp-4 text-gray-2 portrait:max-w-[90%] portrait:text-[2rem] portrait:leading-[2.6rem]">
-            {description}
-          </p>
+          <p className="leading-[2.6rem] text-[2.2rem] text-gray-2 portrait:max-w-[90%] portrait:text-[2rem] portrait:leading-[2.6rem]" dangerouslySetInnerHTML={{ __html: description }}></p>
         </div>
       </div>
     </div>

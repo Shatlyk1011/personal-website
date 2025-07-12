@@ -47,14 +47,13 @@ export const SERVICES = [
   {
     title: "Web Design",
     description:
-      "My Visual Branding creates a memorable identity that reflects your brand’s essence through color schemes, and typography. UI/UX Design delivers intuitive, user-centric interfaces that engage and delight, ensuring seamless navigation and satisfaction",
+      "Crafting memorable brand identities with unique color schemes and typography reflecting brand essence. Delivering intuitive UI/UX Design, user-centric interfaces for seamless navigation and exceptional satisfaction.",
     services: ["UI/UX Design", "Visual Branding", "Responsive Design"],
     number: "02",
   },
   {
     title: "Growth & Optimization",
-    description:
-      "Boost your web app with my optimization expertise. SEO Optimization enhances search rankings via keywords. Performance Enhancement speeds up your site. App Optimization ensures fast, intuitive, cross-platform apps. Maximize impact with my solutions.",
+    description: `Boost your app with my expertise. SEO boosts search <br class="portrait:hidden"/> rankings, performance enhancements speed up your site, <br class="portrait:hidden"/> and app optimization ensures fast, intuitive, cross-platform performance. Maximize impact with my solutions.`,
     services: ["SEO Optimization", "Performance Enhancement", "App Optimization"],
     number: "03",
     awareItemClass: "aware_threshold",

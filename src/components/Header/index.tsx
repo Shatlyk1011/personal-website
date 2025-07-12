@@ -95,7 +95,7 @@ const Header: FC<Props> = ({ mainRef }) => {
 
         <ul className="flex flex-1 items-center justify-end gap-[3.2rem] [font-kerning:none]" data-fixed>
           {NAV_LINKS.map(({ id }) => (
-            <li className="nav_link inline-block cursor-pointer" data-name={id} key={id}>
+            <li className="nav_link inline-block " data-name={id} key={id}>
               <a href={"#" + id} className="capitalize">
                 <TextGlitch text={id} classes="portrait:text-[2.2rem]" />
               </a>

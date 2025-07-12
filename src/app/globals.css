@@ -42,6 +42,10 @@
   }
 }
 
+*::selection {
+  @apply bg-primary text-white
+}
+
 html {
   text-align: left;
   -webkit-font-smoothing: antialiased;
@@ -94,6 +98,24 @@ body.overflow-hidden {
 
 .sticky-content:nth-child(4) {
   --offset: 26rem;
+}
+
+@media screen and (orientation: portrait) {
+ .sticky-content:nth-child(1) {
+    --offset: 0;
+  }
+
+  .sticky-content:nth-child(2) {
+    --offset: 4rem;
+  }
+
+  .sticky-content:nth-child(3) {
+    --offset: 6rem;
+  }
+
+  .sticky-content:nth-child(4) {
+    --offset: 8rem;
+  } 
 }
 
 .transition_1 {
