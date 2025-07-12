@@ -27,7 +27,8 @@
   --color-gray-2: var(--gray-2);
   --color-gray-3: var(--gray-3);
 
-  --animate-aurora: aurora 40s linear infinite;
+  --animate-aurora: aurora 50s linear infinite;
+  
   @keyframes aurora {
     from {
       background-position:
@@ -70,6 +71,7 @@ body {
 
 body.overflow-hidden {
   overflow: hidden;
+  scroll-behavior: initial !important;
 }
 
 /* Sticky card styles */
