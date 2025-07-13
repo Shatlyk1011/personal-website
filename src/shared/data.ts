@@ -61,11 +61,12 @@ export const SERVICES = [
 ]
 
 // get from mux dashboard
-export const PROJECT_VIDEO_IDS = [
-  "3vkPrLCdWA00Tnkpgo6wWZcxWKDdCF9Xr9zaZQjBCP01w",
-  "1xhk4BRkE72Eo01HxhrB00p1fm8XYN1Em9eXDIr5BeVVQ",
-  "01p5bcFrJxvK2TGGdeqBZ01O54Qe8sQKP01erVrbcG9flg",
-]
+
+export const PROJECT_VIDEO_IDS = {
+  copilot: "202VyPadtFmAFoLbSd01t8SxE3nUIVxNUXDnoudARM5go",
+  growchief: "AF3iVO5R5UOFjFleXYWq3d1bpimjmDwDUKqvfUK1urM",
+  agentHeroes: "01p5bcFrJxvK2TGGdeqBZ01O54Qe8sQKP01erVrbcG9flg",
+}
 
 export const PROJECTS = [
   {
@@ -79,10 +80,10 @@ export const PROJECTS = [
     links: [
       {
         title: "View live site",
-        href: "https://www.copilotkit.ai",
+        href: "https://www.copilotkit.ai/pricing",
       },
     ],
-    playbackId: PROJECT_VIDEO_IDS[1],
+    playbackId: PROJECT_VIDEO_IDS.copilot,
 
     bgSrc: "/images/copilot-bg.webp",
     placeholder:
@@ -101,7 +102,7 @@ export const PROJECTS = [
         href: "https://www.growchief.com/",
       },
     ],
-    playbackId: PROJECT_VIDEO_IDS[0],
+    playbackId: PROJECT_VIDEO_IDS.growchief,
 
     bgSrc: "/images/growchief-bg.webp",
     placeholder:
@@ -125,7 +126,7 @@ export const PROJECTS = [
       //   href: "#",
       // },
     ],
-    playbackId: PROJECT_VIDEO_IDS[2],
+    playbackId: PROJECT_VIDEO_IDS.agentHeroes,
 
     bgSrc: "/images/heroes-bg.webp",
     placeholder:
