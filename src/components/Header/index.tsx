@@ -19,6 +19,11 @@ interface Props {
 const Header: FC<Props> = ({ mainRef }) => {
   const headerRef = useRef<HTMLDivElement | null>(null)
 
+  const smoothScroll = (id: string) => {
+    const el = document.getElementById(id);
+    el?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   useEffect(() => {
     if (!mainRef.current) return
 
@@ -60,10 +65,8 @@ const Header: FC<Props> = ({ mainRef }) => {
 
         <ul className="flex flex-1 items-center justify-end gap-[3.2rem] [font-kerning:none]" data-fixed>
           {NAV_LINKS.map(({ id }) => (
-            <li className="nav_link inline-block" data-name={id} key={id}>
-              <a href={"#" + id} className="capitalize">
-                <TextGlitch text={id} classes="portrait:text-[2.2rem]" />
-              </a>
+            <li className="nav_link inline-block capitalize cursor-pointer" data-name={id} key={id} onClick={() => smoothScroll(id)}>
+              <TextGlitch text={id} classes="portrait:text-[2.2rem]" />
             </li>
           ))}
         </ul>
