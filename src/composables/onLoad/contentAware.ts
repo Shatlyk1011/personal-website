@@ -37,6 +37,7 @@ const contentAware = (blocks: NodeListOf<Element>, fixedElements: NodeListOf<Ele
         resetElement(target)
         target.currentTween = gsap.to(target, {
           opacity: 0,
+          zIndex: -1,
           duration: 0.25,
           ease: "expo.out",
           onComplete: () => {
@@ -66,6 +67,7 @@ const contentAware = (blocks: NodeListOf<Element>, fixedElements: NodeListOf<Ele
         target.currentTween = gsap.to(target, {
           xPercent: 100,
           rotation: 0,
+
           y: 0,
           duration: 0.4,
           ease: "expo.inOut",
