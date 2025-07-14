@@ -21,7 +21,7 @@ const ServiceCard: FC<Props> = ({ item }) => {
         {/* right */}
 
         <div className="basis-[66.4rem]">
-          <h4 className="mb-[3.2rem]  text-[3.4rem] leading-[3.6rem] tracking-[0.4px] portrait:text-[3.6rem] portrait:leading-[3.8rem]">
+          <h4 className="mb-[3.2rem] text-[3.4rem] leading-[3.6rem] tracking-[0.4px] portrait:text-[3.6rem] portrait:leading-[3.8rem]">
             {title}
           </h4>
 
@@ -34,7 +34,10 @@ const ServiceCard: FC<Props> = ({ item }) => {
             ))}
           </ul>
 
-          <p className="leading-[2.6rem] text-[2.2rem] text-gray-2 portrait:max-w-[90%] portrait:text-[2rem] portrait:leading-[2.6rem]" dangerouslySetInnerHTML={{ __html: description }}></p>
+          <p
+            className="text-[2.2rem] leading-[2.6rem] text-gray-2 portrait:max-w-[90%] portrait:text-[2rem] portrait:leading-[2.6rem]"
+            dangerouslySetInnerHTML={{ __html: description }}
+          ></p>
         </div>
       </div>
     </div>

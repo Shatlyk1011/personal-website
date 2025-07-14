@@ -111,7 +111,6 @@ const contentAware = (blocks: NodeListOf<Element>, fixedElements: NodeListOf<Ele
 
   // Update position dynamically on resize
   window?.addEventListener("resize", () => {
-    console.log("resize")
     ScrollTrigger.refresh() // Refresh ScrollTrigger to apply new start/end positions
   })
 

@@ -20,7 +20,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="bg-bg-black px-[7.4rem] pt-[12.4rem] text-gray-1 portrait:px-[2.4rem] portrait:pt-[8rem]"
+      className="mt-[0.4rem] bg-bg-black px-[7.4rem] pt-[12rem] text-gray-1 portrait:px-[2.4rem] portrait:pt-[8rem]"
     >
       <div className="mx-auto max-w-[144rem]">
         <div className="flex flex-col gap-[6.4rem] pb-[3.2rem] portrait:gap-[3.2rem] portrait:pb-[4rem]">

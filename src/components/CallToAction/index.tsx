@@ -8,11 +8,8 @@ import CalCom from "../ui/CalCom"
 
 const CallToAction = () => {
   return (
-    <AuroraBackground className="h-full min-h-screen">
-      <section
-        id="contact"
-        className="relative z-10 flex h-full w-full flex-1 flex-col justify-center px-[7.4rem] py-[12.4rem] text-center portrait:px-[4rem] portrait:py-[20rem]"
-      >
+    <AuroraBackground className="section-white h-full min-h-svh" id="contact">
+      <section className="relative z-10 flex h-full w-full flex-1 flex-col justify-center px-[7.4rem] py-[12.4rem] text-center portrait:px-[4rem] portrait:py-[20rem]">
         <h5 className="mb-[2rem] text-[6.4rem] leading-[1.25] font-bold tracking-[-0.03em] text-text-1 portrait:text-[5.6rem] portrait:leading-[1.15]">
           Book Your Free <br className="hidden portrait:inline-block" /> Session — <br className="portrait:hidden" />
           Power Up Your Startup’s Future

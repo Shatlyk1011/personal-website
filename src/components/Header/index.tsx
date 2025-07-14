@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
-import { NAV_LINKS, NavLinkIdx } from "@/shared/data"
+import { NAV_LINKS } from "@/shared/data"
 
 import TextGlitch from "../ui/TextGlitch"
 import { Logo } from "../icons/Logo"
@@ -20,69 +20,34 @@ const Header: FC<Props> = ({ mainRef }) => {
   const headerRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    if (!mainRef?.current) return
+    if (!mainRef.current) return
 
-    const navItems = mainRef?.current?.querySelectorAll(".nav_link")
-    const logo = mainRef?.current?.querySelector(".logo")
+    const navLinks = gsap.utils.toArray(".navbar_nav") as HTMLUListElement[]
+    const sections = gsap.utils.toArray(".section-white") as HTMLLIElement[]
 
-    const setActiveLink = (linkIdx: NavLinkIdx, isDark: boolean) => {
-      navItems.forEach((item) => {
-        // set fixed position on "services" section
-        if (headerRef.current && linkIdx === NavLinkIdx.Services) {
-          headerRef.current.style.position = "fixed"
-        } else if (headerRef.current && linkIdx === NavLinkIdx.Home) {
-          headerRef.current.style.position = "absolute"
-          gsap.to(item, {
-            color: "#0C0C0C",
-            fontWeight: 400,
-            duration: 0.15,
-          })
-          gsap.to(logo, {
-            opacity: isDark ? "0" : "1",
-          })
-          return
-        }
+    sections.forEach((section: HTMLElement, i) => {
+      navLinks.forEach((item: HTMLElement) => {
+        const isHomeSection = i === 0
 
-        gsap.to(logo, {
-          opacity: isDark ? "0" : "1",
+        ScrollTrigger.create({
+          trigger: section,
+          start: () => `top ${isHomeSection ? "2%" : "6%"}`,
+          end: () => "bottom",
+          scrub: 1,
+          toggleClass: {
+            targets: item,
+            className: isHomeSection ? "text-class-two" : "text-class-one",
+          },
         })
-
-        if (item.getAttribute("data-name") == linkIdx) {
-          gsap.to(item, {
-            color: isDark ? "#DCDCDC" : "#0C0C0C", // Active color
-            fontWeight: 500,
-            duration: 0.15,
-          })
-        } else {
-          gsap.to(item, {
-            color: isDark ? "#fff5" : "#0007", // Default color
-            fontWeight: 400,
-            duration: 0.15,
-          })
-        }
-      })
-    }
-
-    // Create ScrollTrigger for each section with id
-    NAV_LINKS.forEach(({ id, linkIdx, isDarkBg, start, end }) => {
-      ScrollTrigger.create({
-        trigger: "#" + id,
-        start,
-        end,
-        onEnter: () => setActiveLink(linkIdx, isDarkBg),
-        onEnterBack: () => setActiveLink(linkIdx, isDarkBg),
-        // onLeave: () => setActiveLink(linkIdx, isDarkBg)
       })
     })
-
-    // Cleanup
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
-    }
   }, [mainRef])
 
   return (
-    <header ref={headerRef} className="fixed top-0 left-0 z-[1000] w-full px-[7.4rem] py-[3.2rem] portrait:px-[2.4rem]">
+    <header
+      ref={headerRef}
+      className="navbar_nav fixed top-0 left-0 z-[1000] w-full px-[7.4rem] py-[3.2rem] text-gray-1 portrait:px-[2.4rem]"
+    >
       <motion.nav
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -95,7 +60,7 @@ const Header: FC<Props> = ({ mainRef }) => {
 
         <ul className="flex flex-1 items-center justify-end gap-[3.2rem] [font-kerning:none]" data-fixed>
           {NAV_LINKS.map(({ id }) => (
-            <li className="nav_link inline-block " data-name={id} key={id}>
+            <li className="nav_link inline-block" data-name={id} key={id}>
               <a href={"#" + id} className="capitalize">
                 <TextGlitch text={id} classes="portrait:text-[2.2rem]" />
               </a>

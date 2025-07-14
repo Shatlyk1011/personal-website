@@ -28,7 +28,7 @@
   --color-gray-3: var(--gray-3);
 
   --animate-aurora: aurora 50s linear infinite;
-  
+
   @keyframes aurora {
     from {
       background-position:
@@ -44,7 +44,16 @@
 }
 
 *::selection {
-  @apply bg-primary text-white
+  @apply bg-primary text-white;
+}
+
+.text-class-one,
+.text-class-two {
+  color: #393a39;
+}
+
+.text-class-two {
+  position: absolute;
 }
 
 html {
@@ -103,7 +112,7 @@ body.overflow-hidden {
 }
 
 @media screen and (orientation: portrait) {
- .sticky-content:nth-child(1) {
+  .sticky-content:nth-child(1) {
     --offset: 0;
   }
 
@@ -117,7 +126,7 @@ body.overflow-hidden {
 
   .sticky-content:nth-child(4) {
     --offset: 8rem;
-  } 
+  }
 }
 
 .transition_1 {
