@@ -58,7 +58,9 @@
 
 .text-class-one nav .logo_block,
 .text-class-two nav .logo_block {
-  display: block;
+  opacity: 1;
+  user-select: auto;
+  visibility: visible;
 }
 
 html {
