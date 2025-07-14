@@ -20,9 +20,9 @@ const Header: FC<Props> = ({ mainRef }) => {
   const headerRef = useRef<HTMLDivElement | null>(null)
 
   const smoothScroll = (id: string) => {
-    const el = document.getElementById(id);
-    el?.scrollIntoView({ behavior: 'smooth' });
-  };
+    const el = document.getElementById(id)
+    el?.scrollIntoView({ behavior: "smooth" })
+  }
 
   useEffect(() => {
     if (!mainRef.current) return
@@ -59,13 +59,13 @@ const Header: FC<Props> = ({ mainRef }) => {
         transition={{ duration: 2, delay: 0.2, ease: "easeInOut" }}
         className="text-card-bg flex items-center justify-between gap-[3.2rem] text-[1.8rem] font-medium"
       >
-        <div className="min-w-[14rem] portrait:min-w-max" data-fixed>
-          <Logo className="logo text-text-1" />
+        <div className="logo_block hidden min-w-[14rem] portrait:min-w-max">
+          <Logo className="logo text-inherit" />
         </div>
 
         <ul className="flex flex-1 items-center justify-end gap-[3.2rem] [font-kerning:none]" data-fixed>
           {NAV_LINKS.map(({ id }) => (
-            <li className="nav_link inline-block capitalize cursor-pointer" data-name={id} key={id} onClick={() => smoothScroll(id)}>
+            <li className="nav_link inline-block cursor-pointer capitalize" key={id} onClick={() => smoothScroll(id)}>
               <TextGlitch text={id} classes="portrait:text-[2.2rem]" />
             </li>
           ))}

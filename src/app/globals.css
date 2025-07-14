@@ -56,6 +56,11 @@
   position: absolute;
 }
 
+.text-class-one nav .logo_block,
+.text-class-two nav .logo_block {
+  display: block;
+}
+
 html {
   text-align: left;
   -webkit-font-smoothing: antialiased;
