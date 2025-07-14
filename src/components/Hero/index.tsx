@@ -32,7 +32,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <AuroraBackground className="section-white h-auto min-h-screen portrait:min-h-full" id="home">
+    <AuroraBackground className="section_white h-auto min-h-screen portrait:min-h-full" id="home">
       {/* 10.2rem is heading */}
       <section className="z-10 mx-auto h-full w-full max-w-[144rem] px-[7.4rem] pt-[calc(3.2rem+10.2rem)] pb-[12.4rem] portrait:px-[2.4rem] portrait:pt-[calc(3.2rem+8rem)] portrait:pb-[6.4rem]">
         <div className="flex gap-[6.4rem] portrait:flex-col">

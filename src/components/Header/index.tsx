@@ -28,7 +28,7 @@ const Header: FC<Props> = ({ mainRef }) => {
     if (!mainRef.current) return
 
     const navLinks = gsap.utils.toArray(".navbar_nav") as HTMLUListElement[]
-    const sections = gsap.utils.toArray(".section-white") as HTMLLIElement[]
+    const sections = gsap.utils.toArray(".section_white") as HTMLLIElement[]
 
     sections.forEach((section: HTMLElement, i) => {
       navLinks.forEach((item: HTMLElement) => {
