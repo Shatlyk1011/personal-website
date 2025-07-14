@@ -1,5 +1,3 @@
-- update videos
-
 - update video bg?
 
 - video metadata?

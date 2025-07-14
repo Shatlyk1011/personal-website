@@ -18,11 +18,11 @@ const MuxVideo: FC<Props> = ({ playbackId, placheolder, classes }) => {
       placeholder={placheolder}
       startTime={0}
       playbackId={playbackId}
-      metadata={{
-        video_id: "video-id-123456",
-        video_title: "Bick Buck Bunny",
-        viewer_user_id: "user-id-bc-789",
-      }}
+      // metadata={{
+      //   video_id: "video-id-123456",
+      //   video_title: "Bick Buck Bunny",
+      //   viewer_user_id: "user-id-bc-789",
+      // }}
       autoPlay
       muted
       loop
