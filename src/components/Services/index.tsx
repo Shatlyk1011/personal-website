@@ -1,4 +1,5 @@
 "use client"
+import { cn } from "@/shared/utils"
 
 import ServiceCard from "./ServiceCard"
 import SectionHeading from "../ui/SectionHeading"
@@ -17,6 +18,8 @@ import { SERVICES } from "@/shared/data"
 // How can I make things easier for you?
 
 const Services = () => {
+  const isPortrait = window?.matchMedia("(orientation: portrait)").matches
+
   return (
     <section
       id="services"
@@ -26,10 +29,15 @@ const Services = () => {
         <div className="flex flex-col gap-[6.4rem] pb-[3.2rem] portrait:gap-[3.2rem] portrait:pb-[4rem]">
           <SectionHeading title={`What can I do <br class="hidden portrait:inline-block"/> for you`} />
 
-          <p className="relative max-w-[66.4rem] self-end text-[2.2rem] leading-[2.6rem] text-gray-2 portrait:self-start portrait:text-[2.4rem] portrait:leading-[2.9rem]">
+          <p className="relative max-w-[66.4rem] self-end text-[2.2rem] leading-[2.6rem] text-gray-2 portrait:hidden portrait:self-start portrait:text-[2.4rem] portrait:leading-[2.9rem]">
             I help ambitious people and brands turn complex ideas into clear, compelling designs that engage audiences,
             solve real problems, and drive measurable results.{" "}
-            <span className="aware_threshold absolute top-[-10rem] left-0 -z-1 h-[calc(100%+8rem)] w-full"></span>
+            <span
+              className={cn(
+                `absolute top-[-10rem] left-0 z-1 h-[calc(100%+8rem)] w-full`,
+                isPortrait ? "hidden" : "aware_threshold",
+              )}
+            ></span>
           </p>
         </div>
         {SERVICES.slice(0, 3).map((item) => (

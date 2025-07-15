@@ -27,8 +27,8 @@ const Header: FC<Props> = ({ mainRef }) => {
   useEffect(() => {
     if (!mainRef.current) return
 
-    const navLinks = gsap.utils.toArray(".navbar_nav") as HTMLUListElement[]
     const sections = gsap.utils.toArray(".section_white") as HTMLLIElement[]
+    const navLinks = gsap.utils.toArray(".header") as HTMLUListElement[]
 
     sections.forEach((section: HTMLElement, i) => {
       navLinks.forEach((item: HTMLElement) => {
@@ -49,16 +49,14 @@ const Header: FC<Props> = ({ mainRef }) => {
   }, [mainRef])
 
   return (
-    <header
+    <motion.header
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.6, delay: 0.2, ease: "easeIn" }}
+      className="header fixed top-0 left-0 z-[1000] w-full px-[7.4rem] py-[3.2rem] text-gray-1 portrait:px-[2.4rem] portrait:py-[2rem]"
       ref={headerRef}
-      className="navbar_nav fixed top-0 left-0 z-[1000] w-full px-[7.4rem] py-[3.2rem] text-gray-1 portrait:px-[2.4rem]"
     >
-      <motion.nav
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 2, delay: 0.2, ease: "easeInOut" }}
-        className="text-card-bg flex items-center justify-between gap-[3.2rem] text-[1.8rem] font-medium"
-      >
+      <nav className="text-card-bg flex items-center justify-between gap-[3.2rem] text-[1.8rem] font-medium">
         <div className="logo_block invisible min-w-[14rem] opacity-0 transition select-none portrait:min-w-max">
           <Logo className="logo text-inherit" />
         </div>
@@ -73,8 +71,8 @@ const Header: FC<Props> = ({ mainRef }) => {
         {/* <button type="button" className="py-[0.7rem] px-[0.8rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">
           <span className="text-[1.8rem]">Let&apos;s Connect</span>
         </button> */}
-      </motion.nav>
-    </header>
+      </nav>
+    </motion.header>
   )
 }
 export default Header

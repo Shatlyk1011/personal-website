@@ -47,9 +47,26 @@
   @apply bg-primary text-white;
 }
 
+.header {
+  background-color: none;
+}
+
+@media screen and (orientation: portrait) {
+  .header {
+    background-color: var(--bg-black);
+  }
+}
+
 .text-class-one,
 .text-class-two {
   color: #393a39;
+}
+
+@media screen and (orientation: portrait) {
+  .text-class-one,
+  .text-class-two {
+    background: var(--bg-white);
+  }
 }
 
 .text-class-two {

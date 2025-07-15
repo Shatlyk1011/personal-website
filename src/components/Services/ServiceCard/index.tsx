@@ -7,13 +7,16 @@ import { type Services } from "@/shared/data"
 interface Props {
   item: Services
 }
+
 const ServiceCard: FC<Props> = ({ item }) => {
   const { title, services, description, number, awareItemClass } = item
+
+  const isPortrait = window?.matchMedia("(orientation: portrait)").matches
 
   return (
     <div className="sticky-content relative z-10 w-full border-t border-white/[12%] bg-bg-black py-[3.2rem] last:border-b portrait:py-[5.6rem]">
       <div className="flex justify-between">
-        {awareItemClass && (
+        {awareItemClass && !isPortrait && (
           <div className={cn("absolute top-[-8%] -z-1 h-[108%] w-full portrait:h-full", awareItemClass)}></div>
         )}
         {/* left */}
