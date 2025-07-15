@@ -11,9 +11,6 @@ const CalCom: FC<Props> = ({ children }) => {
       const cal = await getCalApi()
       cal("ui", {
         theme: "dark",
-        styles: {
-          branding: { brandColor: "#f00" },
-        },
       })
     })()
   }, [])

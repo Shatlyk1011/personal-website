@@ -59,7 +59,7 @@ const Header: FC<Props> = ({ mainRef }) => {
         transition={{ duration: 2, delay: 0.2, ease: "easeInOut" }}
         className="text-card-bg flex items-center justify-between gap-[3.2rem] text-[1.8rem] font-medium"
       >
-        <div className="logo_block transition opacity-0 invisible select-none min-w-[14rem] portrait:min-w-max">
+        <div className="logo_block invisible min-w-[14rem] opacity-0 transition select-none portrait:min-w-max">
           <Logo className="logo text-inherit" />
         </div>
 

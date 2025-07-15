@@ -10,7 +10,7 @@ interface Props {
 }
 
 const onLoad = ({ close, path }: Props) => {
-  document.getElementById('home')?.scrollIntoView({ behavior: 'instant' })
+  document.getElementById("home")?.scrollIntoView({ behavior: "instant" })
 
   const fixedElements = document.querySelectorAll("[data-fixed]")
   const blocks = document.querySelectorAll(".aware_threshold")
