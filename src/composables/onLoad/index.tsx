@@ -20,7 +20,9 @@ const onLoad = ({ close, path }: Props) => {
   preloadAnimation(path, close)
 
   // run contentaware feat
-  handleContentAware()
+  if (handleContentAware) {
+    handleContentAware()
+  }
 
   // turn off mouse 3 click
   // document.body.onmousedown = function (e) {

@@ -14,7 +14,6 @@ import Services from "@/components/Services"
 import Works from "@/components/Works"
 import CallToAction from "@/components/CallToAction"
 
-
 export default function Home() {
   const mainRef = useRef<HTMLDivElement | null>(null)
 
@@ -38,7 +37,7 @@ export default function Home() {
     }
   }, [])
 
-  useEffect(() => handleMediaQuery(setPortrait), []);
+  useEffect(() => handleMediaQuery(setPortrait), [])
 
   return (
     <ReactLenis root options={{ lerp: 0.135, smoothWheel: !isLoading }}>

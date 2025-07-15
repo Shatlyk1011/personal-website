@@ -6,6 +6,11 @@ import { AuroraBackground } from "../ui/AuroraBg"
 import TextGlitch from "../ui/TextGlitch"
 import CalCom from "../ui/CalCom"
 
+console.info(
+  "%cIf you manually switching to mobile version, or vise-versa, reload your browser for full features",
+  "color: #ffffff; background-color: #0057d4; padding: 10px 20px; border-radius: 6px; font-size: 16px; font-weight: medium;",
+)
+
 const CallToAction = () => {
   return (
     <AuroraBackground className="section_white h-full min-h-svh" id="contact">

@@ -22,7 +22,6 @@ interface Props {
 }
 
 const Services: FC<Props> = ({ isPortrait }) => {
-
   return (
     <section
       id="services"
@@ -32,7 +31,7 @@ const Services: FC<Props> = ({ isPortrait }) => {
         <div className="flex flex-col gap-[6.4rem] pb-[3.2rem] portrait:gap-[3.2rem] portrait:pb-[4rem]">
           <SectionHeading title={`What can I do <br class="hidden portrait:inline-block"/> for you`} />
 
-          <p className="relative max-w-[66.4rem] self-end text-[2.2rem] leading-[2.6rem] text-gray-2 portrait:hidden portrait:self-start portrait:text-[2.4rem] portrait:leading-[2.9rem]">
+          <p className="relative max-w-[66.4rem] self-end text-[2.2rem] leading-[2.6rem] text-gray-2 portrait:self-start portrait:text-[2.4rem] portrait:leading-[2.9rem]">
             I help ambitious people and brands turn complex ideas into clear, compelling designs that engage audiences,
             solve real problems, and drive measurable results.{" "}
             <span

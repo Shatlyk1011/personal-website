@@ -16,6 +16,9 @@ interface Effect {
 
 const contentAware = (blocks: NodeListOf<Element>, fixedElements: NodeListOf<Element>) => {
   gsap.registerPlugin(ScrollTrigger)
+  const isPortrait = window?.matchMedia("(orientation: portrait)").matches
+
+  if (isPortrait) return
 
   function resetElement(target: Element) {
     gsap.set(target, {
