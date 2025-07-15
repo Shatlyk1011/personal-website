@@ -49,7 +49,7 @@ const CallToAction = () => {
               ))}
             </ul>
 
-            <a href="#" className="basis-[25%] text-end">
+            <a href="https://www.instagram.com/devbyshat" className="basis-[25%] text-end" target="_blank" rel="noopener">
               <TextGlitch text="More PROJECTS" classes="text-[1.4rem] leading-[2rem] uppercase" />
             </a>
           </div>
