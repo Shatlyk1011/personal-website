@@ -1,4 +1,5 @@
 "use client"
+import { FC } from "react"
 import { cn } from "@/shared/utils"
 
 import ServiceCard from "./ServiceCard"
@@ -17,8 +18,11 @@ import { SERVICES } from "@/shared/data"
 // What’s up? Need a hand?
 // How can I make things easier for you?
 
-const Services = () => {
-  const isPortrait = window?.matchMedia("(orientation: portrait)").matches
+interface Props {
+  isPortrait: boolean
+}
+
+const Services: FC<Props> = ({ isPortrait }) => {
 
   return (
     <section
@@ -41,7 +45,7 @@ const Services = () => {
           </p>
         </div>
         {SERVICES.slice(0, 3).map((item) => (
-          <ServiceCard key={item.title} item={item} />
+          <ServiceCard key={item.title} item={item} isPortrait={isPortrait} />
         ))}
       </div>
     </section>

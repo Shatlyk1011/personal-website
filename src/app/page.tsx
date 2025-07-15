@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import ReactLenis from "lenis/react"
 
 import handleOnLoad from "@/composables/onLoad"
+import { handleMediaQuery } from "@/composables/handleMediaQuery"
 
 //components
 import Preload from "@/components/Preload"
@@ -13,10 +14,12 @@ import Services from "@/components/Services"
 import Works from "@/components/Works"
 import CallToAction from "@/components/CallToAction"
 
+
 export default function Home() {
   const mainRef = useRef<HTMLDivElement | null>(null)
 
   const [isLoading, setIsLoading] = useState(true)
+  const [isPortrait, setPortrait] = useState(false)
 
   const path = useRef<SVGPathElement | null>(null)
 
@@ -35,14 +38,16 @@ export default function Home() {
     }
   }, [])
 
+  useEffect(() => handleMediaQuery(setPortrait), []);
+
   return (
     <ReactLenis root options={{ lerp: 0.135, smoothWheel: !isLoading }}>
       <main className="relative" ref={mainRef}>
         <Header mainRef={mainRef} />
         {isLoading && <Preload path={path} />}
         <Hero />
-        <Services />
-        <Works />
+        <Services isPortrait={isPortrait} />
+        <Works isPortrait={isPortrait} />
         <CallToAction />
         {/* <p className="h-[50vh]">he</p> */}
       </main>

@@ -1,3 +1,4 @@
+"use client"
 import { FC } from "react"
 
 import { cn } from "@/shared/utils"
@@ -6,12 +7,11 @@ import { type Services } from "@/shared/data"
 
 interface Props {
   item: Services
+  isPortrait: boolean
 }
 
-const ServiceCard: FC<Props> = ({ item }) => {
+const ServiceCard: FC<Props> = ({ item, isPortrait }) => {
   const { title, services, description, number, awareItemClass } = item
-
-  const isPortrait = window?.matchMedia("(orientation: portrait)").matches
 
   return (
     <div className="sticky-content relative z-10 w-full border-t border-white/[12%] bg-bg-black py-[3.2rem] last:border-b portrait:py-[5.6rem]">
