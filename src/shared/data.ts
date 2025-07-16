@@ -141,7 +141,7 @@ export const FOOTER_SOCIALS = [
   },
   {
     title: "Instagram",
-    href: "https://www.instagram.com/shatlykabdullayew/",
+    href: "https://www.instagram.com/devbyshat/",
   },
   // {
   //   title: "Youtube",
