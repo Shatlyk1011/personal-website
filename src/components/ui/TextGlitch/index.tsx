@@ -10,7 +10,7 @@ interface Props {
 const TextGlitch: FC<Props> = ({ text, classes }) => {
   return (
     <div className={cn("group relative inline-block overflow-hidden leading-[3.4rem]", classes)}>
-      <span className="invisible">{text}</span>
+      <span className="invisible text-inherit capitalize">{text}</span>
       <span className="absolute top-0 left-0 text-inherit capitalize transition duration-300 ease-in-out group-hover:-translate-y-full">
         {text}
       </span>

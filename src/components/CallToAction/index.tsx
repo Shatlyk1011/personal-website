@@ -39,7 +39,7 @@ const CallToAction = () => {
               <li className="hidden text-nowrap uppercase portrait:block">©2025 Shatlyk A.</li>
             </ul>
 
-            <ul className="flex gap-[1.4rem]">
+            <ul className="flex gap-[1.6rem]">
               {FOOTER_SOCIALS.map(({ href, title }) => (
                 <li key={title}>
                   <a href={href} target="_blank" rel="noopener">
@@ -50,7 +50,7 @@ const CallToAction = () => {
             </ul>
 
             <a href="https://www.instagram.com/devbyshat" className="basis-[25%] text-end" target="_blank" rel="noopener">
-              <TextGlitch text="More PROJECTS" classes="text-[1.4rem] leading-[2rem] uppercase" />
+              <TextGlitch text="MORE PROJECTS" classes="text-[1.4rem] leading-[2rem] uppercase" />
             </a>
           </div>
         </div>

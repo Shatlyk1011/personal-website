@@ -143,10 +143,10 @@ export const FOOTER_SOCIALS = [
     title: "Instagram",
     href: "https://www.instagram.com/devbyshat/",
   },
-  // {
-  //   title: "Youtube",
-  //   href: "#",
-  // },
+  {
+    title: "Telegram",
+    href: "https://t.me/sh_1415926535",
+  },
   // {
   //   title: "X",
   //   href: "#",

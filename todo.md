@@ -7,3 +7,5 @@
 - add links (tg, yb)
 
 - add analytics (after attaching domain)
+
+- add available for freelancee work stat
