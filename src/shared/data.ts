@@ -73,7 +73,7 @@ export const PROJECTS = [
     title: "CopilotKit",
     description:
       // "CopilotKit an AI Copilot which was re-engineered from Webflow to NextJs app to create a smarter, user-aware virtual colleague for seamless product interactions",
-      "CopilotKit, an AI Copilot which was transformed from a Webflow to a powerful Next.js app. <br/>  It offers a smarter, user-aware virtual collegue <br/> for seamless product interactions",
+      "CopilotKit, an AI Copilot which was transformed from a Webflow to a powerful Next.js app. <br/>  It offers a smarter, user-aware virtual collegue <br/> for seamless product interactions.",
 
     tags: ["Stack Migration", "SEO", "UI/UX", "NextJs", "Tailwind"] as Tags[],
 
@@ -112,7 +112,7 @@ export const PROJECTS = [
   {
     title: "Agent Heroes",
     description:
-      "Multivendor food delivery application written using Payload CMS. Small and medium size brands to find themselfes. Previously worked as cook for",
+      "Agent Heroes is a versatile platform for creating digital content, including static images and <br/> video memes. Built with Astro and SCSS for a performant and customizable user experience.",
 
     tags: ["GSAP", "Astro", "SCSS"] as Tags[],
 
