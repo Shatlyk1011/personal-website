@@ -13,7 +13,7 @@ const ServiceCard: FC<Props> = ({ item, isPortrait }) => {
   const { title, services, description, number, awareItemClass } = item
 
   return (
-    <div className="sticky-content relative z-10 w-full border-t border-white/[12%] bg-bg-black py-[3.2rem] last:border-b portrait:py-[5.6rem]">
+    <div className="sticky-content relative z-10 w-full border-t border-white/[12%] bg-bg-black py-[3.2rem] last:border-b portrait:pt-[5.6rem] portrait:pb-[3.6rem]">
       <div className="flex justify-between">
         {awareItemClass && !isPortrait && (
           <div className={cn("absolute top-[-8%] -z-1 h-[108%] w-full portrait:h-full", awareItemClass)}></div>
