@@ -15,7 +15,7 @@ const Works: FC<Props> = ({ isPortrait }) => {
   return (
     <section
       id="works"
-      className="relative bg-bg-black px-[7.4rem] py-[12.4rem] text-gray-1 portrait:px-[2.4rem] portrait:pt-[8rem]"
+      className="relative bg-bg-black px-[7.4rem] z-[100] py-[12.4rem] text-gray-1 portrait:px-[2.4rem] portrait:pt-[8rem]"
     >
       <div
         className={cn(
