@@ -42,20 +42,20 @@ export const SERVICES = [
     description:
       "Boost your brand with a website that captivates and converts. My Full Stack Development builds custom, high-performance web apps tailored to your identity.  CMS Integration provides user-friendly platforms like Strapi for easy content updates. ",
     services: ["Full Stack development", "CMS Integration", "Motion & Animations"],
-    number: "01",
+    number: "I",
   },
   {
     title: "Web Design",
     description:
       "Crafting memorable brand identities with unique color schemes and typography reflecting brand essence. Delivering intuitive UI/UX Design, user-centric interfaces for seamless navigation and exceptional satisfaction.",
     services: ["UI/UX Design", "Visual Branding", "Responsive Design"],
-    number: "02",
+    number: "II",
   },
   {
     title: "Growth & Optimization",
     description: `Boost your app with my expertise. SEO boosts search <br class="portrait:hidden"/> rankings, performance enhancements speed up your site, <br class="portrait:hidden"/> and app optimization ensures fast, intuitive, cross-platform performance. Maximize impact with my solutions.`,
     services: ["SEO Optimization", "Performance Enhancement", "App Optimization"],
-    number: "03",
+    number: "III",
     awareItemClass: "aware_threshold",
   },
 ]
@@ -99,7 +99,8 @@ export const PROJECTS = [
     links: [
       {
         title: "View live site",
-        href: "https://www.growchief.com/",
+        // href: "https://www.growchief.com/",
+        href: "",
       },
     ],
     playbackId: PROJECT_VIDEO_IDS.growchief,

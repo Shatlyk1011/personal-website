@@ -19,7 +19,7 @@ const ServiceCard: FC<Props> = ({ item, isPortrait }) => {
           <div className={cn("absolute top-[-8%] -z-1 h-[108%] w-full portrait:h-full", awareItemClass)}></div>
         )}
         {/* left */}
-        <div className="text-[3.4rem] leading-[3.6rem] tracking-[0.4px] text-gray-1 portrait:hidden">({number})</div>
+        <div className="text-[3.4rem] leading-[3.6rem] tracking-[0.4px] text-gray-1 portrait:hidden">{number}</div>
         {/* right */}
 
         <div className="basis-[66.4rem]">
@@ -30,7 +30,7 @@ const ServiceCard: FC<Props> = ({ item, isPortrait }) => {
           <ul className="mb-[6.4rem] max-w-[38.5rem] text-[2.2rem] leading-[2.6rem] portrait:mb-[4.8rem] portrait:text-[2.4rem] portrait:leading-[4rem]">
             {services.map((s, i) => (
               <li key={s} className="border-b border-white/[12%] py-2 not-last:mb-[1.8rem]">
-                <span className="mr-[1rem] text-gray-3 opacity-80">0{i + 1}</span>
+                <span className="mr-[1rem] text-gray-3 opacity-80">{Array.from({ length: i + 1 }).map(() => 'I').join('')}</span>
                 {s}
               </li>
             ))}

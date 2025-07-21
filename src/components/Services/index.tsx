@@ -42,7 +42,7 @@ const Services: FC<Props> = ({ isPortrait }) => {
             ></span>
           </p>
         </div>
-        {SERVICES.slice(0, 3).map((item) => (
+        {SERVICES.map((item) => (
           <ServiceCard key={item.title} item={item} isPortrait={isPortrait} />
         ))}
       </div>
