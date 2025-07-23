@@ -33,11 +33,12 @@ const Header: FC<Props> = ({ mainRef }) => {
     sections.forEach((section: HTMLElement, i) => {
       navLinks.forEach((item: HTMLElement) => {
         const isHomeSection = i === 0
+        const isLast = i === sections.length - 1
 
         ScrollTrigger.create({
           trigger: section,
           start: () => `top ${isHomeSection ? "2%" : "6%"}`,
-          end: () => "bottom",
+          end: () => `bottom ${isLast ? "0" : '4%'}`,
           scrub: 1,
           toggleClass: {
             targets: item,
