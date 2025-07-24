@@ -23,7 +23,8 @@ const Works: FC<Props> = ({ isPortrait }) => {
           isPortrait ? "hidden" : "aware_threshold",
         )}
       ></div>
-      <SectionHeading title="Portfolio Spotlight" />
+      {/* <SectionHeading title="Portfolio Spotlight" /> */}
+      <SectionHeading title="SELECTED WORKS" />
       {PROJECTS.map((item, i) => (
         <ProjectCard key={i} item={item} />
       ))}

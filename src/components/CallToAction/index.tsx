@@ -15,14 +15,13 @@ const CallToAction = () => {
   return (
     <AuroraBackground className="section_white h-full min-h-svh" id="contact">
       <section className="relative z-10 flex h-full w-full flex-1 flex-col justify-center px-[7.4rem] py-[12.4rem] text-center portrait:px-[4rem] portrait:py-[20rem]">
-        <h5 className="mb-[2rem] text-[6.4rem] leading-[1.25] font-bold tracking-[-0.03em] text-text-1 portrait:text-[5.6rem] portrait:leading-[1.15]">
+        <h5 className="mb-[1rem] text-[6.4rem] leading-[1.25] font-bold tracking-[-0.03em] text-text-1 portrait:text-[5.6rem] portrait:leading-[1.15]">
           Book Your Free <br className="hidden portrait:inline-block" /> Session — <br className="portrait:hidden" />
-          Power Up Your Startup’s Future
+          Power Up Your Project’s Future
         </h5>
 
-        <p className="mx-auto mb-[4.8rem] text-[2.2rem] leading-[2.8rem] tracking-[0.04px] text-text-2 portrait:max-w-[90%]">
-          I transform bold ideas into real impact — <br className="hidden portrait:block" /> through design driven by{" "}
-          <br className="portrait:hidden" /> insight, crafted with precision, and built to make a difference.
+        <p className="mx-auto mb-[2.4rem] text-[2.2rem] leading-[2.8rem] tracking-[0.04px] text-text-2 portrait:max-w-[90%]">
+          Count on me, you will not regret
         </p>
 
         <div className="flex items-center justify-center gap-[1.8rem]">
@@ -33,21 +32,21 @@ const CallToAction = () => {
 
       <footer className="w-full leading-[2.2rem]">
         <div className="relative mx-[3.2rem] border-t border-black/20">
-          <div className="relative flex justify-between py-[0.8rem] portrait:flex-wrap portrait:py-[3.2rem]">
-            <ul className="flex basis-[25%] flex-col items-start leading-[150%] font-semibold text-nowrap portrait:order-2 portrait:mt-6 portrait:basis-[100%] portrait:leading-[160%]">
+          <div className="relative flex justify-between py-[1.6rem] portrait:flex-wrap portrait:py-[3.2rem]">
+            <ul className="flex basis-[25%] flex-col items-start leading-[150%] font-semibold text-nowrap opacity-90 portrait:order-2 portrait:mt-6 portrait:basis-[100%] portrait:leading-[160%]">
               <li>Shatlyk Abdullayev</li>
               <li className="">©2025 All Rights Reserved.</li>
               {/* <li className="hidden text-nowrap uppercase portrait:block">©2025 All Rights Reserved.</li> */}
             </ul>
 
-            <ul className="flex items-center gap-[1.6rem]">
+            <ul className="flex items-center gap-[1.2rem]">
               {FOOTER_SOCIALS.map(({ href, title }) => (
                 <li key={title}>
                   <a
                     href={href}
                     target="_blank"
                     rel="noopener"
-                    className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-[0.1rem] focus-within:ring-[0.15rem] focus-within:ring-current focus-within:outline-none"
+                    className="rounded-3xl px-[0.6rem] py-[0.3rem] tracking-wide ring-offset-[0.1rem] focus-within:ring-[0.15rem] focus-within:ring-current focus-within:outline-none focus:outline-none"
                   >
                     <TextGlitch
                       text={title}
@@ -60,11 +59,14 @@ const CallToAction = () => {
             <div className="flex basis-[25%] items-center justify-end align-bottom">
               <a
                 href="https://www.instagram.com/devbyshat"
-                className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-1 focus-within:ring-[0.15rem] focus-within:ring-current focus-within:outline-none"
+                className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-1 focus-within:ring-[0.15rem] focus-within:ring-current focus-within:outline-none focus:outline-none"
                 target="_blank"
                 rel="noopener"
               >
-                <TextGlitch text="More Projects" classes="text-[1.4rem] portrait:text-[1.8rem] leading-[110%]" />
+                <TextGlitch
+                  text="More Projects"
+                  classes="text-[1.4rem] tracking-wide portrait:text-[1.8rem] leading-[110%]"
+                />
               </a>
             </div>
           </div>
