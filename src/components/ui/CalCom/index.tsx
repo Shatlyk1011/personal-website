@@ -19,7 +19,7 @@ const CalCom: FC<Props> = ({ children }) => {
     <button
       data-cal-link="shatlyk-abdullayev"
       data-cal-config='{"theme":"dark"}'
-      className="rounded-[1.8rem] bg-text-2 px-[2.4rem] py-[1.8rem] text-[1.8rem] font-medium tracking-[-0.04px] text-white transition-all duration-200 ease-linear hover:bg-primary hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.15)] portrait:px-[3.2rem] portrait:py-[2.2rem] portrait:text-[2.6rem]"
+      className="rounded-[1.8rem] bg-text-2 px-[2.4rem] py-[1.8rem] text-[1.8rem] font-medium tracking-[-0.04px] text-white transition-all duration-200 ease-linear hover:bg-primary hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.15)] focus:bg-primary focus:ring-[0.25rem] focus:ring-primary focus:ring-offset-[0.1rem] focus:outline-none portrait:px-[3.2rem] portrait:py-[2.2rem] portrait:text-[2.6rem]"
       type="button"
     >
       {children}

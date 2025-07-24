@@ -7,7 +7,7 @@ import TextGlitch from "../ui/TextGlitch"
 import CalCom from "../ui/CalCom"
 
 console.info(
-  "%cIf you manually switching to mobile version, or vise-versa, reload your browser for full features",
+  "%cIf you manually switching mobile version, or vise-versa, reload your browser for full features",
   "color: #ffffff; background-color: #0057d4; padding: 10px 20px; border-radius: 6px; font-size: 16px; font-weight: medium;",
 )
 
@@ -33,30 +33,40 @@ const CallToAction = () => {
 
       <footer className="w-full leading-[2.2rem]">
         <div className="relative mx-[3.2rem] border-t border-black/20">
-          <div className="relative flex justify-between py-[2rem]">
-            <ul className="flex basis-[25%] items-center gap-[2rem] portrait:basis-[25%]">
-              <li className="text-nowrap uppercase portrait:hidden">©2025 Shatlyk Abdullayev</li>
-              <li className="hidden text-nowrap uppercase portrait:block">©2025 Shatlyk A.</li>
+          <div className="relative flex justify-between py-[0.8rem] portrait:flex-wrap portrait:py-[3.2rem]">
+            <ul className="flex basis-[25%] flex-col items-start leading-[150%] font-semibold text-nowrap portrait:order-2 portrait:mt-6 portrait:basis-[100%] portrait:leading-[160%]">
+              <li>Shatlyk Abdullayev</li>
+              <li className="">©2025 All Rights Reserved.</li>
+              {/* <li className="hidden text-nowrap uppercase portrait:block">©2025 All Rights Reserved.</li> */}
             </ul>
 
-            <ul className="flex gap-[1.6rem]">
+            <ul className="flex items-center gap-[1.6rem]">
               {FOOTER_SOCIALS.map(({ href, title }) => (
                 <li key={title}>
-                  <a href={href} target="_blank" rel="noopener">
-                    <TextGlitch text={title} classes="text-[1.4rem] leading-[2rem] uppercase"></TextGlitch>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener"
+                    className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-[0.1rem] focus-within:ring-[0.15rem] focus-within:ring-current focus-within:outline-none"
+                  >
+                    <TextGlitch
+                      text={title}
+                      classes="text-[1.4rem] portrait:text-[1.8rem]  leading-[110%] "
+                    ></TextGlitch>
                   </a>
                 </li>
               ))}
             </ul>
-
-            <a
-              href="https://www.instagram.com/devbyshat"
-              className="basis-[25%] text-end"
-              target="_blank"
-              rel="noopener"
-            >
-              <TextGlitch text="MORE PROJECTS" classes="text-[1.4rem] leading-[2rem] uppercase" />
-            </a>
+            <div className="flex basis-[25%] items-center justify-end align-bottom">
+              <a
+                href="https://www.instagram.com/devbyshat"
+                className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-1 focus-within:ring-[0.15rem] focus-within:ring-current focus-within:outline-none"
+                target="_blank"
+                rel="noopener"
+              >
+                <TextGlitch text="More Projects" classes="text-[1.4rem] portrait:text-[1.8rem] leading-[110%]" />
+              </a>
+            </div>
           </div>
         </div>
       </footer>

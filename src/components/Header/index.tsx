@@ -38,7 +38,7 @@ const Header: FC<Props> = ({ mainRef }) => {
         ScrollTrigger.create({
           trigger: section,
           start: () => `top ${isHomeSection ? "2%" : "6%"}`,
-          end: () => `bottom ${isLast ? "0" : '4%'}`,
+          end: () => `bottom ${isLast ? "0" : "4%"}`,
           scrub: 1,
           toggleClass: {
             targets: item,
@@ -62,9 +62,14 @@ const Header: FC<Props> = ({ mainRef }) => {
           <Logo className="logo text-inherit" />
         </div>
 
-        <ul className="flex flex-1 items-center justify-end gap-[3.2rem] [font-kerning:none]" data-fixed>
+        <ul className="flex flex-1 items-center justify-end gap-[2.4rem] [font-kerning:none]" data-fixed>
           {NAV_LINKS.map(({ id }) => (
-            <li className="nav_link inline-block cursor-pointer capitalize" key={id} onClick={() => smoothScroll(id)}>
+            <li
+              tabIndex={0}
+              className="nav_link focus-within:-wi:outline-none focus-within:-wi:ring-[0.25rem] focus-within:-wi:ring-current inline-block cursor-pointer rounded-3xl px-[0.4rem] leading-0 capitalize ring-offset-[0.1rem]"
+              key={id}
+              onClick={() => smoothScroll(id)}
+            >
               <TextGlitch text={id} classes="portrait:text-[2.2rem]" />
             </li>
           ))}

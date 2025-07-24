@@ -138,7 +138,7 @@ body.overflow-hidden {
 @media screen and (orientation: portrait) {
   .sticky-content {
     position: static;
-    height: auto
+    height: auto;
   }
 }
 

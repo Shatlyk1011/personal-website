@@ -137,21 +137,21 @@ export const PROJECTS = [
 
 export const FOOTER_SOCIALS = [
   {
+    title: "Blog",
+    href: "https://blog.shatlykabdullayev.com",
+  },
+  {
     title: "Github",
     href: "https://www.github.com/Shatlyk1011",
   },
   {
     title: "Instagram",
-    href: "https://www.instagram.com/devbyshat/",
+    href: "https://www.instagram.com/devbyshat",
   },
   {
     title: "Telegram",
     href: "https://t.me/sh_1415926535",
   },
-  // {
-  //   title: "X",
-  //   href: "#",
-  // },
 ]
 
 type Tags =

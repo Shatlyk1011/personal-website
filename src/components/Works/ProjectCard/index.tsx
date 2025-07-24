@@ -35,9 +35,7 @@ const ProjectCard: FC<Props> = ({ item: { title, description, bgSrc, playbackId,
           <div className="flex items-center gap-[1.8rem]">
             {links?.map(({ href, title }) => {
               if (!href) return null
-              return (
-                <CustomLink key={title} title={title} url={href} />
-              )
+              return <CustomLink key={title} title={title} url={href} />
             })}
           </div>
         </div>
