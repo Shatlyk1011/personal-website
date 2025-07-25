@@ -21,7 +21,7 @@ const CallToAction = () => {
         </h5>
 
         <p className="mx-auto mb-[2.4rem] text-[2.2rem] leading-[2.8rem] tracking-[0.04px] text-text-2 portrait:max-w-[90%]">
-          Count on me, you will not regret
+          I bring big ideas to life with clear, sharp, meaningful design <br className="portrait:hidden" /> and craft them with expert, purposeful development.
         </p>
 
         <div className="flex items-center justify-center gap-[1.8rem]">
