@@ -39,7 +39,7 @@ const CallToAction = () => {
               {/* <li className="hidden text-nowrap uppercase portrait:block">©2025 All Rights Reserved.</li> */}
             </ul>
 
-            <ul className="flex items-center gap-[1.2rem]">
+            <ul className="flex items-center gap-[1.2rem] portrait:gap-[0.4rem]">
               {FOOTER_SOCIALS.map(({ href, title }) => (
                 <li key={title}>
                   <a
@@ -65,7 +65,7 @@ const CallToAction = () => {
               >
                 <TextGlitch
                   text="More Projects"
-                  classes="text-[1.4rem] tracking-wide portrait:text-[1.8rem] leading-[110%]"
+                  classes="text-[1.4rem] text-nowrap tracking-wide portrait:text-[1.8rem] leading-[110%]"
                 />
               </a>
             </div>
