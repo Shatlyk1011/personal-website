@@ -21,7 +21,8 @@ const CallToAction = () => {
         </h5>
 
         <p className="mx-auto mb-[2.4rem] text-[2.2rem] leading-[2.8rem] tracking-[0.04px] text-text-2 portrait:max-w-[90%]">
-          I bring big ideas to life with clear, sharp, meaningful design <br className="portrait:hidden" /> and craft them with expert, purposeful development.
+          I bring big ideas to life with clear, sharp, meaningful design <br className="portrait:hidden" /> and craft
+          them with expert, purposeful development.
         </p>
 
         <div className="flex items-center justify-center gap-[1.8rem]">
@@ -46,7 +47,7 @@ const CallToAction = () => {
                     href={href}
                     target="_blank"
                     rel="noopener"
-                    className="rounded-3xl px-[0.6rem] py-[0.3rem] tracking-wide ring-offset-[0.1rem] focus-visible:ring-[0.15rem] focus-visible:ring-current focus-visible:outline-none focus:outline-none"
+                    className="rounded-3xl px-[0.6rem] py-[0.3rem] tracking-wide ring-offset-[0.1rem] focus:outline-none focus-visible:ring-[0.15rem] focus-visible:ring-current focus-visible:outline-none"
                   >
                     <TextGlitch
                       text={title}
@@ -59,7 +60,7 @@ const CallToAction = () => {
             <div className="flex basis-[25%] items-center justify-end align-bottom">
               <a
                 href="https://www.instagram.com/devbyshat"
-                className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-1 focus-visible:ring-[0.15rem] focus-visible:ring-current focus-visible:outline-none focus:outline-none"
+                className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-1 focus:outline-none focus-visible:ring-[0.15rem] focus-visible:ring-current focus-visible:outline-none"
                 target="_blank"
                 rel="noopener"
               >
