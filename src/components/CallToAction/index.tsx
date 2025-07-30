@@ -46,7 +46,7 @@ const CallToAction = () => {
                     href={href}
                     target="_blank"
                     rel="noopener"
-                    className="rounded-3xl px-[0.6rem] py-[0.3rem] tracking-wide ring-offset-[0.1rem] focus-within:ring-[0.15rem] focus-within:ring-current focus-within:outline-none focus:outline-none"
+                    className="rounded-3xl px-[0.6rem] py-[0.3rem] tracking-wide ring-offset-[0.1rem] focus-visible:ring-[0.15rem] focus-visible:ring-current focus-visible:outline-none focus:outline-none"
                   >
                     <TextGlitch
                       text={title}
@@ -59,7 +59,7 @@ const CallToAction = () => {
             <div className="flex basis-[25%] items-center justify-end align-bottom">
               <a
                 href="https://www.instagram.com/devbyshat"
-                className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-1 focus-within:ring-[0.15rem] focus-within:ring-current focus-within:outline-none focus:outline-none"
+                className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-1 focus-visible:ring-[0.15rem] focus-visible:ring-current focus-visible:outline-none focus:outline-none"
                 target="_blank"
                 rel="noopener"
               >

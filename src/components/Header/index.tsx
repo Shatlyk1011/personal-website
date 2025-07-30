@@ -66,7 +66,7 @@ const Header: FC<Props> = ({ mainRef }) => {
           {NAV_LINKS.map(({ id }) => (
             <li
               tabIndex={0}
-              className="nav_link inline-block cursor-pointer rounded-3xl px-[0.4rem] leading-0 capitalize ring-offset-[0.1rem] focus-within:ring-[0.25rem] focus-within:ring-current focus-within:outline-none"
+              className="nav_link inline-block cursor-pointer rounded-3xl px-[0.4rem] leading-0 capitalize ring-offset-[0.1rem] focus-visible:ring-[0.25rem] focus-visible:ring-current focus-visible:outline-none"
               key={id}
               onClick={() => smoothScroll(id)}
             >
