@@ -7,7 +7,7 @@ interface Props {
 
 const CalCom: FC<Props> = ({ children }) => {
   useEffect(() => {
-    ;(async function () {
+    (async function () {
       const cal = await getCalApi()
       cal("ui", {
         theme: "dark",
