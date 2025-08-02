@@ -145,6 +145,10 @@ export const FOOTER_SOCIALS = [
     href: "https://www.github.com/Shatlyk1011",
   },
   {
+    title: "Youtube",
+    href: "https://www.youtube.com/@devbyshat",
+  },
+  {
     title: "Instagram",
     href: "https://www.instagram.com/devbyshat",
   },

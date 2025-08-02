@@ -57,7 +57,7 @@ const CallToAction = () => {
                 </li>
               ))}
             </ul>
-            <div className="flex basis-[25%] items-center justify-end align-bottom">
+            <div className="flex basis-[25%] items-center justify-end align-bottom portrait:mt-3">
               <a
                 href="https://www.instagram.com/devbyshat"
                 className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-1 focus:outline-none focus-visible:ring-[0.15rem] focus-visible:ring-current focus-visible:outline-none"
