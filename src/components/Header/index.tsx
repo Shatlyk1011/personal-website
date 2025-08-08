@@ -63,14 +63,14 @@ const Header: FC<Props> = ({ mainRef }) => {
         </div>
 
         <ul className="flex flex-1 items-center justify-end gap-[2.4rem] [font-kerning:none]" data-fixed>
-          {NAV_LINKS.map(({ id }) => (
+          {NAV_LINKS.map(({ title, linkIdx }) => (
             <li
               tabIndex={0}
               className="nav_link inline-block cursor-pointer rounded-3xl px-[0.4rem] leading-0 capitalize ring-offset-[0.1rem] focus-visible:ring-[0.25rem] focus-visible:ring-current focus-visible:outline-none"
-              key={id}
-              onClick={() => smoothScroll(id)}
+              key={linkIdx}
+              onClick={() => smoothScroll(linkIdx)}
             >
-              <TextGlitch text={id} classes="portrait:text-[2.2rem]" />
+              <TextGlitch text={title} classes="portrait:text-[2.2rem] capitalize" />
             </li>
           ))}
         </ul>

@@ -7,28 +7,28 @@ export enum NavLinkIdx {
 
 export const NAV_LINKS = [
   {
-    id: "home",
+    title: "Home",
     linkIdx: NavLinkIdx.Home,
     isDarkBg: false,
     // start: "top",
     // end: "bottom+=1%",
   },
   {
-    id: "services",
+    title: "Services",
     linkIdx: NavLinkIdx.Services,
     isDarkBg: true,
     // start: "top",
     // end: "bottom-=1%",
   },
   {
-    id: "works",
+    title: "Works",
     linkIdx: NavLinkIdx.Works,
     isDarkBg: true,
     // start: "top",
     // end: "bottom-=1%",
   },
   {
-    id: "contact",
+    title: "Contact",
     linkIdx: NavLinkIdx.Contact,
     isDarkBg: false,
     // start: "top",
