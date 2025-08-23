@@ -57,6 +57,10 @@
   }
 }
 
+.text-class-two {
+  position: absolute;
+}
+
 .text-class-one,
 .text-class-two {
   color: #393a39;
@@ -67,10 +71,6 @@
   .text-class-two {
     background: var(--bg-white);
   }
-}
-
-.text-class-two {
-  position: absolute;
 }
 
 .text-class-one nav .logo_block,

@@ -57,12 +57,12 @@ const Header: FC<Props> = ({ mainRef }) => {
       className="header fixed top-0 left-0 z-[1000] w-full px-[7.4rem] py-[3.2rem] text-gray-1 portrait:px-[2.4rem] portrait:py-[2rem]"
       ref={headerRef}
     >
-      <nav className="text-card-bg flex items-center justify-between gap-[3.2rem] text-[1.8rem] font-medium">
-        <div className="logo_block invisible min-w-[14rem] opacity-0 transition select-none portrait:min-w-max">
+      <nav className="text-card-bg flex items-center justify-between gap-[3.2rem] text-[1.8rem] font-medium" data-fixed>
+        <div className="logo_block text-current  min-w-[14rem]  transition select-none portrait:min-w-max">
           <Logo className="logo text-inherit" />
         </div>
 
-        <ul className="flex flex-1 items-center justify-end gap-[2.4rem] [font-kerning:none]" data-fixed>
+        <ul className="flex flex-1 items-center justify-end gap-[2.4rem] [font-kerning:none]" >
           {NAV_LINKS.map(({ title, linkIdx }) => (
             <li
               tabIndex={0}
