@@ -58,11 +58,11 @@ const Header: FC<Props> = ({ mainRef }) => {
       ref={headerRef}
     >
       <nav className="text-card-bg flex items-center justify-between gap-[3.2rem] text-[1.8rem] font-medium" data-fixed>
-        <div className="logo_block text-current  min-w-[14rem]  transition select-none portrait:min-w-max">
+        <div className="logo_block min-w-[14rem] text-current transition select-none portrait:min-w-max">
           <Logo className="logo text-inherit" />
         </div>
 
-        <ul className="flex flex-1 items-center justify-end gap-[2.4rem] [font-kerning:none]" >
+        <ul className="flex flex-1 items-center justify-end gap-[2.4rem] [font-kerning:none]">
           {NAV_LINKS.map(({ title, linkIdx }) => (
             <li
               tabIndex={0}
