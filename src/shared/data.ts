@@ -70,12 +70,31 @@ export const PROJECT_VIDEO_IDS = {
 
 export const PROJECTS = [
   {
+    title: "GrowChief",
+    description: `GrowChief is an AI-powered social engagement tool developed using Next.js and Tailwind CSS. <br class="portrait:hidden"/> It features a fully responsive webpage with seamless blog functionality.`,
+
+    tags: ["Startup", "Blog", "Nextjs", "Tailwind", "SEO"] as Tags[],
+
+    links: [
+      {
+        title: "View live site",
+        href: "https://www.growchief.com",
+      },
+    ],
+    playbackId: PROJECT_VIDEO_IDS.growchief,
+
+    bgSrc: "/images/growchief-bg.webp",
+    placeholder:
+      'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><filter id="b" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="10"/><feComponentTransfer><feFuncA type="discrete" tableValues="1 1"/></feComponentTransfer></filter><g filter="url(%23b)"><image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" href="data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwAgCdASoQAAwAAQAcJYwCsAEUrmFFJbpwQAD+/yycAyCfSXAmKzz4rKU0NptalnmxaL/hDwbG/2gpnvYKVa5yQuZk7rzOrY5aWOWztLCwRu4P/f0s9//9oRW/iPRP60tLo8tz+ah7bK2+0d01sokJtAis5IrE5/I6aunOB06yvK+qY3pSAAAA"/></g></svg>',
+  },
+
+  {
     title: "CopilotKit",
     description:
       // "CopilotKit an AI Copilot which was re-engineered from Webflow to NextJs app to create a smarter, user-aware virtual colleague for seamless product interactions",
       "CopilotKit, an AI Copilot which was transformed from a Webflow to a powerful Next.js app. <br/>  It offers a smarter, user-aware virtual collegue <br/> for seamless product interactions.",
 
-    tags: ["Stack Migration", "SEO", "UI/UX", "NextJs", "Tailwind"] as Tags[],
+    tags: ["Stack Migration", "UI/UX", "NextJs", "Tailwind", "SEO"] as Tags[],
 
     links: [
       {
@@ -90,32 +109,12 @@ export const PROJECTS = [
       'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><filter id="b" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="10"/><feComponentTransfer><feFuncA type="discrete" tableValues="1 1"/></feComponentTransfer></filter><g filter="url(%23b)"><image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" href="data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAwAAQAcJaQAAvkPE6wgoAD+/u+eBjLi0bgLMkF8UJJlHEEqZFVlqzWnP3yxDDRqFX5/Ul4Koweau3jLORCP1voAAA=="/></g></svg>',
   },
 
-  // {
-  //   title: "GrowChief",
-  //   description: `GrowChief is an AI-powered social engagement tool developed using Next.js and Tailwind CSS. <br class="portrait:hidden"/> It features a fully responsive webpage with seamless blog functionality.`,
-
-  //   tags: ["Startup", "Blog", "SEO", "Nextjs", "Tailwind"] as Tags[],
-
-  //   links: [
-  //     {
-  //       title: "View live site",
-  //       // href: "https://www.growchief.com/",
-  //       href: "",
-  //     },
-  //   ],
-  //   playbackId: PROJECT_VIDEO_IDS.growchief,
-
-  //   bgSrc: "/images/growchief-bg.webp",
-  //   placeholder:
-  //     'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><filter id="b" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="10"/><feComponentTransfer><feFuncA type="discrete" tableValues="1 1"/></feComponentTransfer></filter><g filter="url(%23b)"><image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" href="data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwAgCdASoQAAwAAQAcJYwCsAEUrmFFJbpwQAD+/yycAyCfSXAmKzz4rKU0NptalnmxaL/hDwbG/2gpnvYKVa5yQuZk7rzOrY5aWOWztLCwRu4P/f0s9//9oRW/iPRP60tLo8tz+ah7bK2+0d01sokJtAis5IrE5/I6aunOB06yvK+qY3pSAAAA"/></g></svg>',
-  // },
-
   {
     title: "Agent Heroes",
     description:
       "Agent Heroes is a versatile platform for creating digital content, including static images and <br/> video memes. Built with Astro and SCSS for a performant and customizable user experience.",
 
-    tags: ["GSAP", "Astro", "SCSS"] as Tags[],
+    tags: ["Astro", "SCSS", "GSAP"] as Tags[],
 
     links: [
       {
