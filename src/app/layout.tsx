@@ -7,7 +7,7 @@ import { constructMetadata } from "@/shared/utils"
 import Script from "next/script"
 
 export const metadata: Metadata = constructMetadata({
-  title: "Shatlyk Abdullayev — Freelance Web Designer & Developer",
+  title: "Shatlyk Abdullayev — Web Designer & Developer",
   description: "Helping brands to turn ideas into high-impact, results-driven websites. Global expertise.",
 })
 
