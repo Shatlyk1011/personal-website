@@ -19,7 +19,20 @@ export function constructMetadata({
   return {
     title,
     description,
-    keywords: ["Web Development", "Web Design", "Freelance", "Code Developer", "Shatlyk Abdullayev"],
+    keywords: [
+      "Web Development",
+      "Web Design",
+      "Freelance",
+      "Code Developer",
+      "Lebap",
+      "Ashgabat",
+      "Mary",
+      "Balkan",
+      "Turkmenistan",
+      "Dashoguz",
+      "Turkmenabat",
+      "Shatlyk Abdullayev",
+    ],
     openGraph: {
       title,
       description,
