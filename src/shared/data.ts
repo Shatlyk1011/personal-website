@@ -41,7 +41,7 @@ export const SERVICES = [
     title: "Web Development",
     description:
       "Boost your brand with a website that captivates and converts. My Full Stack Development builds custom, high-performance web apps tailored to your identity.  CMS Integration provides user-friendly platforms like Strapi for easy content updates. ",
-    services: ["Full Stack development", "CMS Integration", "Motion & Animations"],
+    services: ["Frontend Development", "CMS & API Integration", "Motion & Animations"],
     number: "I",
   },
   {
