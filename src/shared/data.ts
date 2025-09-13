@@ -65,7 +65,7 @@ export const SERVICES = [
 export const PROJECT_VIDEO_IDS = {
   copilot: "202VyPadtFmAFoLbSd01t8SxE3nUIVxNUXDnoudARM5go",
   growchief: "AF3iVO5R5UOFjFleXYWq3d1bpimjmDwDUKqvfUK1urM",
-  agentHeroes: "16lm01pbwW00kUEH1DmJjxD8MNYDZV89cAf02WVR1CYwlc",
+  agentHeroes: "sIn4yvruYgh02jNLzYBdd02A00gPkioBmib01RZIJv2GJYY",
 }
 
 export const PROJECTS = [
