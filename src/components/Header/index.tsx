@@ -57,7 +57,7 @@ const Header: FC<Props> = ({ mainRef }) => {
       className="header fixed top-0 left-0 z-[1000] w-full px-[7.4rem] py-[3.2rem] text-gray-1 portrait:px-[2.4rem] portrait:py-[2rem]"
       ref={headerRef}
     >
-      <nav className="text-card-bg flex items-center justify-between gap-[3.2rem] text-[1.8rem] font-medium" data-fixed>
+      <nav className="flex items-center justify-between gap-[3.2rem] text-[1.8rem] font-medium" data-fixed>
         <div className="logo_block min-w-[14rem] text-current transition select-none portrait:min-w-max">
           <Logo className="logo text-inherit" />
         </div>
