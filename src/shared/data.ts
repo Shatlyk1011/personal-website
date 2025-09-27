@@ -40,7 +40,7 @@ export const SERVICES = [
   {
     title: "Web Development",
     description:
-      "Boost your brand with a website that captivates and converts. My Full Stack Development builds custom, high-performance web apps tailored to your identity.  CMS Integration provides user-friendly platforms like Strapi for easy content updates. ",
+      "Boost your brand with a website that captivates and converts. My Full Stack Development builds custom, high-performance web apps tailored to your identity.  CMS Integration provides user-friendly platforms like Strapi for easy content updates.",
     services: ["Frontend Development", "CMS & API Integration", "Motion & Animations"],
     number: "I",
   },
@@ -66,14 +66,34 @@ export const PROJECT_VIDEO_IDS = {
   copilot: "202VyPadtFmAFoLbSd01t8SxE3nUIVxNUXDnoudARM5go",
   growchief: "AF3iVO5R5UOFjFleXYWq3d1bpimjmDwDUKqvfUK1urM",
   agentHeroes: "sIn4yvruYgh02jNLzYBdd02A00gPkioBmib01RZIJv2GJYY",
+  peppermint: "7HoHVNYxryqScGV3AQAttVrsq33Xq7DeL7CG01nf4OKI",
 }
 
 export const PROJECTS = [
   {
+    title: "Peppermint",
+    description:
+      "Developed the Peppermint Agency website from scratch, integrating Strapi CMS for a modern, responsive user experience that highlights services, portfolio, and brand identity.",
+
+    tags: ["Redesign", "NextJs", "Tailwind", "Strapi", "SEO"] as Tags[],
+
+    links: [
+      {
+        title: "View live site",
+        href: "https://peppermint.id",
+      },
+    ],
+    playbackId: PROJECT_VIDEO_IDS.peppermint,
+
+    bgSrc: "/images/pp-bg.webp",
+    placeholder: "",
+  },
+
+  {
     title: "GrowChief",
     description: `GrowChief is an AI-powered social engagement tool developed using Next.js and Tailwind CSS. <br class="portrait:hidden"/> It features a fully responsive webpage with seamless blog functionality.`,
 
-    tags: ["Startup", "Blog", "Nextjs", "Tailwind", "SEO"] as Tags[],
+    tags: ["Startup", "Blog", "Nextjs", "Tailwind"] as Tags[],
 
     links: [
       {
@@ -169,6 +189,7 @@ type Tags =
   | "Astro"
   | "SCSS"
   | "GSAP"
+  | "Redesign"
 
 export type Services = (typeof SERVICES)[number]
 export type Project = (typeof PROJECTS)[number]
