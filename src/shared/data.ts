@@ -75,7 +75,7 @@ export const PROJECTS = [
     description:
       "Developed the Peppermint Agency website from scratch, integrating Strapi CMS for a modern, responsive user experience that highlights services, portfolio, and brand identity.",
 
-    tags: ["Redesign", "NextJs", "Tailwind", "Strapi", "SEO"] as Tags[],
+    tags: ["Redesign", "NextJs", "Tailwind", "", "SEO"],
 
     links: [
       {
@@ -86,14 +86,15 @@ export const PROJECTS = [
     playbackId: PROJECT_VIDEO_IDS.peppermint,
 
     bgSrc: "/images/pp-bg.webp",
-    placeholder: "",
+    placeholder:
+      "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAABQAgCdASoQAAwAAQAcJZgCdAYuvv2XaNrQfgAA/sK/+IPNfDN9GZhd49Swdst9K69TFC3eS4/hJkeuvE2/b5Zl4pxXQhzlC4fJezki8furwEwWvzPBc977K1Qrpdni094f/ibVGO38FKYZ0XfV6PxhZRQ/5ZQxDFdntSD9S8zddn/j17F/oTPIeVYxR2gpTudrgAAA",
   },
 
   {
     title: "GrowChief",
     description: `GrowChief is an AI-powered social engagement tool developed using Next.js and Tailwind CSS. <br class="portrait:hidden"/> It features a fully responsive webpage with seamless blog functionality.`,
 
-    tags: ["Startup", "Blog", "Nextjs", "Tailwind"] as Tags[],
+    tags: ["Startup", "Blog", "Nextjs", "Tailwind"],
 
     links: [
       {
@@ -114,7 +115,7 @@ export const PROJECTS = [
       // "CopilotKit an AI Copilot which was re-engineered from Webflow to NextJs app to create a smarter, user-aware virtual colleague for seamless product interactions",
       "CopilotKit, an AI Copilot which was transformed from a Webflow to a powerful Next.js app. <br/>  It offers a smarter, user-aware virtual collegue <br/> for seamless product interactions.",
 
-    tags: ["Stack Migration", "UI/UX", "NextJs", "Tailwind", "SEO"] as Tags[],
+    tags: ["Stack Migration", "UI/UX", "NextJs", "Tailwind", "SEO"],
 
     links: [
       {
@@ -134,7 +135,7 @@ export const PROJECTS = [
     description:
       "Agent Heroes is a versatile platform for creating digital content, including static images and <br/> video memes. Built with Astro and SCSS for a performant and customizable user experience.",
 
-    tags: ["Astro", "SCSS", "GSAP"] as Tags[],
+    tags: ["Astro", "SCSS", "GSAP"],
 
     links: [
       {
@@ -176,20 +177,6 @@ export const FOOTER_SOCIALS = [
     href: "https://t.me/sh_1415926535",
   },
 ]
-
-type Tags =
-  | "Startup"
-  | "Blog"
-  | "Nextjs"
-  | "Tailwind"
-  | "Stack Migration"
-  | "SEO"
-  | "NextJs"
-  | "UI/UX"
-  | "Astro"
-  | "SCSS"
-  | "GSAP"
-  | "Redesign"
 
 export type Services = (typeof SERVICES)[number]
 export type Project = (typeof PROJECTS)[number]
