@@ -1,3 +1,5 @@
+import { IProject } from "./types"
+
 export enum NavLinkIdx {
   Home = "home",
   Services = "services",
@@ -69,13 +71,13 @@ export const PROJECT_VIDEO_IDS = {
   peppermint: "7HoHVNYxryqScGV3AQAttVrsq33Xq7DeL7CG01nf4OKI",
 }
 
-export const PROJECTS = [
+export const PROJECTS: IProject[] = [
   {
     title: "Peppermint",
     description:
       "Developed the Peppermint Agency website from scratch, integrating Strapi CMS for a modern, responsive user experience that highlights services, portfolio, and brand identity.",
 
-    tags: ["Redesign", "NextJs", "Tailwind", "", "SEO"],
+    tags: ["Redesign", "NextJs", "Tailwind", "CMS", "SEO"],
 
     links: [
       {

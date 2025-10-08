@@ -11,6 +11,7 @@ type Tags =
   | "SCSS"
   | "GSAP"
   | "Redesign"
+  | "CMS"
 
 export interface IProject {
   title: string
