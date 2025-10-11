@@ -25,3 +25,11 @@ export interface IProject {
   bgSrc:string;
   placeholder:string
 }
+
+export interface IContactForm {
+  name: string
+  email: string
+  organization: string
+  currentWebsite: string | number
+  description: string
+}

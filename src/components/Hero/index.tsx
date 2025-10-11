@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import Link from "next/link"
 
 import gsap from "gsap"
 
@@ -8,7 +9,6 @@ import TextEffect from "../ui/TextEffect"
 
 import { animH2, animH2Desc } from "@/shared/anim"
 import { motion } from "motion/react"
-import CalCom from "../ui/CalCom"
 
 const Hero = () => {
   useEffect(() => {
@@ -126,22 +126,20 @@ const Hero = () => {
                 per="line"
                 as="p"
                 delay={1.7}
-                className="mb-[1.6rem] text-[2.2rem] leading-[2.6rem] portrait:max-w-[90%] portrait:text-[2.4rem] portrait:leading-[3.2rem]"
+                className="mb-[1.6rem] max-w-[90%] text-[2.2rem] leading-[2.8rem] portrait:max-w-[90%] portrait:text-[2.4rem] portrait:leading-[3.2rem]"
                 segmentWrapperClassName="overflow-hidden block"
                 variants={animH2Desc}
               >
-                I craft user-focused websites that empower startups and businesses to stand out and scale with
+
+                I build user-focused websites that empower startups and businesses to stand out and scale with
                 confidence.
               </TextEffect>
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{
-                  duration: 0.5,
-                  delay: 2,
-                }}
+                transition={{ duration: 0.5, delay: 2 }}
               >
-                <CalCom>Let&apos;s Connect</CalCom>
+                <Link href="/contact" className='text-[1.8rem] inline-block rounded-[1.8rem] bg-text-2 text-white duration-200 ease-linear hover:bg-primary hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.1)] transition-colors py-[1.9rem] px-[2.5rem]' type="button">Start a project</Link>
               </motion.div>
             </div>
           </div>

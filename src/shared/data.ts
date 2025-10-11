@@ -12,29 +12,22 @@ export const NAV_LINKS = [
     title: "Home",
     linkIdx: NavLinkIdx.Home,
     isDarkBg: false,
-    // start: "top",
-    // end: "bottom+=1%",
   },
   {
     title: "Services",
     linkIdx: NavLinkIdx.Services,
     isDarkBg: true,
-    // start: "top",
-    // end: "bottom-=1%",
   },
   {
     title: "Works",
     linkIdx: NavLinkIdx.Works,
     isDarkBg: true,
-    // start: "top",
-    // end: "bottom-=1%",
   },
   {
     title: "Contact",
     linkIdx: NavLinkIdx.Contact,
     isDarkBg: false,
-    // start: "top",
-    // end: "bottom+=1%",
+    href: "/contact",
   },
 ]
 
