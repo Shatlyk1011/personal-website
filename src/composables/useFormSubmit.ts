@@ -5,12 +5,12 @@ import { toast } from "sonner"
 
 import { IContactForm } from "@/shared/types"
 
-const formInitialState:IContactForm = {
-  name: '',
-  email: '',
-  organization: '',
-  currentWebsite: '',
-  description: '',
+const formInitialState: IContactForm = {
+  name: "",
+  email: "",
+  organization: "",
+  currentWebsite: "",
+  description: "",
 }
 
 function getCurrentTime() {
@@ -33,7 +33,6 @@ const useFormSubmit = () => {
   const [form, setForm] = useState(formInitialState)
 
   const submit = async () => {
-
     setIsLoading(true)
     toast.loading("Sending request...", { id: "loading-toast-id" })
 
@@ -51,9 +50,9 @@ const useFormSubmit = () => {
       if (res.status === 200) {
         setForm(formInitialState)
         toast.success("Success. I will contact you shortly", {
-          style:{background:'#0c0c0c'}, 
+          style: { background: "#0c0c0c" },
           id: "loading-toast-id",
-          duration: 7000, 
+          duration: 7000,
         })
       }
     } catch {

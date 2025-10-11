@@ -130,16 +130,17 @@ const Hero = () => {
                 segmentWrapperClassName="overflow-hidden block"
                 variants={animH2Desc}
               >
-
                 I build user-focused websites that empower startups and businesses to stand out and scale with
                 confidence.
               </TextEffect>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 2 }}
-              >
-                <Link href="/contact" className='text-[1.8rem] inline-block rounded-[1.8rem] bg-text-2 text-white duration-200 ease-linear hover:bg-primary hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.1)] transition-colors py-[1.9rem] px-[2.5rem]' type="button">Start a project</Link>
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 2 }}>
+                <Link
+                  href="/contact"
+                  className="inline-block rounded-[1.8rem] bg-text-2 px-[2.5rem] py-[1.9rem] text-[1.8rem] text-white transition-colors duration-200 ease-linear hover:bg-primary hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.1)]"
+                  type="button"
+                >
+                  Start a project
+                </Link>
               </motion.div>
             </div>
           </div>

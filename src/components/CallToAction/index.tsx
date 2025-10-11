@@ -25,9 +25,16 @@ const CallToAction = () => {
         </p>
 
         <div className="flex items-center justify-center gap-[1.8rem]">
-
-          <Link href="/contact" className='text-[1.8rem] rounded-[1.8rem] bg-text-2 text-white duration-200 ease-linear hover:bg-primary hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.1)] transition-colors py-[1.9rem] px-[2.5rem]' type="button">Start a project</Link>
-          <CalCom classes="bg-initial outline outline-current hover:text-primary text-text-2 hover:bg-initial ">Schedule a call</CalCom>
+          <Link
+            href="/contact"
+            className="rounded-[1.8rem] bg-text-2 px-[2.5rem] py-[1.9rem] text-[1.8rem] text-white transition-colors duration-200 ease-linear hover:bg-primary hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.1)]"
+            type="button"
+          >
+            Start a project
+          </Link>
+          <CalCom classes="bg-initial outline outline-current hover:text-primary text-text-2 hover:bg-initial ">
+            Schedule a call
+          </CalCom>
         </div>
       </section>
 

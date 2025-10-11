@@ -1,5 +1,5 @@
-import { FOOTER_SOCIALS } from '@/shared/data';
-import TextGlitch from '../ui/TextGlitch';
+import { FOOTER_SOCIALS } from "@/shared/data"
+import TextGlitch from "../ui/TextGlitch"
 
 const Footer = () => {
   return (
@@ -21,10 +21,7 @@ const Footer = () => {
                   rel="noopener"
                   className="rounded-3xl px-[0.6rem] py-[0.3rem] tracking-wide ring-offset-[0.1rem] focus:outline-none focus-visible:ring-[0.15rem] focus-visible:ring-current focus-visible:outline-none"
                 >
-                  <TextGlitch
-                    text={title}
-                    classes="text-[1.4rem] portrait:text-[1.8rem]  leading-[110%] "
-                  ></TextGlitch>
+                  <TextGlitch text={title} classes="text-[1.4rem] portrait:text-[1.8rem]  leading-[110%] "></TextGlitch>
                 </a>
               </li>
             ))}
@@ -46,5 +43,5 @@ const Footer = () => {
       </div>
     </footer>
   )
-};
+}
 export default Footer

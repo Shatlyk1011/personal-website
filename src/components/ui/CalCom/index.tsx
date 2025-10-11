@@ -10,7 +10,7 @@ interface Props {
 
 const CalCom: FC<Props> = ({ children, classes }) => {
   useEffect(() => {
-    (async function () {
+    ;(async function () {
       const cal = await getCalApi()
       cal("ui", {
         theme: "dark",
@@ -22,7 +22,10 @@ const CalCom: FC<Props> = ({ children, classes }) => {
     <button
       data-cal-link="shatlyk-abdullayev"
       data-cal-config='{"theme":"dark"}'
-      className={cn("rounded-[1.8rem] bg-text-2 px-[2.4rem] py-[1.8rem] text-[1.8rem] font-medium tracking-[-0.04px] text-white transition-colors duration-200 ease-linear hover:bg-primary hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.1)] focus-visible:bg-primary focus-visible:ring-[0.25rem] focus-visible:ring-primary focus-visible:ring-offset-[0.1rem] focus-visible:outline-none portrait:px-[3.2rem] portrait:py-[2.2rem] portrait:text-[2.6rem]", classes)}
+      className={cn(
+        "rounded-[1.8rem] bg-text-2 px-[2.4rem] py-[1.8rem] text-[1.8rem] font-medium tracking-[-0.04px] text-white transition-colors duration-200 ease-linear hover:bg-primary hover:shadow-[0_10px_20px_rgba(5,_38,_85,_0.1)] focus-visible:bg-primary focus-visible:ring-[0.25rem] focus-visible:ring-primary focus-visible:ring-offset-[0.1rem] focus-visible:outline-none portrait:px-[3.2rem] portrait:py-[2.2rem] portrait:text-[2.6rem]",
+        classes,
+      )}
       type="button"
     >
       {children}

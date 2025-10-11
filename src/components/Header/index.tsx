@@ -57,7 +57,10 @@ const Header: FC<Props> = ({ mainRef, classes }) => {
       initial={mainRef ? { y: -100, opacity: 0 } : false}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1.6, delay: 0.2, ease: "easeIn" }}
-      className={cn("header fixed top-0 left-0 z-[1000] w-full px-[7.4rem] py-[3.2rem] text-gray-1 portrait:px-[2.4rem] portrait:py-[2rem]", classes)}
+      className={cn(
+        "header fixed top-0 left-0 z-[1000] w-full px-[7.4rem] py-[3.2rem] text-gray-1 portrait:px-[2.4rem] portrait:py-[2rem]",
+        classes,
+      )}
       ref={headerRef}
     >
       <nav className="flex items-center justify-between gap-[3.2rem] text-[1.8rem] font-medium" data-fixed>
@@ -73,15 +76,14 @@ const Header: FC<Props> = ({ mainRef, classes }) => {
               </Link>
             ) : (
               <a
-                href={'/#' + linkIdx}
+                href={"/#" + linkIdx}
                 className="nav_link inline-block cursor-pointer rounded-3xl px-[0.4rem] leading-0 capitalize ring-offset-[0.1rem] focus-visible:ring-[0.25rem] focus-visible:ring-current focus-visible:outline-none"
                 key={linkIdx}
                 onClick={() => smoothScroll(linkIdx)}
               >
                 <TextGlitch text={title} classes="portrait:text-[2.2rem] capitalize" />
               </a>
-            )
-
+            ),
           )}
         </ul>
         {/* <button type="button" className="py-[0.7rem] px-[0.8rem] leading-[2.2rem] cursor-pointer rounded-[1.6rem] border border-current">

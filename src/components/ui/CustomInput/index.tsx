@@ -1,10 +1,4 @@
-import {
-  useRef,
-  type DetailedHTMLProps,
-  type FC,
-  type InputHTMLAttributes,
-  type TextareaHTMLAttributes,
-} from "react"
+import { useRef, type DetailedHTMLProps, type FC, type InputHTMLAttributes, type TextareaHTMLAttributes } from "react"
 
 import { cn } from "@/shared/utils"
 
@@ -38,7 +32,7 @@ const CustomInput: FC<Props> = ({ classes, as = "input", errorMsg, ...rest }) =>
   return (
     <div>
       <input autoComplete="off" aria-autocomplete="none" type="text" {...(commonProps as InputProps)} />
-      {errorMsg && <span className="leading-[130%] text-danger text-[1.4rem]  font-normal">{errorMsg}</span>}
+      {errorMsg && <span className="text-[1.4rem] leading-[130%] font-normal text-danger">{errorMsg}</span>}
     </div>
   )
 }

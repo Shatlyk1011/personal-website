@@ -15,15 +15,15 @@ type Tags =
 
 export interface IProject {
   title: string
-  description: string;
+  description: string
   tags: Tags[]
   links: {
     title: string
     href: string
   }[]
   playbackId: string
-  bgSrc:string;
-  placeholder:string
+  bgSrc: string
+  placeholder: string
 }
 
 export interface IContactForm {
