@@ -32,6 +32,8 @@ export function constructMetadata({
       "Dashoguz",
       "Turkmenabat",
       "Shatlyk Abdullayev",
+      "devbyshat",
+      "@devbyshat",
     ],
     openGraph: {
       title,
