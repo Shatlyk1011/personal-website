@@ -12,6 +12,8 @@
   --gray-1: #dcdcdc;
   --gray-2: #a5a5a5;
   --gray-3: #787878;
+
+  --danger: #b00020;
 }
 
 @theme inline {
@@ -26,6 +28,8 @@
   --color-gray-1: var(--gray-1);
   --color-gray-2: var(--gray-2);
   --color-gray-3: var(--gray-3);
+
+  --color-danger: var(--danger);
 
   --animate-aurora: aurora 50s linear infinite;
 
@@ -98,7 +102,7 @@ html {
 
 body {
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   font-size: 1.6rem;
 }
 
@@ -161,7 +165,7 @@ body.overflow-hidden {
 } */
 
 .transition_1 {
-  transition: all 0.25s cubic-bezier(0.85, 0, 0.15, 1);
+  transition: color 0.25s cubic-bezier(0.85, 0, 0.15, 1);
 }
 
 mux-player {
