@@ -41,7 +41,7 @@ const useFormSubmit = () => {
     const data = {
       service_id: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
       template_id: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-      user_id: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      user_id: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_ID!,
       template_params: { ...form, time },
     }
     try {
@@ -56,7 +56,7 @@ const useFormSubmit = () => {
         })
       }
     } catch {
-      toast.error("Что то пошло не так... Попробуйте еще раз", { id: "loading-toast-id" })
+      toast.error("Something went wrong. Try again later", { id: "loading-toast-id" })
     } finally {
       setIsLoading(false)
     }

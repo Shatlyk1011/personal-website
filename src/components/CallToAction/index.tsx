@@ -32,7 +32,7 @@ const CallToAction = () => {
           >
             Start a project
           </Link>
-          <CalCom classes="bg-initial outline outline-current hover:text-primary text-text-2 hover:bg-initial ">
+          <CalCom classes="bg-initial outline outline-current transition hover:text-primary text-text-2 hover:bg-initial ">
             Schedule a call
           </CalCom>
         </div>
