@@ -21,7 +21,7 @@ type FormData = z.infer<typeof formSchema>
 type FormErrors = Partial<Record<keyof FormData, string>>
 
 // use form hook
-export const useZodForm = (form: IContactForm, onSubmit: () => void) => {
+export const useZodForm = (form: IContactForm, onSubmit: () => Promise<void>) => {
   const [errors, setErrors] = useState<FormErrors>({})
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -41,7 +41,6 @@ export const useZodForm = (form: IContactForm, onSubmit: () => void) => {
 
     setErrors({})
     await onSubmit()
-    console.log("form:", result.data)
   }
 
   return { errors, handleSubmit }
