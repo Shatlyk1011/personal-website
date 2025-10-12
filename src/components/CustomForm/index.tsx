@@ -28,7 +28,7 @@ const CustomForm = () => {
   // }, [])
   return (
     <form className="rounded-[2rem] bg-[#121212] px-[4rem] pt-[4rem] pb-[4rem]" onSubmit={handleSubmit}>
-      <div className="mb-[3.2rem] flex flex-col gap-[2.4rem]">
+      <div className="mb-[2.4rem] flex flex-col gap-[2.4rem]">
         <CustomInput
           errorMsg={errors?.name}
           name="name"
