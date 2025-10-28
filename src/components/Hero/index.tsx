@@ -147,7 +147,7 @@ const Hero = () => {
           {/* right */}
           <motion.figure
             id="img"
-            className="h-full w-full flex-1 custom_transition overflow-hidden rounded-[1.6rem] opacity-0"
+            className="custom_transition h-full w-full flex-1 overflow-hidden rounded-[1.6rem] opacity-0"
             animate={{ opacity: 1 }}
             transition={{ duration: 1.6, delay: 1.2 }}
           >

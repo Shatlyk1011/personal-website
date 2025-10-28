@@ -77,16 +77,15 @@ const Header: FC<Props> = ({ mainRef, classes }) => {
                 </Link>
               </li>
             ) : (
-                <li key={linkIdx}>
-                  <a
-                    href={"/#" + linkIdx}
-                    className="nav_link inline-block cursor-pointer rounded-3xl px-[0.4rem] leading-0 capitalize ring-offset-[0.1rem] focus-visible:ring-[0.25rem] focus-visible:ring-current focus-visible:outline-none"
-                    onClick={() => smoothScroll(linkIdx)}
-                  >
-                    <TextGlitch text={title} classes="portrait:text-[2.2rem] capitalize" />
-                  </a>
-                </li>
-
+              <li key={linkIdx}>
+                <a
+                  href={"/#" + linkIdx}
+                  className="nav_link inline-block cursor-pointer rounded-3xl px-[0.4rem] leading-0 capitalize ring-offset-[0.1rem] focus-visible:ring-[0.25rem] focus-visible:ring-current focus-visible:outline-none"
+                  onClick={() => smoothScroll(linkIdx)}
+                >
+                  <TextGlitch text={title} classes="portrait:text-[2.2rem] capitalize" />
+                </a>
+              </li>
             ),
           )}
         </ul>
