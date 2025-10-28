@@ -38,7 +38,7 @@ const Hero = () => {
         <div className="flex gap-[6.4rem] portrait:flex-col portrait:gap-[4rem]">
           {/* left */}
           <div className="flex flex-[1.2] flex-col justify-between">
-            <h1 className="mb-[2rem] portrait:mb-[3.2rem] portrait:pr-[2rem]">
+            <h1 className="mb-[0rem] portrait:mb-[3.2rem] portrait:pr-[2rem]">
               <svg
                 id="name"
                 xmlns="http://www.w3.org/2000/svg"
@@ -147,9 +147,9 @@ const Hero = () => {
           {/* right */}
           <motion.figure
             id="img"
-            className="h-full w-full flex-1 overflow-hidden rounded-[1.6rem] opacity-0"
+            className="h-full w-full flex-1 custom_transition overflow-hidden rounded-[1.6rem] opacity-0"
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1 }}
+            transition={{ duration: 1.6, delay: 1.2 }}
           >
             <img
               fetchPriority="high"

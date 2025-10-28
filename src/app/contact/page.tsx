@@ -1,5 +1,7 @@
 import { FOOTER_SOCIALS } from "@/shared/data"
 
+import { config } from "@/siteConfig"
+
 //components
 import CustomForm from "@/components/CustomForm"
 import Header from "@/components/Header"
@@ -46,7 +48,7 @@ export default function Home() {
                 <li className="mb-[0.6rem] text-[1.2rem] leading-[120%] tracking-[-0.01em] text-gray-3 uppercase">
                   CURRENT LOCATION
                 </li>
-                <li>Home, Turkmenabat</li>
+                <li>{config.currentLocation}</li>
               </ul>
             </div>
           </div>
@@ -79,7 +81,7 @@ export default function Home() {
               <li className="mb-[0.6rem] text-[1.2rem] leading-[120%] tracking-[-0.01em] text-gray-3 uppercase">
                 CURRENT LOCATION
               </li>
-              <li>Home, Turkmenabat</li>
+              <li>{config.currentLocation}</li>
             </ul>
           </div>
         </section>

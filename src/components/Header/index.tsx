@@ -71,18 +71,22 @@ const Header: FC<Props> = ({ mainRef, classes }) => {
         <ul className="flex flex-1 items-center justify-end gap-[2.4rem] [font-kerning:none]">
           {NAV_LINKS.map(({ title, linkIdx, href }) =>
             href ? (
-              <Link key={linkIdx} href={href} className="leading-0">
-                <TextGlitch text={title} classes="portrait:text-[2.2rem] capitalize" />
-              </Link>
+              <li key={linkIdx}>
+                <Link href={href} className="leading-0">
+                  <TextGlitch text={title} classes="portrait:text-[2.2rem] capitalize" />
+                </Link>
+              </li>
             ) : (
-              <a
-                href={"/#" + linkIdx}
-                className="nav_link inline-block cursor-pointer rounded-3xl px-[0.4rem] leading-0 capitalize ring-offset-[0.1rem] focus-visible:ring-[0.25rem] focus-visible:ring-current focus-visible:outline-none"
-                key={linkIdx}
-                onClick={() => smoothScroll(linkIdx)}
-              >
-                <TextGlitch text={title} classes="portrait:text-[2.2rem] capitalize" />
-              </a>
+                <li key={linkIdx}>
+                  <a
+                    href={"/#" + linkIdx}
+                    className="nav_link inline-block cursor-pointer rounded-3xl px-[0.4rem] leading-0 capitalize ring-offset-[0.1rem] focus-visible:ring-[0.25rem] focus-visible:ring-current focus-visible:outline-none"
+                    onClick={() => smoothScroll(linkIdx)}
+                  >
+                    <TextGlitch text={title} classes="portrait:text-[2.2rem] capitalize" />
+                  </a>
+                </li>
+
             ),
           )}
         </ul>

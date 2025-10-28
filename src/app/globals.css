@@ -102,7 +102,7 @@ html {
 
 body {
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
   font-size: 1.6rem;
 }
 
@@ -166,6 +166,10 @@ body.overflow-hidden {
 
 .transition_1 {
   transition: color 0.25s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+.custom_transition {
+  transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
 }
 
 mux-player {
