@@ -31,8 +31,7 @@ export default function Home() {
               <ul>
                 <li className="mb-[0.2rem] text-[1.2rem] leading-[120%] text-gray-3 uppercase">CONTACT DETAILS</li>
                 <li className="">
-                  <a href="mailto:shatlykabdullayev@mail.ru" target="_blank"
-                    rel="noopener">
+                  <a href="mailto:shatlykabdullayev@mail.ru" target="_blank" rel="noopener">
                     <TextGlitch text="shatlykabdullayev@mail.ru" classes="leading-[120%] " textClasses="lowercase" />
                   </a>
                 </li>
@@ -44,8 +43,7 @@ export default function Home() {
                   .reverse()
                   .map(({ href, title }) => (
                     <li key={href}>
-                      <a href={href} target="_blank"
-                        rel="noopener">
+                      <a href={href} target="_blank" rel="noopener">
                         <TextGlitch text={title} classes="leading-[120%] " />
                       </a>
                     </li>
