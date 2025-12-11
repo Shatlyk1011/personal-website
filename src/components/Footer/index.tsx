@@ -9,7 +9,6 @@ const Footer = () => {
           <ul className="flex basis-[25%] flex-col items-start leading-[150%] font-semibold text-nowrap opacity-90 portrait:order-2 portrait:mt-6 portrait:basis-[100%] portrait:leading-[160%]">
             <li>Shatlyk Abdullayev</li>
             <li className="">©2025 All Rights Reserved.</li>
-            {/* <li className="hidden text-nowrap uppercase portrait:block">©2025 All Rights Reserved.</li> */}
           </ul>
 
           <ul className="flex items-center gap-[1.2rem] portrait:gap-[0.4rem]">

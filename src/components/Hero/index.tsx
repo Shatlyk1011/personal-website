@@ -16,7 +16,6 @@ const Hero = () => {
       defaults: { duration: 1, ease: "expo.out" }, // Common properties
     })
 
-    // FIX ANIMATION
     tl.fromTo("#name path", { y: 300 }, { y: 0, delay: 0.8, duration: 1.5, stagger: 0.02 })
 
     tl.fromTo(

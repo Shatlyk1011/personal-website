@@ -15,7 +15,7 @@ export default function Home() {
       <main className="min-h-svh w-full bg-bg-black px-[12rem] pt-[8rem] text-gray-1 portrait:px-[2rem]">
         <section className="flex h-full w-full portrait:flex-col">
           {/* left */}
-          <div className="flex flex-1 flex-col gap-[14rem] pt-[7.4rem] pr-[7.4rem] pb-[4rem] portrait:gap-[6rem] portrait:pt-[4rem]">
+          <div className="flex flex-1 flex-col justify-between gap-[14rem] pt-[7.4rem] pr-[7.4rem] pb-[4rem] portrait:gap-[6rem] portrait:pt-[4rem]">
             <div>
               <h1 className="mb-[2.4rem] text-[6.4rem] leading-[110%] font-medium tracking-[-0.04em] text-nowrap">
                 Let&apos;s start a <br /> project together
@@ -28,15 +28,6 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-[3.2rem] text-[1.4rem] tracking-[-0.04em] text-gray-1 portrait:hidden">
-              <ul>
-                <li className="mb-[0.2rem] text-[1.2rem] leading-[120%] text-gray-3 uppercase">CONTACT DETAILS</li>
-                <li className="">
-                  <a href="mailto:shatlykabdullayev@mail.ru" target="_blank" rel="noopener">
-                    <TextGlitch text="shatlykabdullayev@mail.ru" classes="leading-[120%] " textClasses="lowercase" />
-                  </a>
-                </li>
-              </ul>
-
               <ul className="flex flex-wrap gap-x-[1.2rem]">
                 <li className="mb-[0.6rem] basis-[100%] text-[1.2rem] leading-[120%] text-gray-3 uppercase">SOCIALS</li>
                 {FOOTER_SOCIALS.slice(1)
@@ -48,12 +39,6 @@ export default function Home() {
                       </a>
                     </li>
                   ))}
-              </ul>
-              <ul>
-                <li className="mb-[0.6rem] text-[1.2rem] leading-[120%] tracking-[-0.01em] text-gray-3 uppercase">
-                  CURRENT LOCATION
-                </li>
-                <li>{config.currentLocation}</li>
               </ul>
             </div>
           </div>

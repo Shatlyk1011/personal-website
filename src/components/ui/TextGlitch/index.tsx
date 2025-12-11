@@ -20,7 +20,12 @@ const TextGlitch: FC<Props> = ({ text, classes, textClasses }) => {
       >
         {text}
       </span>
-      <span className={cn("absolute top-0 left-0 translate-y-full text-inherit capitalize transition duration-300 ease-in-out group-hover:translate-y-0", textClasses)}>
+      <span
+        className={cn(
+          "absolute top-0 left-0 translate-y-full text-inherit capitalize transition duration-300 ease-in-out group-hover:translate-y-0",
+          textClasses,
+        )}
+      >
         {text}
       </span>
     </div>

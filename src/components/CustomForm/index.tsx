@@ -19,13 +19,6 @@ const CustomForm = () => {
     handleInput(name as keyof IContactForm, value)
   }
 
-  // useEffect(() => {
-  //   document?.addEventListener('wheel', (e) => {
-  //     if (e.ctrlKey) {
-  //       e.preventDefault();
-  //     }
-  //   }, { passive: false });
-  // }, [])
   return (
     <form className="rounded-[2rem] bg-[#121212] px-[4rem] pt-[4rem] pb-[4rem]" onSubmit={handleSubmit}>
       <div className="mb-[2.4rem] flex flex-col gap-[2.4rem]">
