@@ -1,3 +1,1 @@
-export const config = {
-  currentLocation: "Turkmenistan, Turkmenabat",
-}
+export const config = {}
