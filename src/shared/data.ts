@@ -68,7 +68,7 @@ export const PROJECTS: IProject[] = [
   {
     title: "Peppermint",
     description:
-      "Developed the Peppermint Agency website from scratch, integrating Strapi CMS for a modern, responsive user experience that highlights services, portfolio, and brand identity.",
+      "Developed the Peppermint Agency website with responsive user experience that highlights services, portfolio, and brand identity.",
 
     tags: ["Redesign", "NextJs", "Tailwind", "CMS", "SEO"],
 
