@@ -15,7 +15,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       {/* <!-- Google tag (gtag.js) --> */}
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-NTSVCRXMWJ"></Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-3NXFSSK6XG"></Script>
       <Script
         id="gtag-init"
         dangerouslySetInnerHTML={{
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-NTSVCRXMWJ');
+          gtag('config', 'G-3NXFSSK6XG');
         `,
         }}
       ></Script>
