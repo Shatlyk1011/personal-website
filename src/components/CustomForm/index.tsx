@@ -1,5 +1,5 @@
 "use client"
-import { ChangeEvent } from "react"
+import { ChangeEvent, useEffect } from "react"
 
 import CustomInput from "../ui/CustomInput"
 import useFormSubmit from "@/composables/useFormSubmit"
@@ -18,6 +18,10 @@ const CustomForm = () => {
   const onInputChange = ({ target: { name, value } }: ChangeEvent<HTMLInputElement>) => {
     handleInput(name as keyof IContactForm, value)
   }
+
+  useEffect(() => {
+    document.body.style.overflowY = "auto"
+  }, [])
 
   return (
     <form className="rounded-[2rem] bg-[#121212] px-[4rem] pt-[4rem] pb-[4rem]" onSubmit={handleSubmit}>

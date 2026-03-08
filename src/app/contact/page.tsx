@@ -6,11 +6,11 @@ import Header from "@/components/Header"
 import { Toaster } from "sonner"
 import TextGlitch from "@/components/ui/TextGlitch"
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <>
       <Header classes="absolute" />
-      <main className="min-h-svh w-full bg-bg-black px-[12rem] pt-[8rem] text-gray-1 portrait:px-[2rem]">
+      <main className="min-h-svh h-full w-full bg-bg-black px-[12rem] pt-[8rem] text-gray-1 portrait:px-[2rem]">
         <section className="flex h-full w-full portrait:flex-col">
           {/* left */}
           <div className="flex flex-1 flex-col justify-between gap-[14rem] pt-[7.4rem] pr-[7.4rem] pb-[4rem] portrait:gap-[6rem] portrait:pt-[4rem]">
