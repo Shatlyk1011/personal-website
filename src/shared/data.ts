@@ -164,10 +164,6 @@ export const FOOTER_SOCIALS = [
     href: "https://www.youtube.com/@devbyshat",
   },
   {
-    title: "Instagram",
-    href: "https://www.instagram.com/devbyshat",
-  },
-  {
     title: "Linkedin",
     href: "https://www.linkedin.com/in/shatlyk1011/",
   },

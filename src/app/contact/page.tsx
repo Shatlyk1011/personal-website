@@ -61,7 +61,7 @@ export default function ContactPage() {
             <ul>
               <li className="mb-[0.2rem] text-[1.2rem] leading-[120%] text-gray-3 uppercase">CONTACT DETAILS</li>
               <li className="">
-                <a href="mailto:shatlykabdullayev@mail.ru">shatlykabdullayev@mail.ru</a>
+                <a href="mailto:shatlykabdullayev1011@gmail.com">shatlykabdullayev1011@gmail.com</a>
               </li>
             </ul>
           </div>
