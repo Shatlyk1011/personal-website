@@ -25,19 +25,6 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          <div className="flex basis-[25%] items-center justify-end align-bottom portrait:mt-3">
-            <a
-              href="https://www.instagram.com/devbyshat"
-              className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-1 focus:outline-none focus-visible:ring-[0.15rem] focus-visible:ring-current focus-visible:outline-none"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <TextGlitch
-                text="More Projects"
-                classes="text-[1.4rem] text-nowrap tracking-wide portrait:text-[1.8rem] leading-[110%]"
-              />
-            </a>
-          </div>
         </div>
       </div>
     </footer>
