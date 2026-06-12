@@ -8,7 +8,10 @@ import { AuroraBackground } from "../ui/AuroraBg"
 import TextEffect from "../ui/TextEffect"
 
 import { animH2, animH2Desc } from "@/shared/anim"
+import { siteConfig } from "@/siteConfig"
 import { motion } from "motion/react"
+
+const siteTitle = `${siteConfig.name}, ${siteConfig.role}`
 
 const Hero = () => {
   useEffect(() => {
@@ -38,6 +41,7 @@ const Hero = () => {
           {/* left */}
           <div className="flex flex-[1.2] flex-col justify-between">
             <h1 className="mb-[0rem] portrait:mb-[3.2rem] portrait:pr-[2rem]">
+              <span className="sr-only">{siteTitle}</span>
               <svg
                 id="name"
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,6 +49,7 @@ const Hero = () => {
                 height="100%"
                 viewBox="0 0 650 229"
                 fill="none"
+                aria-hidden="true"
               >
                 <path
                   d="M32.1953 103.151C26.5755 103.151 21.6667 102.304 17.4688 100.612C13.2708 98.919 9.95312 96.4985 7.51562 93.35C5.11198 90.2016 3.75781 86.4438 3.45312 82.0766L3.40234 81.3149H15.8945L15.9961 81.9243C16.3685 84.0232 17.2826 85.8344 18.7383 87.3578C20.194 88.8813 22.1068 90.0662 24.4766 90.9125C26.8802 91.725 29.6055 92.1313 32.6523 92.1313C35.7331 92.1313 38.3906 91.7081 40.625 90.8618C42.8932 90.0154 44.6367 88.8136 45.8555 87.2563C47.0742 85.6651 47.6836 83.8201 47.6836 81.7211V81.6703C47.6836 78.9282 46.651 76.7615 44.5859 75.1703C42.5547 73.5792 39.1693 72.2758 34.4297 71.2602L26.5586 69.6352C19.3815 68.1456 13.9987 65.7081 10.4102 62.3227C6.82161 58.9034 5.02734 54.4685 5.02734 49.018V48.9672C5.0612 44.6339 6.22917 40.8592 8.53125 37.643C10.8672 34.393 14.0833 31.8709 18.1797 30.0766C22.276 28.2485 26.9479 27.3344 32.1953 27.3344C37.5104 27.3344 42.1654 28.2146 46.1602 29.975C50.1549 31.7355 53.2865 34.1899 55.5547 37.3383C57.8568 40.4868 59.1263 44.143 59.3633 48.3071L59.4141 49.1703H46.9219L46.8203 48.5102C46.5156 46.3774 45.7201 44.5662 44.4336 43.0766C43.1471 41.5532 41.4544 40.3852 39.3555 39.5727C37.2565 38.7602 34.8359 38.3539 32.0938 38.3539C29.25 38.3539 26.7786 38.7771 24.6797 39.6235C22.6146 40.436 21.0065 41.587 19.8555 43.0766C18.7383 44.5662 18.1797 46.2927 18.1797 48.2563V48.3071C18.1797 50.88 19.2122 52.9789 21.2773 54.6039C23.3763 56.1951 26.6263 57.4477 31.0273 58.3618L38.8984 59.9868C44.0104 61.0362 48.1745 62.4581 51.3906 64.2524C54.6068 66.0467 56.9766 68.298 58.5 71.0063C60.0573 73.7146 60.8359 76.9646 60.8359 80.7563V80.8071C60.8359 85.3435 59.6849 89.2875 57.3828 92.6391C55.1146 95.9907 51.8307 98.5805 47.5312 100.409C43.2656 102.237 38.1536 103.151 32.1953 103.151Z"
@@ -113,7 +118,7 @@ const Hero = () => {
               <TextEffect
                 className="mb-[1.4rem] text-[4rem] leading-[3.4rem] font-medium tracking-[0.04rem] portrait:mb-[2.4rem] portrait:text-nowrap"
                 per="line"
-                as="h2"
+                as="p"
                 variants={animH2}
                 delay={1.5}
                 speedReveal={2}
@@ -156,7 +161,7 @@ const Hero = () => {
               srcSet="/images/main-1x.webp 1x, /images/main-2x.webp 2x"
               className="aspect-custom-hero-image h-full w-full scale-101 object-cover object-top"
               loading="eager"
-              alt="Shatlyk Abdullayev main hero image"
+              alt="Portrait of Shatlyk Abdullayev, freelance web designer and developer"
             />
           </motion.figure>
         </div>

@@ -1,4 +1,6 @@
 import { FOOTER_SOCIALS } from "@/shared/data"
+import { JsonLd, constructMetadata, contactPageSchema } from "@/shared/seo"
+import { siteConfig } from "@/siteConfig"
 
 //components
 import CustomForm from "@/components/CustomForm"
@@ -6,9 +8,21 @@ import Header from "@/components/Header"
 import { Toaster } from "sonner"
 import TextGlitch from "@/components/ui/TextGlitch"
 
+const title = "Contact"
+const description =
+  "Get in touch with Shatlyk Abdullayev to discuss web design, web development, SEO, and performance work for your next project."
+
+export const metadata = constructMetadata({
+  title,
+  description,
+  path: "/contact",
+  keywords: [...siteConfig.keywords, "contact web designer", "contact web developer"],
+})
+
 export default function ContactPage() {
   return (
     <>
+      <JsonLd data={contactPageSchema({ title, description })} />
       <Header classes="absolute" />
       <main className="min-h-svh h-full w-full bg-bg-black px-[12rem] pt-[8rem] text-gray-1 portrait:px-[2rem]">
         <section className="flex h-full w-full portrait:flex-col">
@@ -32,7 +46,7 @@ export default function ContactPage() {
                   .reverse()
                   .map(({ href, title }) => (
                     <li key={href}>
-                      <a href={href} target="_blank" rel="noopener">
+                      <a href={href} target="_blank" rel="noopener noreferrer">
                         <TextGlitch text={title} classes="leading-[120%] " />
                       </a>
                     </li>
@@ -53,7 +67,9 @@ export default function ContactPage() {
                 .reverse()
                 .map(({ href, title }) => (
                   <li key={href}>
-                    <a href={href}>{title}</a>
+                    <a href={href} target="_blank" rel="noopener noreferrer">
+                      {title}
+                    </a>
                   </li>
                 ))}
             </ul>

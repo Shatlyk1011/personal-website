@@ -50,7 +50,8 @@ const ProjectCard: FC<Props> = ({ item: { title, description, bgSrc, playbackId,
           src={bgSrc}
           fetchPriority="low"
           className="absolute top-0 left-0 z-[1] h-full w-full object-cover"
-          alt="growchief image"
+          alt=""
+          aria-hidden="true"
         />
       </div>
     </div>

@@ -9,13 +9,13 @@ interface Props {
 
 const SectionHeading: FC<Props> = ({ title, classes }) => {
   return (
-    <h3
+    <h2
       className={cn(
         "text-[6.4rem] leading-[1.2] font-medium tracking-[-0.04em] uppercase portrait:text-[5.6rem]",
         classes,
       )}
       dangerouslySetInnerHTML={{ __html: title }}
-    ></h3>
+    ></h2>
   )
 }
 export default SectionHeading
