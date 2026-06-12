@@ -17,7 +17,7 @@ const Footer = () => {
                 <a
                   href={href}
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   className="rounded-3xl px-[0.6rem] py-[0.3rem] tracking-wide ring-offset-[0.1rem] focus:outline-none focus-visible:ring-[0.15rem] focus-visible:ring-current focus-visible:outline-none"
                 >
                   <TextGlitch text={title} classes="text-[1.4rem] portrait:text-[1.8rem]  leading-[110%] "></TextGlitch>
@@ -30,7 +30,7 @@ const Footer = () => {
               href="https://www.instagram.com/devbyshat"
               className="rounded-3xl px-[0.6rem] py-[0.3rem] ring-offset-1 focus:outline-none focus-visible:ring-[0.15rem] focus-visible:ring-current focus-visible:outline-none"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <TextGlitch
                 text="More Projects"
